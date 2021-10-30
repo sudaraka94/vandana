@@ -1,3 +1,4 @@
+import { List, ListItemButton, ListItemText } from "@mui/material"
 import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { fetchMenu } from "../api"
@@ -19,11 +20,17 @@ const Menu = () => {
     return (
         <>
             <div>
+                <List>
                 {
                     menuItems.map((item) => {
-                        return (<Link key={item.id} to={`/article/${item.id}`}>{item.title}</Link>)
+                        return (
+                            <ListItemButton alignItems="justify-content" key={item.id} component="a" href={`/article/${item.id}`}>
+                                <ListItemText primary={item.title} />
+                            </ListItemButton>
+                        )
                     })
                 }
+                </List>
             </div>
         </>
     )
