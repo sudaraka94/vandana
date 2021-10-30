@@ -18,7 +18,6 @@ const Menu = () => {
 
     return (
         <>
-            <h1>වන්දනා</h1>
             <div>
                 {
                     menuItems.map((item) => {
@@ -29,5 +28,6 @@ const Menu = () => {
         </>
     )
 }
+
 
 export default Menu

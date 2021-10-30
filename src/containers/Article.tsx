@@ -21,7 +21,6 @@ const Article = () => {
 
     return (
         <>
-            <Link to="/">Home</Link>
             <p>{article?.title}</p>
             {article?.content}
         </>

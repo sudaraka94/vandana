@@ -8,16 +8,19 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Layout from './hoc/Layout';
 
 function App() {
 
   return (
     <div className="App">
       <Router>
-        <Switch>
-          <Route exact path="/" component={Menu} />
-          <Route exact path="/article/:articleId" component={Article} />
-        </Switch>
+        <Layout>
+          <Switch>
+            <Route exact path="/" component={Menu} />
+            <Route exact path="/article/:articleId" component={Article} />
+          </Switch>
+        </Layout>
       </Router>
     </div>
   )
