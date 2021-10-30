@@ -1,29 +1,29 @@
-import React, { useState } from 'react'
-import './App.css'
-import Menu from './containers/Menu'
-import Article from './containers/Article';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import Layout from './hoc/Layout';
+import React from "react";
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { CssBaseline, ThemeProvider } from "@mui/material";
+
+import Menu from "./containers/Menu";
+import Article from "./containers/Article";
+import Layout from "./hoc/Layout";
+import { theme } from "./theme/theme";
 
 function App() {
-
   return (
-    <div className="App">
-      <Router>
-        <Layout>
-          <Switch>
-            <Route exact path="/" component={Menu} />
-            <Route exact path="/article/:articleId" component={Article} />
-          </Switch>
-        </Layout>
-      </Router>
-    </div>
-  )
+    <>
+      <CssBaseline />
+      <ThemeProvider theme={theme}>
+        <Router>
+          <Layout>
+            <Switch>
+              <Route exact path="/" component={Menu} />
+              <Route exact path="/article/:articleId" component={Article} />
+            </Switch>
+          </Layout>
+        </Router>
+      </ThemeProvider>
+    </>
+  );
 }
 
-export default App
+export default App;
