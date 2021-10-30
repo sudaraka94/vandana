@@ -17,3 +17,19 @@ export const fetchArticleById = async (articleId: string) => {
         }
     }
 }
+
+export const fetchMenu = async () => {
+    try {
+        let response = await axios.get(`${baseUrl}/menu.json`);
+
+        return {
+            data: response.data,
+            error: null
+        }
+    } catch (error) {
+        return {
+            data: null,
+            error: error,
+        }
+    }
+}
