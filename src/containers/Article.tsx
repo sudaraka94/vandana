@@ -43,7 +43,7 @@ const Article = () => {
         <Typography variant="h4" align="center">
           {article?.title}
         </Typography>
-        <div dangerouslySetInnerHTML={{__html: article?.content}} style={{fontSize: `${fontSize}em`}}>
+        <div dangerouslySetInnerHTML={{__html: article?.content || ""}} style={{fontSize: `${fontSize}em`}}>
         </div>
       </Box>
       <Box position="fixed" bottom={16} right={16}>
