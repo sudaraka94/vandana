@@ -22,7 +22,8 @@ const Menu = () => {
     }, []);
 
     const onEdit = (value: string) => {
-        setSearchQuery(value);
+        setSearchQuery(value.toLowerCase());
+        console.log(searchQuery)
     };
 
     return (
