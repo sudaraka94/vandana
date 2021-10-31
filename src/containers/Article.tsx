@@ -27,25 +27,24 @@ const Article = () => {
 
   const zoomIn = () => {
       if (fontSize < 16) {
-          setFontSize(fontSize+1);
+          setFontSize(fontSize*1.1);
       }
   }
 
   const zoomOut = () => {
     if (fontSize > 1) {
-        setFontSize(fontSize-1);
+        setFontSize(fontSize*0.9);
     }
 }
 
   return (
     <Box display="flex" flexDirection="column" alignItems="center" padding={4}>
-      <Box paddingBottom={16} maxWidth={400}>
+      <Box paddingBottom={16} width={"100%"} maxWidth={800}>
         <Typography variant="h4" align="center">
           {article?.title}
         </Typography>
-        <Typography sx={{fontSize: `${fontSize}em`}} variant="body1" align="center">
-          {article?.content}
-        </Typography>
+        <div dangerouslySetInnerHTML={{__html: article?.content}} style={{fontSize: `${fontSize}em`}}>
+        </div>
       </Box>
       <Box position="fixed" bottom={16} right={16}>
         <Zoom in={true}>
