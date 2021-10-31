@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 
 import { Box } from "@mui/system";
 import { Fab, Typography, Zoom } from "@mui/material";
-import { ArrowBack } from "@mui/icons-material";
+import { ArrowBack, ZoomIn, ZoomOut } from "@mui/icons-material";
 
 import { fetchArticleById } from "../api";
 
@@ -17,6 +17,7 @@ interface Article {
 const Article = () => {
   const { articleId } = useParams<{ articleId: string }>();
   const [article, setArticle] = useState<Article>();
+  const [fontSize, setFontSize] = useState<number>(1);
 
   useEffect(() => {
     fetchArticleById(articleId).then((response) => {
@@ -24,13 +25,25 @@ const Article = () => {
     });
   }, []);
 
+  const zoomIn = () => {
+      if (fontSize < 16) {
+          setFontSize(fontSize+1);
+      }
+  }
+
+  const zoomOut = () => {
+    if (fontSize > 1) {
+        setFontSize(fontSize-1);
+    }
+}
+
   return (
     <Box display="flex" flexDirection="column" alignItems="center" padding={4}>
       <Box paddingBottom={16} maxWidth={400}>
         <Typography variant="h4" align="center">
           {article?.title}
         </Typography>
-        <Typography variant="body1" align="center">
+        <Typography sx={{fontSize: `${fontSize}em`}} variant="body1" align="center">
           {article?.content}
         </Typography>
       </Box>
@@ -38,6 +51,20 @@ const Article = () => {
         <Zoom in={true}>
           <Fab color="primary" aria-label="back" href="/">
             <ArrowBack />
+          </Fab>
+        </Zoom>
+      </Box>
+      <Box position="fixed" bottom={164} right={16}>
+        <Zoom in={true}>
+          <Fab color="primary" aria-label="back" onClick={event => {zoomIn()}}>
+            <ZoomIn />
+          </Fab>
+        </Zoom>
+      </Box>
+      <Box position="fixed" bottom={90} right={16}>
+        <Zoom in={true}>
+          <Fab color="primary" aria-label="back" onClick={event => {zoomOut()}}>
+            <ZoomOut />
           </Fab>
         </Zoom>
       </Box>
