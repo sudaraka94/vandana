@@ -3,46 +3,84 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 import { Box } from "@mui/system";
-import { Fab, Typography, Zoom } from "@mui/material";
-import { ArrowBack } from "@mui/icons-material";
+import { Backdrop, CircularProgress, Fab, Typography, Zoom } from "@mui/material";
+import { ArrowBack, ZoomIn, ZoomOut } from "@mui/icons-material";
 
 import { fetchArticleById } from "../api";
 
 // used as the structure for the article
 interface Article {
-  title: string;
-  content: string;
+    title: string;
+    content: string;
 }
 
 const Article = () => {
-  const { articleId } = useParams<{ articleId: string }>();
-  const [article, setArticle] = useState<Article>();
+    const { articleId } = useParams<{ articleId: string }>();
+    const [article, setArticle] = useState<Article>();
+    const [fontSize, setFontSize] = useState<number>(1);
+    const [isLoading, setIsLoading] = useState<boolean>(true);
 
-  useEffect(() => {
-    fetchArticleById(articleId).then((response) => {
-      setArticle(response.data);
-    });
-  }, []);
+    useEffect(() => {
+        fetchArticleById(articleId).then((response) => {
+            setArticle(response.data);
+        })
+            .finally(() => {
+                setIsLoading(false);
+            })
+    }, []);
 
-  return (
-    <Box display="flex" flexDirection="column" alignItems="center" padding={4}>
-      <Box paddingBottom={16} maxWidth={400}>
-        <Typography variant="h4" align="center">
-          {article?.title}
-        </Typography>
-        <Typography variant="body1" align="center">
-          {article?.content}
-        </Typography>
-      </Box>
-      <Box position="fixed" bottom={16} right={16}>
-        <Zoom in={true}>
-          <Fab color="primary" aria-label="back" href="/">
-            <ArrowBack />
-          </Fab>
-        </Zoom>
-      </Box>
-    </Box>
-  );
+    const zoomIn = () => {
+        if (fontSize < 16) {
+            setFontSize(fontSize * 1.1);
+        }
+    }
+
+    const zoomOut = () => {
+        if (fontSize > 1) {
+            setFontSize(fontSize * 0.9);
+        }
+    }
+
+    return (
+        <>
+            <Backdrop
+                sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+                open={isLoading}
+            >
+                <CircularProgress color="inherit" />
+            </Backdrop>
+            <Box display="flex" flexDirection="column" alignItems="center" padding={4}>
+                <Box paddingBottom={16} width={"100%"} maxWidth={800}>
+                    <Typography variant="h4" align="center">
+                        {article?.title}
+                    </Typography>
+                    <div dangerouslySetInnerHTML={{ __html: article?.content || "" }} style={{ fontSize: `${fontSize}em` }}>
+                    </div>
+                </Box>
+                <Box position="fixed" bottom={16} right={16}>
+                    <Zoom in={true}>
+                        <Fab color="primary" aria-label="back" href="/">
+                            <ArrowBack />
+                        </Fab>
+                    </Zoom>
+                </Box>
+                <Box position="fixed" bottom={164} right={16}>
+                    <Zoom in={true}>
+                        <Fab color="primary" aria-label="back" onClick={event => { zoomIn() }}>
+                            <ZoomIn />
+                        </Fab>
+                    </Zoom>
+                </Box>
+                <Box position="fixed" bottom={90} right={16}>
+                    <Zoom in={true}>
+                        <Fab color="primary" aria-label="back" onClick={event => { zoomOut() }}>
+                            <ZoomOut />
+                        </Fab>
+                    </Zoom>
+                </Box>
+            </Box>
+        </>
+    );
 };
 
 export default Article;

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import Logo from "/images/VandanaLogo.svg";
 
 interface LayoutProps {
-  children: React.ReactNode;
+  children: JSX.Element;
 }
 
 const Layout = (props: LayoutProps) => {
