@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 
 import { Box } from "@mui/system";
 import { Backdrop, CircularProgress, Fab, Typography, Zoom } from "@mui/material";
-import { ArrowBack, ZoomIn, ZoomOut } from "@mui/icons-material";
+import { Add, ArrowBack, ZoomIn, ZoomOut } from "@mui/icons-material";
 
 import { fetchArticleById } from "../api";
 
@@ -19,6 +19,7 @@ const Article = () => {
     const [article, setArticle] = useState<Article>();
     const [fontSize, setFontSize] = useState<number>(1);
     const [isLoading, setIsLoading] = useState<boolean>(true);
+    const [showBtns, setShowBtns] = useState<boolean>(false);
 
     useEffect(() => {
         fetchArticleById(articleId).then((response) => {
@@ -41,6 +42,10 @@ const Article = () => {
         }
     }
 
+    const toggleShowBtns = () => {
+        setShowBtns(!showBtns);
+    }
+
     return (
         <>
             <Backdrop
@@ -59,25 +64,41 @@ const Article = () => {
                 </Box>
                 <Box position="fixed" bottom={16} right={16}>
                     <Zoom in={true}>
-                        <Fab color="primary" aria-label="back" href="/">
-                            <ArrowBack />
+                        <Fab color="primary" aria-label="back" onClick={() => { toggleShowBtns() }}>
+                            <Add />
                         </Fab>
                     </Zoom>
                 </Box>
-                <Box position="fixed" bottom={164} right={16}>
-                    <Zoom in={true}>
-                        <Fab color="primary" aria-label="back" onClick={event => { zoomIn() }}>
-                            <ZoomIn />
-                        </Fab>
-                    </Zoom>
-                </Box>
-                <Box position="fixed" bottom={90} right={16}>
-                    <Zoom in={true}>
-                        <Fab color="primary" aria-label="back" onClick={event => { zoomOut() }}>
-                            <ZoomOut />
-                        </Fab>
-                    </Zoom>
-                </Box>
+                {
+                    showBtns ?
+                        (
+                            <>
+                                <Box position="fixed" bottom={90} right={16}>
+                                    <Zoom in={true}>
+                                        <Fab color="primary" aria-label="back" href="/">
+                                            <ArrowBack />
+                                        </Fab>
+                                    </Zoom>
+                                </Box>
+                                <Box position="fixed" bottom={164} right={16}>
+                                    <Zoom in={true}>
+                                        <Fab color="primary" aria-label="back" onClick={event => { zoomOut() }}>
+                                            <ZoomOut />
+                                        </Fab>
+                                    </Zoom>
+                                </Box>
+                                <Box position="fixed" bottom={238} right={16}>
+                                    <Zoom in={true}>
+                                        <Fab color="primary" aria-label="back" onClick={event => { zoomIn() }}>
+                                            <ZoomIn />
+                                        </Fab>
+                                    </Zoom>
+                                </Box>
+                            </>
+                        )
+                        :
+                        ""
+                }
             </Box>
         </>
     );
