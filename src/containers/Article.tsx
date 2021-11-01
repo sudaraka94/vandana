@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 
 import { Box } from "@mui/system";
 import { Backdrop, CircularProgress, Fab, Typography, Zoom } from "@mui/material";
-import { Add, ArrowBack, ZoomIn, ZoomOut } from "@mui/icons-material";
+import { Add, ArrowBack, Close, ZoomIn, ZoomOut } from "@mui/icons-material";
 
 import { fetchArticleById } from "../api";
 
@@ -65,7 +65,13 @@ const Article = () => {
                 <Box position="fixed" bottom={16} right={16}>
                     <Zoom in={true}>
                         <Fab color="primary" aria-label="back" onClick={() => { toggleShowBtns() }}>
-                            <Add />
+                            {
+                                showBtns ?
+                                    <Close />
+                                    :
+                                    <Add />
+                            }
+
                         </Fab>
                     </Zoom>
                 </Box>
