@@ -55,7 +55,7 @@ const Article = () => {
                 <CircularProgress color="inherit" />
             </Backdrop>
             <Box display="flex" flexDirection="column" alignItems="center" padding={4}>
-                <Box paddingBottom={16} width={"100%"} maxWidth={800}>
+                <Box width={"100%"} maxWidth={800}>
                     <Typography variant="h4" align="center">
                         {article?.title}
                     </Typography>
