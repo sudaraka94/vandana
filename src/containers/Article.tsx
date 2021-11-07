@@ -3,15 +3,21 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 import { Box } from "@mui/system";
-import { Backdrop, CircularProgress, Fab, Typography, Zoom } from "@mui/material";
+import { Backdrop, Button, CircularProgress, Fab, Typography, Zoom } from "@mui/material";
 import { Add, ArrowBack, Close, ZoomIn, ZoomOut } from "@mui/icons-material";
 
 import { fetchArticleById } from "../api";
 
 // used as the structure for the article
+interface Suggestion {
+    id: string;
+    title: string;
+}
+
 interface Article {
     title: string;
     content: string;
+    suggestions: Suggestion[];
 }
 
 const Article = () => {
@@ -75,6 +81,22 @@ const Article = () => {
                         </Fab>
                     </Zoom>
                 </Box>
+                <Box display="flex" flexDirection="row" alignItems="center">
+                    {
+                        article?.suggestions?.map(
+                            suggestion => {
+                                console.log(suggestion)
+                                return (
+                                    <Button sx={{ margin: "3px" }} key={suggestion.id} variant="outlined" href={`/article/${suggestion.id}`}>
+                                        {suggestion.title}
+                                    </Button>
+                                );
+                            }
+                        )
+
+                    }
+                </Box>
+
                 {
                     showBtns ?
                         (
@@ -88,14 +110,14 @@ const Article = () => {
                                 </Box>
                                 <Box position="fixed" bottom={164} right={16}>
                                     <Zoom in={true}>
-                                        <Fab color="primary" aria-label="back" onClick={event => { zoomOut() }}>
+                                        <Fab color="primary" aria-label="out" onClick={event => { zoomOut() }}>
                                             <ZoomOut />
                                         </Fab>
                                     </Zoom>
                                 </Box>
                                 <Box position="fixed" bottom={238} right={16}>
                                     <Zoom in={true}>
-                                        <Fab color="primary" aria-label="back" onClick={event => { zoomIn() }}>
+                                        <Fab color="primary" aria-label="in" onClick={event => { zoomIn() }}>
                                             <ZoomIn />
                                         </Fab>
                                     </Zoom>

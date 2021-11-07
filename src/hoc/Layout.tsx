@@ -24,11 +24,11 @@ const Layout = (props: LayoutProps) => {
         </Toolbar>
       </AppBar>
       {props.children}
-      <Box display="flex" width="100%" justifyContent="center"  marginBottom="1em">
+      {/* <Box display="flex" width="100%" justifyContent="center"  marginBottom="1em">
         <Typography fontWeight={700} variant="subtitle2">
           Made with ❤️ by <MuiLink target="_blank" href="http://zeroonetech.xyz" underline="none">ZeroOne Technologies</MuiLink>
         </Typography>
-      </Box>
+      </Box> */}
     </Box>
   );
 };

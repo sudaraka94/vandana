@@ -1,6 +1,10 @@
 {
     "menuItems": [
         {
+            "id": "namaskaraya",
+            "title": "නමස්කාරය හා බුද්ධ වන්දනා"  
+        },
+        {
             "id": "jayapiritha",
             "title": "ජය පිරිත"  
         },
