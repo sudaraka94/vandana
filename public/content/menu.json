@@ -9,6 +9,10 @@
             "title": "තෙරුවන් වන්දනාව"
         },
         {
+            "id": "buddhapuja",
+            "title": "බුද්ධ පූජා ගාථා"
+        },
+        {
             "id": "jayapiritha",
             "title": "ජය පිරිත"
         },
@@ -27,6 +31,10 @@
         {
             "id": "anawumpiritha",
             "title": "ඇනවුම් පිරිත"
+        },
+        {
+            "id": "deviyantapindeema",
+            "title": "දෙවියන්ට පින්දීම"
         }
     ]
 }

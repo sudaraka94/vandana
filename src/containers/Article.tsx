@@ -85,7 +85,6 @@ const Article = () => {
                     {
                         article?.suggestions?.map(
                             suggestion => {
-                                console.log(suggestion)
                                 return (
                                     <Button sx={{ margin: "3px" }} key={suggestion.id} variant="outlined" href={`/article/${suggestion.id}`}>
                                         {suggestion.title}
