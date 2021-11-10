@@ -11,14 +11,19 @@ interface MenuItem {
     title: string;
 }
 
+interface Article {
+    title: string;
+}
+
 const Menu = () => {
     const [menuItems, setMenuItems] = useState<MenuItem[]>([]);
     const [searchQuery, setSearchQuery] = useState<string>("");
     const [isLoading, setIsLoading] = useState<boolean>(true);
+    const [articles, setArticles] = useState<Map<string, Article>>(new Map());
 
     useEffect(() => {
         fetchMenu().then((response) => {
-            setMenuItems(response.data.menuItems);
+            setArticles(new Map(response.data.articles));
         })
             .finally(() => {
                 setIsLoading(false);
@@ -28,6 +33,24 @@ const Menu = () => {
     const onEdit = (value: string) => {
         setSearchQuery(value.toLowerCase());
     };
+
+    const getArticles = () => {
+        let menuArticles: JSX.Element[] = [];
+        for (let [id, article] of articles) {
+            if (searchQuery && !article.title.includes(searchQuery) && !id.includes(searchQuery)) {
+                continue;
+            }
+            menuArticles.push((
+                <ListItem key={id}>
+                    <ListItemButton sx={{ textAlign: "center" }} component="a" href={`/article/${id}`}>
+                        <Typography flexGrow={1} align="center" variant="h5">{article.title}</Typography>
+                    </ListItemButton>
+                </ListItem>
+            ))
+        }
+
+        return menuArticles;
+    }
 
     return (
         <>
@@ -47,18 +70,7 @@ const Menu = () => {
                         onChange={event => onEdit(event.target.value)} id="search" label="සොයන්න" variant="outlined" />
                 </Box>
                 <List>
-                    {menuItems.map((item) => {
-                        if (searchQuery && !item.title.includes(searchQuery) && !item.id.includes(searchQuery)) {
-                            return null
-                        }
-                        return (
-                            <ListItem key={item.id}>
-                                <ListItemButton sx={{ textAlign: "center" }} component="a" href={`/article/${item.id}`}>
-                                    <Typography flexGrow={1} align="center" variant="h5">{item.title}</Typography>
-                                </ListItemButton>
-                            </ListItem>
-                        );
-                    })}
+                    {getArticles()}
                 </List>
             </Box>
         </>
