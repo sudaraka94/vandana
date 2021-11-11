@@ -1,28 +1,13 @@
 import React, { useEffect, useState } from "react";
-
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 import { Box } from "@mui/system";
-import {
-  Backdrop,
-  Button,
-  CircularProgress,
-  Fab,
-  Typography,
-  Zoom,
-} from "@mui/material";
-import {
-  Add,
-  ArrowBack,
-  Close,
-  MoreHoriz,
-  MoreVert,
-  ZoomIn,
-  ZoomOut,
-} from "@mui/icons-material";
+import { Backdrop, Button, CircularProgress, Typography } from "@mui/material";
+import { ArrowBack, ZoomIn, ZoomOut } from "@mui/icons-material";
 
 import { fetchArticleById } from "../api";
 import ContentContainer from "../components/ContentContainer";
+import ArticleFAB from "../components/ArticleFAB";
 
 // used as the structure for the article
 interface Suggestion {
@@ -36,12 +21,18 @@ interface Article {
   suggestions: Suggestion[];
 }
 
+interface IArticleParams {
+  articleId: string | undefined;
+}
+
 const Article = () => {
-  const { articleId } = useParams<{ articleId: string }>();
+  const navigate = useNavigate();
+
+  const { articleId = "" }: IArticleParams = useParams();
+
   const [article, setArticle] = useState<Article>();
   const [fontSize, setFontSize] = useState<number>(1);
   const [isLoading, setIsLoading] = useState<boolean>(true);
-  const [showBtns, setShowBtns] = useState<boolean>(false);
 
   useEffect(() => {
     fetchArticleById(articleId)
@@ -56,18 +47,38 @@ const Article = () => {
   const zoomIn = () => {
     if (fontSize < 16) {
       setFontSize(fontSize * 1.1);
+    } else {
+      setFontSize(16);
     }
   };
 
   const zoomOut = () => {
     if (fontSize > 1) {
       setFontSize(fontSize * 0.9);
+    } else {
+      setFontSize(1);
     }
   };
 
-  const toggleShowBtns = () => {
-    setShowBtns(!showBtns);
-  };
+  const fabButtons = [
+    {
+      label: "zoom in",
+      icon: <ZoomIn />,
+      onClick: zoomIn,
+    },
+    {
+      label: "zoom out",
+      icon: <ZoomOut />,
+      onClick: zoomOut,
+    },
+    {
+      label: "back",
+      icon: <ArrowBack />,
+      onClick: () => {
+        navigate("/");
+      },
+    },
+  ];
 
   return (
     <>
@@ -89,24 +100,10 @@ const Article = () => {
           </Typography>
           <ContentContainer article={article?.content} fontSize={fontSize} />
         </Box>
-        <Box position="fixed" bottom={16} right={16}>
-          <Zoom in={true}>
-            <Fab
-              color="primary"
-              aria-label="back"
-              onClick={() => {
-                toggleShowBtns();
-              }}
-            >
-              {showBtns ? <MoreHoriz /> : <MoreVert />}
-            </Fab>
-          </Zoom>
-        </Box>
-        <Box display="flex" flexDirection="row" alignItems="center">
+        <Box display="flex" flexDirection="row" alignItems="center" p={1}>
           {article?.suggestions?.map((suggestion) => {
             return (
               <Button
-                sx={{ margin: "3px" }}
                 key={suggestion.id}
                 variant="outlined"
                 href={`/article/${suggestion.id}`}
@@ -116,44 +113,7 @@ const Article = () => {
             );
           })}
         </Box>
-
-        {showBtns && (
-          <>
-            <Box position="fixed" bottom={90} right={16}>
-              <Zoom in={true}>
-                <Fab color="primary" aria-label="back" href="/">
-                  <ArrowBack />
-                </Fab>
-              </Zoom>
-            </Box>
-            <Box position="fixed" bottom={164} right={16}>
-              <Zoom in={true}>
-                <Fab
-                  color="primary"
-                  aria-label="out"
-                  onClick={(event) => {
-                    zoomOut();
-                  }}
-                >
-                  <ZoomOut />
-                </Fab>
-              </Zoom>
-            </Box>
-            <Box position="fixed" bottom={238} right={16}>
-              <Zoom in={true}>
-                <Fab
-                  color="primary"
-                  aria-label="in"
-                  onClick={(event) => {
-                    zoomIn();
-                  }}
-                >
-                  <ZoomIn />
-                </Fab>
-              </Zoom>
-            </Box>
-          </>
-        )}
+        <ArticleFAB {...{ fabButtons }} />
       </Box>
     </>
   );
