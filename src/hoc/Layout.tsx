@@ -1,11 +1,10 @@
 import React from "react";
 
-import { AppBar, Toolbar, Typography } from "@mui/material";
+import { AppBar, Toolbar } from "@mui/material";
 import { Box } from "@mui/system";
 import { Link } from "react-router-dom";
-import MuiLink from '@mui/material/Link';
+
 import Logo from "/images/VandanaLogo.svg";
-import { theme } from "../theme/theme";
 
 interface LayoutProps {
   children: JSX.Element;
