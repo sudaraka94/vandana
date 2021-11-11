@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, Link } from "react-router-dom";
 
 import { Box } from "@mui/system";
 import { Backdrop, Button, CircularProgress, Typography } from "@mui/material";
@@ -35,14 +35,16 @@ const Article = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
+    setIsLoading(true);
     fetchArticleById(articleId)
       .then((response) => {
         setArticle(response.data);
+        window.scrollTo({ top: 0 });
       })
       .finally(() => {
         setIsLoading(false);
       });
-  }, []);
+  }, [articleId]);
 
   const zoomIn = () => {
     if (fontSize < 16) {
@@ -100,13 +102,20 @@ const Article = () => {
           </Typography>
           <ContentContainer article={article?.content} fontSize={fontSize} />
         </Box>
-        <Box display="flex" flexDirection="row" alignItems="center" p={1}>
+        <Box
+          display="flex"
+          flexDirection="row"
+          alignItems="center"
+          gap={1}
+          p={1}
+        >
           {article?.suggestions?.map((suggestion) => {
             return (
               <Button
                 key={suggestion.id}
+                component={Link}
                 variant="outlined"
-                href={`/article/${suggestion.id}`}
+                to={`/article/${suggestion.id}`}
               >
                 {suggestion.title}
               </Button>
