@@ -1,10 +1,9 @@
 import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-
 
 import Menu from "./containers/Menu";
 import Article from "./containers/Article";
@@ -18,7 +17,7 @@ const firebaseConfig = {
   storageBucket: "vandana-94dfa.appspot.com",
   messagingSenderId: "901516946638",
   appId: "1:901516946638:web:f5072b42552596b8c6b49f",
-  measurementId: "G-Z9N1XMK4C6"
+  measurementId: "G-Z9N1XMK4C6",
 };
 
 // Initialize Firebase
@@ -30,14 +29,14 @@ function App() {
     <>
       <CssBaseline />
       <ThemeProvider theme={theme}>
-        <Router>
+        <BrowserRouter>
           <Layout>
-            <Switch>
-              <Route exact path="/" component={Menu} />
-              <Route exact path="/article/:articleId" component={Article} />
-            </Switch>
+            <Routes>
+              <Route path="/" element={<Menu />} />
+              <Route path="/article/:articleId" element={<Article />} />
+            </Routes>
           </Layout>
-        </Router>
+        </BrowserRouter>
       </ThemeProvider>
     </>
   );
