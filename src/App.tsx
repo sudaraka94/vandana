@@ -41,7 +41,6 @@ function App() {
         collections: response.data.collections
       }
 
-      console.log(menuState);
       dispatch(updateMenu(menuState));
     });
   });
