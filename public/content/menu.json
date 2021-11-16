@@ -37,12 +37,21 @@
             "title": "දෙවියන්ට පින්දීම"
         }
     ],
-    "articles": [
-        [
-            "namaskaraya",
-            {
-                "title": "නමස්කාරය හා බුද්ධ වන්දනාව"
-            }
-        ]
-    ]
+    "articles": {
+        "namaskaraya": {
+            "title": "නමස්කාරය හා බුද්ධ වන්දනාව"
+        },
+        "theruwanvandana": {
+            "title": "තෙරුවන් වන්දනාව"
+        }
+    },
+    "collections": {
+        "mulika-vandanawa": {
+            "title": "මූලික වන්දනාව",
+            "articles": [
+                "namaskaraya",
+                "theruwanvandana"
+            ]
+        }
+    }
 }

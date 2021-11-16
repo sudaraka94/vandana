@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { CssBaseline, ThemeProvider } from "@mui/material";
@@ -10,6 +10,10 @@ import Menu from "./containers/Menu";
 import Article from "./containers/Article";
 import Layout from "./hoc/Layout";
 import { theme } from "./theme/theme";
+import MainMenu from "./containers/MainMenu";
+import { useAppDispatch } from "./store";
+import { fetchMenu } from "./api";
+import { MenuState, updateMenu } from "./slices/menu";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDZmhbMzCOtPgCY5CItE8jtWlXeWs4kWQ8",
@@ -26,6 +30,22 @@ const app = initializeApp(firebaseConfig);
 getAnalytics(app);
 
 function App() {
+  // load menu upon loading the app
+  const dispatch = useAppDispatch()
+
+  useEffect(() => {
+    fetchMenu().then((response) => {
+      const menuState: MenuState = {
+        isMenuLoading: false,
+        articles: response.data.articles,
+        collections: response.data.collections
+      }
+
+      console.log(menuState);
+      dispatch(updateMenu(menuState));
+    });
+  });
+
   return (
     <>
       <CssBaseline />
@@ -33,7 +53,8 @@ function App() {
         <Router>
           <Layout>
             <Switch>
-              <Route exact path="/" component={Menu} />
+              <Route exact path="/" component={MainMenu} />
+              <Route exact path="/menu" component={Menu} />
               <Route exact path="/article/:articleId" component={Article} />
             </Switch>
           </Layout>
