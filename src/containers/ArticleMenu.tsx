@@ -6,8 +6,8 @@ import Menu from "../components/Menu";
 import { useParams } from "react-router-dom";
 
 const ArticleMenu = () => {
-    const { collectionId } = useParams<{ collectionId: string }>();
-    const articles = useAppSelector(selectArticles(collectionId));
+    const { collectionId }: { collectionId: string | undefined } = useParams();
+    const articles = collectionId ? useAppSelector(selectArticles(collectionId)) : {};
 
     return (
         <>

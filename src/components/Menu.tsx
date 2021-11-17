@@ -1,6 +1,7 @@
 import { Backdrop, Box, CircularProgress, List, ListItem, ListItemButton, TextField, Typography } from "@mui/material";
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 interface Article {
     title: string;
@@ -27,7 +28,7 @@ const Menu = (props: MenuProps) => {
             }
             menuArticles.push((
                 <ListItem key={id}>
-                    <ListItemButton sx={{ textAlign: "center" }} component="a" href={`/${props.routePrefix}/${id}`}>
+                    <ListItemButton sx={{ textAlign: "center" }} component={Link} to={`/${props.routePrefix}/${id}`}>
                         <Typography flexGrow={1} align="center" variant="h5">{article.title}</Typography>
                     </ListItemButton>
                 </ListItem>

@@ -48,9 +48,9 @@ function App() {
         <BrowserRouter>
           <Layout>
             <Routes>
-              <Route exact path="/" component={<MainMenu />} />
-              <Route exact path="/collections/:collectionId" component={<ArticleMenu />} />
-              <Route exact path="/articles/:articleId" component={<Article />} />
+              <Route path="/" element={<MainMenu />} />
+              <Route path="/collections/:collectionId" element={<ArticleMenu />} />
+              <Route path="/articles/:articleId" element={<Article />} />
             </Routes>
           </Layout>
         </BrowserRouter>
