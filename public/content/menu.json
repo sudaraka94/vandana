@@ -1,40 +1,57 @@
 {
-    "menuItems": [
-        {
-            "id": "namaskaraya",
-            "title": "නමස්කාරය හා බුද්ධ වන්දනා"
+    "articles": {
+        "namaskaraya": {
+            "title": "නමස්කාරය හා බුද්ධ වන්දනාව"
         },
-        {
-            "id": "theruwanvandana",
+        "theruwanvandana": {
             "title": "තෙරුවන් වන්දනාව"
         },
-        {
-            "id": "buddhapuja",
+        "buddhapuja": {
             "title": "බුද්ධ පූජා ගාථා"
         },
-        {
-            "id": "jayapiritha",
+        "jayapiritha": {
             "title": "ජය පිරිත"
         },
-        {
-            "id": "mahamangalasutta",
+        "mahamangalasutta": {
             "title": "මහා මංගල සූත්‍ර‍ය"
         },
-        {
-            "id": "rathanasutta",
+        "rathanasutta": {
             "title": "රතන සූත්‍රය"
         },
-        {
-            "id": "karaneeyameththasutta",
+        "karaneeyameththasutta": {
             "title": "කරණීයමෙත්ත සූත්‍රය"
         },
-        {
-            "id": "anawumpiritha",
+        "anawumpiritha": {
             "title": "ඇනවුම් පිරිත"
         },
-        {
-            "id": "deviyantapindeema",
+        "deviyantapindeema": {
             "title": "දෙවියන්ට පින්දීම"
         }
-    ]
+    },
+    "collections": {
+        "mulika-vandanawa": {
+            "title": "මූලික වන්දනාව",
+            "articles": [
+                "namaskaraya",
+                "theruwanvandana",
+                "buddhapuja",
+                "jayapiritha",
+                "mahamangalasutta",
+                "rathanasutta",
+                "karaneeyameththasutta",
+                "anawumpiritha",
+                "deviyantapindeema"
+            ]
+        },
+        "pirith": {
+            "title": "පිරිත්",
+            "articles": [
+                "jayapiritha",
+                "mahamangalasutta",
+                "rathanasutta",
+                "karaneeyameththasutta",
+                "anawumpiritha"
+            ]
+        }
+    }
 }

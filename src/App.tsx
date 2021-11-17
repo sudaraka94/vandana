@@ -1,24 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
-
-import Menu from "./containers/Menu";
+import ArticleMenu from "./containers/ArticleMenu";
 import Article from "./containers/Article";
 import Layout from "./hoc/Layout";
 import { theme } from "./theme/theme";
+import MainMenu from "./containers/MainMenu";
+import { useAppDispatch } from "./store";
+import { fetchMenu } from "./api";
+import { MenuState, updateMenu } from "./slices/menu";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDZmhbMzCOtPgCY5CItE8jtWlXeWs4kWQ8",
-  authDomain: "vandana-94dfa.firebaseapp.com",
   projectId: "vandana-94dfa",
-  storageBucket: "vandana-94dfa.appspot.com",
-  messagingSenderId: "901516946638",
   appId: "1:901516946638:web:f5072b42552596b8c6b49f",
-  measurementId: "G-Z9N1XMK4C6"
+  measurementId: "G-Z9N1XMK4C6",
 };
 
 // Initialize Firebase
@@ -26,18 +26,34 @@ const app = initializeApp(firebaseConfig);
 getAnalytics(app);
 
 function App() {
+  // load menu upon loading the app
+  const dispatch = useAppDispatch()
+
+  useEffect(() => {
+    fetchMenu().then((response) => {
+      const menuState: MenuState = {
+        isMenuLoading: false,
+        articles: response.data.articles,
+        collections: response.data.collections
+      }
+
+      dispatch(updateMenu(menuState));
+    });
+  });
+
   return (
     <>
       <CssBaseline />
       <ThemeProvider theme={theme}>
-        <Router>
+        <BrowserRouter>
           <Layout>
-            <Switch>
-              <Route exact path="/" component={Menu} />
-              <Route exact path="/article/:articleId" component={Article} />
-            </Switch>
+            <Routes>
+              <Route path="/" element={<MainMenu />} />
+              <Route path="/collections/:collectionId" element={<ArticleMenu />} />
+              <Route path="/articles/:articleId" element={<Article />} />
+            </Routes>
           </Layout>
-        </Router>
+        </BrowserRouter>
       </ThemeProvider>
     </>
   );
