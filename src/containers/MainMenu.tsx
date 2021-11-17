@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Menu from "../components/Menu";
-import { selectArticles, selectCollections } from "../slices/menu";
+import { selectCollections } from "../slices/menu";
 import { useAppSelector } from "../store";
 
 
@@ -9,7 +9,7 @@ const MainMenu = () => {
 
     return (
         <>
-            <Menu isLoading={false} articles={collections} />
+            <Menu isLoading={false} articles={collections} routePrefix="collections" />
         </>
     );
 }

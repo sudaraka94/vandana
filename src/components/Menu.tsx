@@ -8,6 +8,7 @@ interface Article {
 
 interface MenuProps {
     articles: { [id: string]: Article }
+    routePrefix: string
     isLoading: boolean
 }
 
@@ -26,7 +27,7 @@ const Menu = (props: MenuProps) => {
             }
             menuArticles.push((
                 <ListItem key={id}>
-                    <ListItemButton sx={{ textAlign: "center" }} component="a" href={`/article/${id}`}>
+                    <ListItemButton sx={{ textAlign: "center" }} component="a" href={`/${props.routePrefix}/${id}`}>
                         <Typography flexGrow={1} align="center" variant="h5">{article.title}</Typography>
                     </ListItemButton>
                 </ListItem>

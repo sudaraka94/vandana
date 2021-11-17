@@ -10,8 +10,8 @@ export interface Collection {
 
 export interface MenuState {
     isMenuLoading: boolean
-    articles: {[id: string]: Article}
-    collections: {[id: string]: Collection}
+    articles: { [id: string]: Article }
+    collections: { [id: string]: Collection }
 }
 
 const initialState: MenuState = {
@@ -33,7 +33,16 @@ const menuSlice = createSlice({
 });
 
 // Other code such as selectors can use the imported `RootState` type
-export const selectArticles = (state: RootState) => state.menu.articles
+export const selectArticles = (collectionId: string) => (state: RootState) => {
+    let articles: { [id: string]: Article } = {}
+    state.menu.collections[collectionId]?.articles.reduce((obj, key) => {
+        articles[key] = state.menu.articles[key];
+        return articles
+    }, {})
+
+    return articles;
+}
+
 export const selectIsMenuLoading = (state: RootState) => state.menu.isMenuLoading
 export const selectCollections = (state: RootState) => state.menu.collections
 

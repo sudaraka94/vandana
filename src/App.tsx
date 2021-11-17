@@ -6,7 +6,7 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
 
-import Menu from "./containers/Menu";
+import ArticleMenu from "./containers/ArticleMenu";
 import Article from "./containers/Article";
 import Layout from "./hoc/Layout";
 import { theme } from "./theme/theme";
@@ -17,10 +17,7 @@ import { MenuState, updateMenu } from "./slices/menu";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDZmhbMzCOtPgCY5CItE8jtWlXeWs4kWQ8",
-  authDomain: "vandana-94dfa.firebaseapp.com",
   projectId: "vandana-94dfa",
-  storageBucket: "vandana-94dfa.appspot.com",
-  messagingSenderId: "901516946638",
   appId: "1:901516946638:web:f5072b42552596b8c6b49f",
   measurementId: "G-Z9N1XMK4C6"
 };
@@ -53,8 +50,8 @@ function App() {
           <Layout>
             <Switch>
               <Route exact path="/" component={MainMenu} />
-              <Route exact path="/menu" component={Menu} />
-              <Route exact path="/article/:articleId" component={Article} />
+              <Route exact path="/collections/:collectionId" component={ArticleMenu} />
+              <Route exact path="/articles/:articleId" component={Article} />
             </Switch>
           </Layout>
         </Router>
