@@ -29,6 +29,20 @@
         }
     },
     "collections": {
+        "all": {
+            "title": "සියලු ගථා",
+            "articles": [
+                "namaskaraya",
+                "theruwanvandana",
+                "buddhapuja",
+                "jayapiritha",
+                "mahamangalasutta",
+                "rathanasutta",
+                "karaneeyameththasutta",
+                "anawumpiritha",
+                "deviyantapindeema"
+            ]
+        },
         "mulika-vandanawa": {
             "title": "මූලික වන්දනාව",
             "articles": [

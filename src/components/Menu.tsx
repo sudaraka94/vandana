@@ -10,6 +10,7 @@ interface Article {
 interface MenuProps {
     articles: { [id: string]: Article }
     routePrefix: string
+    routePostfix?: string
     isLoading: boolean
 }
 
@@ -28,7 +29,8 @@ const Menu = (props: MenuProps) => {
             }
             menuArticles.push((
                 <ListItem key={id}>
-                    <ListItemButton sx={{ textAlign: "center" }} component={Link} to={`/${props.routePrefix}/${id}`}>
+                    <ListItemButton sx={{ textAlign: "center" }} component={Link}
+                        to={`/${props.routePrefix}/${id}${props.routePostfix ? "?collectionId=" + props.routePostfix : ""}`}>
                         <Typography flexGrow={1} align="center" variant="h5">{article.title}</Typography>
                     </ListItemButton>
                 </ListItem>

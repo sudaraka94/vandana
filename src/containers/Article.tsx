@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate, useParams, Link } from "react-router-dom";
+import { useParams, useSearchParams } from "react-router-dom";
 
 import { Box } from "@mui/system";
 import { Backdrop, BottomNavigation, BottomNavigationAction, Button, CircularProgress, Paper, Typography } from "@mui/material";
-import { ArrowBack, Favorite, Restore, ZoomIn, ZoomOut } from "@mui/icons-material";
+import { Home, ZoomIn, ZoomOut } from "@mui/icons-material";
 
 import { fetchArticleById } from "../api";
 import ContentContainer from "../components/ContentContainer";
+import BreadcrumbNav from "../components/BreadcrumbNav";
+import { useAppSelector } from "../store";
+import { selectCollections } from "../slices/menu";
 
 // used as the structure for the article
 interface Suggestion {
@@ -25,9 +28,9 @@ interface IArticleParams {
 }
 
 const Article = () => {
-  const navigate = useNavigate();
-
   const { articleId = "" }: IArticleParams = useParams();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const collections = useAppSelector(selectCollections);
 
   const [article, setArticle] = useState<Article>();
   const [fontSize, setFontSize] = useState<number>(1);
@@ -61,6 +64,21 @@ const Article = () => {
     }
   };
 
+  const getBreadCrumbLinks = () => {
+    const collectionId = searchParams.get('collectionId');
+    if (collectionId && collections) {
+      return [
+        { text: "වන්දනා ක්‍රම", to: "/", icon: <Home sx={{ mr: 1, marginBottom: "-2.5px" }} fontSize="inherit" /> },
+        { text: collections[collectionId]?.title, to: "/collections/" + collectionId }
+      ]
+    }
+    return [
+      { text: "වන්දනා ක්‍රම", to: "/", icon: <Home sx={{ mr: 1, marginBottom: "-2.5px" }} fontSize="inherit" /> },
+      { text: "සියලු ගථා", to: "/collections/all" },
+    ]
+
+  }
+
   return (
     <>
       <Backdrop
@@ -69,6 +87,7 @@ const Article = () => {
       >
         <CircularProgress color="inherit" />
       </Backdrop>
+      <BreadcrumbNav links={getBreadCrumbLinks()} title={article ? article.title : ""} />
       <Box
         display="flex"
         flexDirection="column"
@@ -77,7 +96,7 @@ const Article = () => {
       >
         <Box width={"100%"} maxWidth={800}>
           <Typography variant="h4" align="center">
-            {article?.title}
+            ෴ {article?.title} ෴
           </Typography>
           <ContentContainer article={article?.content} fontSize={fontSize} />
         </Box>
@@ -102,3 +121,4 @@ const Article = () => {
 };
 
 export default Article;
+
