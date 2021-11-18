@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, useSearchParams } from "react-router-dom";
 
 import { Box } from "@mui/system";
-import { Backdrop, BottomNavigation, BottomNavigationAction, Button, CircularProgress, Paper, Typography } from "@mui/material";
+import { Backdrop, BottomNavigation, BottomNavigationAction, CircularProgress, Divider, Paper, Typography } from "@mui/material";
 import { Home, ZoomIn, ZoomOut } from "@mui/icons-material";
 
 import { fetchArticleById } from "../api";
@@ -96,8 +96,9 @@ const Article = () => {
       >
         <Box width={"100%"} maxWidth={800}>
           <Typography variant="h4" align="center">
-            ෴ {article?.title} ෴
+            ☸ {article?.title}
           </Typography>
+          <Divider sx={{marginTop: "7px"}} />
           <ContentContainer article={article?.content} fontSize={fontSize} />
         </Box>
         <Box
