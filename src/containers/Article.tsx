@@ -2,12 +2,11 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 
 import { Box } from "@mui/system";
-import { Backdrop, Button, CircularProgress, Typography } from "@mui/material";
-import { ArrowBack, ZoomIn, ZoomOut } from "@mui/icons-material";
+import { Backdrop, BottomNavigation, BottomNavigationAction, Button, CircularProgress, Paper, Typography } from "@mui/material";
+import { ArrowBack, Favorite, Restore, ZoomIn, ZoomOut } from "@mui/icons-material";
 
 import { fetchArticleById } from "../api";
 import ContentContainer from "../components/ContentContainer";
-import ArticleFAB from "../components/ArticleFAB";
 
 // used as the structure for the article
 interface Suggestion {
@@ -62,26 +61,6 @@ const Article = () => {
     }
   };
 
-  const fabButtons = [
-    {
-      label: "zoom in",
-      icon: <ZoomIn />,
-      onClick: zoomIn,
-    },
-    {
-      label: "zoom out",
-      icon: <ZoomOut />,
-      onClick: zoomOut,
-    },
-    {
-      label: "back",
-      icon: <ArrowBack />,
-      onClick: () => {
-        navigate("/");
-      },
-    },
-  ];
-
   return (
     <>
       <Backdrop
@@ -109,20 +88,14 @@ const Article = () => {
           gap={1}
           p={1}
         >
-          {article?.suggestions?.map((suggestion) => {
-            return (
-              <Button
-                key={suggestion.id}
-                component={Link}
-                variant="outlined"
-                to={`/article/${suggestion.id}`}
-              >
-                {suggestion.title}
-              </Button>
-            );
-          })}
         </Box>
-        <ArticleFAB {...{ fabButtons }} />
+
+        <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
+          <BottomNavigation showLabels>
+            <BottomNavigationAction label="අකුරු විශාල කරන්න" icon={<ZoomIn />} onClick={zoomIn} />
+            <BottomNavigationAction label="අකුරු කුඩා කරන්න" icon={<ZoomOut />} onClick={zoomOut} />
+          </BottomNavigation>
+        </Paper>
       </Box>
     </>
   );
