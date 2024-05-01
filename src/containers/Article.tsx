@@ -21,7 +21,7 @@ interface Article {
 }
 
 interface IArticleParams {
-  articleId: string | undefined;
+  articleId?: string;
 }
 
 const Article = () => {
