@@ -18,7 +18,7 @@ const Layout = (props: LayoutProps) => {
 
   useEffect(() => {
     const currentPath = location.pathname;
-    console.log(currentPath)
+
     if (currentPath != "/") {
       setBackBtn(
         <Button variant="outlined" sx={{ color: '#ffff', borderColor: '#ffff', position: 'absolute' }}
