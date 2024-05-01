@@ -12,6 +12,7 @@ export default function ContentContainer(props: IArticleContainer) {
     <Box
       fontSize={`${fontSize}em`}
       dangerouslySetInnerHTML={{ __html: article }}
+      sx={{textAlign: 'center'}}
     />
   );
 }

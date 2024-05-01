@@ -26,6 +26,9 @@
         },
         "deviyantapindeema": {
             "title": "දෙවියන්ට පින්දීම"
+        },
+        "mahajayamangalagatha": {
+            "title": "මහා ජය මංගල ගාථා"
         }
     },
     "collections": {
@@ -50,7 +53,8 @@
                 "mahamangalasutta",
                 "rathanasutta",
                 "karaneeyameththasutta",
-                "anawumpiritha"
+                "anawumpiritha",
+                "mahajayamangalagatha"
             ]
         }
     }
