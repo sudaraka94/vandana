@@ -16,7 +16,7 @@ jobs:
         shell: bash
       - run : git config user.email github-actions@github.com
         shell: bash
-      - run : git add dist -f
+      - run : git add docs -f
         shell: bash
       - run : git commit -m "Deploy :rocket:"
         shell: bash
