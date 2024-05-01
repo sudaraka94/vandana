@@ -16,7 +16,7 @@ jobs:
         shell: bash
       - run : git config user.email github-actions@github.com
         shell: bash
-      - run : git --work-tree build add --all
+      - run : git add dist
         shell: bash
       - run : git commit -m "Deploy ${{ env.sha_short }} :rocket:"
         shell: bash
