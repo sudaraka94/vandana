@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { initializeApp } from "firebase/app";
@@ -28,8 +28,10 @@ getAnalytics(app);
 function App() {
   // load menu upon loading the app
   const dispatch = useAppDispatch()
+  const [firstLoad, setFirstLoad] = useState(true);
 
   useEffect(() => {
+
     fetchMenu().then((response) => {
       const menuState: MenuState = {
         isMenuLoading: false,
@@ -38,6 +40,7 @@ function App() {
       }
 
       dispatch(updateMenu(menuState));
+      setFirstLoad(false);
     });
   });
 
@@ -46,6 +49,7 @@ function App() {
       <CssBaseline />
       <ThemeProvider theme={theme}>
         <BrowserRouter>
+          <ResetPath firstLoad={firstLoad} />
           <Layout>
             <Routes>
               <Route path="/" element={<MainMenu />} />
@@ -57,6 +61,18 @@ function App() {
       </ThemeProvider>
     </>
   );
+}
+
+const ResetPath: React.FC<{firstLoad: boolean}> = ({firstLoad}) => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!firstLoad) return;
+    const currentURL = window.location.pathname + window.location.search;
+    navigate(currentURL);
+  });
+
+  return null;
 }
 
 export default App;
