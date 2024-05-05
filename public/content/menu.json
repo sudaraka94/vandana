@@ -1,5 +1,38 @@
 {
   "articles": {
+    "anawum-piritha": {
+      "id": "anawum-piritha",
+      "title": "ඇනවුම් පිරිත",
+      "keywords": [
+        "ඇනවුම් පිරිත",
+        "anawumpiritha"
+      ],
+      "collections": [
+        "pirith"
+      ]
+    },
+    "buddhapuja-ghatha": {
+      "id": "buddhapuja-ghatha",
+      "title": "බුද්ධ පූජා ගාථා",
+      "keywords": [
+        "බුද්ධ පූජා ගාථා",
+        "buddhapujaghatha"
+      ],
+      "collections": [
+        "mulikaVandanawa"
+      ]
+    },
+    "deviyanta-pindeema": {
+      "id": "deviyanta-pindeema",
+      "title": "දෙවියන්ට පින්දීම",
+      "keywords": [
+        "දෙවියන්ට පින්දීම",
+        "deviyantapindeema"
+      ],
+      "collections": [
+        "mulikaVandanawa"
+      ]
+    },
     "dhamma-chakka-pawattana-sutta": {
       "id": "dhamma-chakka-pawattana-sutta",
       "title": "ධම්මචක්කපවත්තන සූත්‍රය",
@@ -16,7 +49,15 @@
     "pirith": {
       "title": "පිරිත්",
       "articles": [
+        "anawum-piritha",
         "dhamma-chakka-pawattana-sutta"
+      ]
+    },
+    "mulikaVandanawa": {
+      "title": "මූලික වන්දනාව",
+      "articles": [
+        "buddhapuja-ghatha",
+        "deviyanta-pindeema"
       ]
     }
   }
