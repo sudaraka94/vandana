@@ -1,0 +1,58 @@
+---
+title: "තෙරුවන් වන්දනාව"
+keywords: 
+    - "තෙරුවන් වන්දනාව"
+    - "theruwanvandanawa"
+collections:
+    - "mulikaVandanawa"
+---
+<p style='text-align:center'><strong>1. බුදු ගුණ නමස්කාරය</strong></p>
+<p style='text-align:center'>ඉතිපි සො භගවා අරහං සම්මා සම්බුද්ධො විජ්ජාචරණ සම්පන්නො සුගතො ලෝක විදූ, අනුත්තරෝ පුරිස ධම්ම සාරථි සත්ථා දේව මනුස්සානං බුද්ධො භගවාති</p>
+<p style='text-align:center'>&nbsp;</p>
+<p style='text-align:center'>බුද්ධං ජිවිත පරියන්තං - සරණං ගච්ඡාමි</p>
+<p style='text-align:center'>&nbsp;</p>
+<p style='text-align:center'>යෙච බුද්ධා අතීතා ච - යෙච බුද්ධා අනාගතා</p>
+<p style='text-align:center'>පච්චුප්පන්නා ච යෙ බුද්ධා - අහං වන්දාමි සබ්බදා</p>
+<p style='text-align:center'>&nbsp;</p>
+<p style='text-align:center'>නත්ථි මේ සරණං අඤ්ඤං - බුද්ධො මේ සණං වරං.</p>
+<p style='text-align:center'>ඒතෙන සච්ච වජ්ජේන - හෝතු මේ ජය මඞගලං</p>
+<p style='text-align:center'>&nbsp;</p>
+<p style='text-align:center'>උත්තමංගේන වන්දේහං - පාදපංසු වරුත්තමං</p>
+<p style='text-align:center'>බුද්ධේ යො ඛලිතො දොසො - බුද්ධෝ ඛමතු තං මමං</p>
+<p style='text-align:center'>&nbsp;</p>
+<p style='text-align:center'><strong>2. දහම් ගුණ නමස්කාරය</strong></p>
+<p style='text-align:center'>ස්වාක්ඛාතො භගවතො ධම්මෝ සන්දිට්ඨිකෝ අකාලිකෝ ඒහිපස්සිකෝ ඕපනයිකෝ පච්චත්තං වේදිතබ්බෝ විඤ්ඤුහීති</p>
+<p style='text-align:center'>&nbsp;</p>
+<p style='text-align:center'>ධම්මං ජිවිත පරියන්තං - සරණං ගච්ඡාමි</p>
+<p style='text-align:center'>&nbsp;</p>
+<p style='text-align:center'>යෙච බුද්ධා අතීතා ච - යෙච බුද්ධා අනාගතා</p>
+<p style='text-align:center'>පච්චුප්පන්නා ච යෙ බුද්ධා - අහං වන්දාමි සබ්බදා</p>
+<p style='text-align:center'>&nbsp;</p>
+<p style='text-align:center'>නත්ථි මේ සරණං අඤ්ඤං - ධම්මො මේ සණං වරං.</p>
+<p style='text-align:center'>ඒතෙන සච්ච වජ්ජේන - හෝතු මේ ජය මඞගලං</p>
+<p style='text-align:center'>&nbsp;</p>
+<p style='text-align:center'>උත්තමං ගේන වන්දේහං - ධම්මඤ්ච තිවිධං වරං</p>
+<p style='text-align:center'>ධම්මේ යො ඛලිතො දොසො - ධම්මො ඛමතු තං මමං</p>
+<p style='text-align:center'>&nbsp;</p>
+<p style='text-align:center'><strong>3. ආර්&zwj;ය මහා සඟ ගුණ නමස්කාරය</strong></p>
+<p style='text-align:center'>&nbsp;</p>
+<p style='text-align:center'>සුපටිපන්නෝ භගවතෝ සාවකසංඝෝ,</p>
+<p style='text-align:center'>උජුපටිපන්නෝ භගවතෝ සාවකසංඝෝ,</p>
+<p style='text-align:center'>ඤායපටිපන්නෝ භගවතෝ සාවකසංඝෝ,</p>
+<p style='text-align:center'>සාමීචිපටිපන්නෝ භගවතෝ සාවක සංඝෝ,</p>
+<p style='text-align:center'>යදිදං චත්තාරි පුරිසයුගානි</p>
+<p style='text-align:center'>අට්ඨපුරිසපුග්ගලා ඒස භගවතෝ සාවකසංඝෝ,</p>
+<p style='text-align:center'>ආහුණෙය්&zwj;යෝ,පාහුණෙය්&zwj;යෝ, දක්ඛිණෙය්&zwj;යෝ,</p>
+<p style='text-align:center'>අංජලිකරණීයෝ ,අනුත්තරං</p>
+<p style='text-align:center'>පුඤ්ඤක්ඛෙත්තං ලෝකස්සා&rsquo;ති.</p>
+<p style='text-align:center'>&nbsp;</p>
+<p style='text-align:center'>සංඝං ජිවිත පරියන්තං - සරණං ගච්ඡාමි</p>
+<p style='text-align:center'>&nbsp;</p>
+<p style='text-align:center'>යෙච සංඝා අතීතා ච - යෙච සංඝා අනාගතා</p>
+<p style='text-align:center'>පච්චුප්පන්නා ච යෙ සංඝා - අහං වන්දාමි සබ්බදා</p>
+<p style='text-align:center'>&nbsp;</p>
+<p style='text-align:center'>නත්ථි මේ සරණං අඤ්ඤං - සංඝො මේ සරණං වරං.</p>
+<p style='text-align:center'>ඒතෙන සච්ච වජ්ජේන - හෝතු මේ ජය මඞගලං</p>
+<p style='text-align:center'>&nbsp;</p>
+<p style='text-align:center'>උත්තමං ගේන වන්දේහං - සංඝං ච තිවිධොත්තමං</p>
+<p style='text-align:center'>සඞඝේ යො ඛලිතො දොසො - සංඝො ඛමතු තං මමං</p>
