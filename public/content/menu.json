@@ -1,61 +1,220 @@
 {
-    "articles": {
-        "namaskaraya": {
-            "title": "නමස්කාරය හා බුද්ධ වන්දනාව"
-        },
-        "theruwanvandana": {
-            "title": "තෙරුවන් වන්දනාව"
-        },
-        "buddhapuja": {
-            "title": "බුද්ධ පූජා ගාථා"
-        },
-        "jayapiritha": {
-            "title": "ජය පිරිත"
-        },
-        "mahamangalasutta": {
-            "title": "මහා මංගල සූත්‍ර‍ය"
-        },
-        "rathanasutta": {
-            "title": "රතන සූත්‍රය"
-        },
-        "karaneeyameththasutta": {
-            "title": "කරණීයමෙත්ත සූත්‍රය"
-        },
-        "anawumpiritha": {
-            "title": "ඇනවුම් පිරිත"
-        },
-        "deviyantapindeema": {
-            "title": "දෙවියන්ට පින්දීම"
-        },
-        "mahajayamangalagatha": {
-            "title": "මහා ජය මංගල ගාථා"
-        }
+  "articles": {
+    "anawum-piritha": {
+      "id": "anawum-piritha",
+      "title": "ඇනවුම් පිරිත",
+      "keywords": [
+        "ඇනවුම් පිරිත",
+        "anawumpiritha"
+      ],
+      "collections": [
+        "pirith"
+      ]
     },
-    "collections": {
-        "mulika-vandanawa": {
-            "title": "මූලික වන්දනාව",
-            "articles": [
-                "namaskaraya",
-                "theruwanvandana",
-                "buddhapuja",
-                "jayapiritha",
-                "mahamangalasutta",
-                "rathanasutta",
-                "karaneeyameththasutta",
-                "anawumpiritha",
-                "deviyantapindeema"
-            ]
-        },
-        "pirith": {
-            "title": "පිරිත්",
-            "articles": [
-                "jayapiritha",
-                "mahamangalasutta",
-                "rathanasutta",
-                "karaneeyameththasutta",
-                "anawumpiritha",
-                "mahajayamangalagatha"
-            ]
-        }
+    "atawisi-piritha": {
+      "id": "atawisi-piritha",
+      "title": "අටවිසි පිරිත",
+      "keywords": [
+        "අටවිසි පිරිත",
+        "atawisipiritha"
+      ],
+      "collections": [
+        "pirith"
+      ]
+    },
+    "bojjanga-piritha": {
+      "id": "bojjanga-piritha",
+      "title": "බොජ්ඣංග පිරිත",
+      "keywords": [
+        "බොජ්ඣංග පිරිත",
+        "bojjangapiritha"
+      ],
+      "collections": [
+        "pirith"
+      ]
+    },
+    "buddhapuja-ghatha": {
+      "id": "buddhapuja-ghatha",
+      "title": "බුද්ධ පූජා ගාථා",
+      "keywords": [
+        "බුද්ධ පූජා ගාථා",
+        "buddhapujaghatha"
+      ],
+      "collections": [
+        "mulikaVandanawa"
+      ]
+    },
+    "deviyanta-pindeema": {
+      "id": "deviyanta-pindeema",
+      "title": "දෙවියන්ට පින්දීම",
+      "keywords": [
+        "දෙවියන්ට පින්දීම",
+        "deviyantapindeema"
+      ],
+      "collections": [
+        "mulikaVandanawa"
+      ]
+    },
+    "dhamma-chakka-pawattana-sutta": {
+      "id": "dhamma-chakka-pawattana-sutta",
+      "title": "ධම්මචක්කපවත්තන සූත්‍රය",
+      "keywords": [
+        "ධම්මචක්කපවත්තන සූත්‍රය",
+        "dhammachakkapawattanasutta"
+      ],
+      "collections": [
+        "pirith"
+      ]
+    },
+    "girimananda-suthraya": {
+      "id": "girimananda-suthraya",
+      "title": "ගිරිමානන්‍ද සූත්‍රය",
+      "keywords": [
+        "ගිරිමානන්‍ද සූත්‍රය",
+        "girimanandasuthraya"
+      ],
+      "collections": [
+        "pirith"
+      ]
+    },
+    "jaya-piritha": {
+      "id": "jaya-piritha",
+      "title": "ජය පිරිත",
+      "keywords": [
+        "ජය පිරිත",
+        "jayapiritha"
+      ],
+      "collections": [
+        "pirith"
+      ]
+    },
+    "jinapanjaraya": {
+      "id": "jinapanjaraya",
+      "title": "ජින පඤ්ජරය",
+      "keywords": [
+        "ජින පඤ්ජරයත",
+        "jinapanjaraya"
+      ],
+      "collections": [
+        "pirith"
+      ]
+    },
+    "karaneeyameththa-suthraya": {
+      "id": "karaneeyameththa-suthraya",
+      "title": "කරණීයමෙත්ත සූත්‍රය",
+      "keywords": [
+        "කරණීයමෙත්ත සූත්‍රය",
+        "karaneeyameththasuthraya"
+      ],
+      "collections": [
+        "pirith"
+      ]
+    },
+    "mahajayamangala-gatha": {
+      "id": "mahajayamangala-gatha",
+      "title": "මහා ජයමංගල ගාථා",
+      "keywords": [
+        "මහා ජයමංගල ගාථා",
+        "mahajayamangalagatha"
+      ],
+      "collections": [
+        "pirith"
+      ]
+    },
+    "mahamangala-suthraya": {
+      "id": "mahamangala-suthraya",
+      "title": "මහා මංගල සූත්‍ර‍ය",
+      "keywords": [
+        "මහා මංගල සූත්‍ර‍ය",
+        "mahamangalasuthraya"
+      ],
+      "collections": [
+        "pirith"
+      ]
+    },
+    "namaskaraya": {
+      "id": "namaskaraya",
+      "title": "නමස්කාරය හා බුද්ධ වන්දනා",
+      "keywords": [
+        "නමස්කාරය හා බුද්ධ වන්දනා",
+        "namaskarayabudhdhavandana"
+      ],
+      "collections": [
+        "mulikaVandanawa"
+      ]
+    },
+    "rathana-suthraya": {
+      "id": "rathana-suthraya",
+      "title": "රතන සූත්‍රය",
+      "keywords": [
+        "රතන සූත්‍රය",
+        "rathanasuthraya"
+      ],
+      "collections": [
+        "pirith"
+      ]
+    },
+    "sachchavibhanga-suthraya": {
+      "id": "sachchavibhanga-suthraya",
+      "title": "සච්චවිභඞ්ග සූත්‍රය",
+      "keywords": [
+        "සච්චවිභඞ්ග සූත්‍රය",
+        "sachchavibhangasuthraya"
+      ],
+      "collections": [
+        "pirith"
+      ]
+    },
+    "seth-pathima": {
+      "id": "seth-pathima",
+      "title": "සෙත් පැතීම",
+      "keywords": [
+        "සෙත් පැතීම",
+        "sethpathima"
+      ],
+      "collections": [
+        "mulikaVandanawa"
+      ]
+    },
+    "theruwan-vandanawa": {
+      "id": "theruwan-vandanawa",
+      "title": "තෙරුවන් වන්දනාව",
+      "keywords": [
+        "තෙරුවන් වන්දනාව",
+        "theruwanvandanawa"
+      ],
+      "collections": [
+        "mulikaVandanawa"
+      ]
     }
+  },
+  "collections": {
+    "pirith": {
+      "title": "පිරිත්",
+      "articles": [
+        "anawum-piritha",
+        "atawisi-piritha",
+        "bojjanga-piritha",
+        "dhamma-chakka-pawattana-sutta",
+        "girimananda-suthraya",
+        "jaya-piritha",
+        "jinapanjaraya",
+        "karaneeyameththa-suthraya",
+        "mahajayamangala-gatha",
+        "mahamangala-suthraya",
+        "rathana-suthraya",
+        "sachchavibhanga-suthraya"
+      ]
+    },
+    "mulikaVandanawa": {
+      "title": "මූලික වන්දනාව",
+      "articles": [
+        "buddhapuja-ghatha",
+        "deviyanta-pindeema",
+        "namaskaraya",
+        "seth-pathima",
+        "theruwan-vandanawa"
+      ]
+    }
+  }
 }
