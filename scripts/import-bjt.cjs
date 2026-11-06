@@ -62,10 +62,12 @@ const META = {
   'parabhawa-suthraya': ['Parabhava Sutta', 'පිරිහීමට හේතු වන කරුණු', 'The causes of downfall in a person\'s life.'],
   'wasala-suthraya': ['Vasala Sutta', 'ක්‍රියාවෙන් පහත් අය වන්නේ කෙසේද', 'One becomes an outcast or a noble one by deeds, not by birth.'],
   'atanatiya-suthraya': ['Atanatiya Sutta', 'සතර වරම් දෙවියන් දුන් ආරක්ෂක පිරිත', 'A protection given by the Four Great Kings against harmful spirits.'],
-  'anaththalakkhana-suthraya': ['Anattalakkhana Sutta', 'පස්වග මහණුන්ට දෙසූ අනාත්ම ලක්ෂණය', 'The characteristic of not-self, the second discourse, taught to the five ascetics.'],
-  'adiththapariyaya-suthraya': ['Adittapariyaya Sutta', 'සියල්ල ඇවිළ ගෙන ඇති බව දෙසූ ගිනි දේශනාව', 'The fire sermon: everything is burning with greed, hatred and delusion.'],
 };
 
+// Only texts of the Sri Lankan Maha Pirith (Catubhanavara, 29 items) belong here. The set was checked
+// against Piyadassi Thera, "The Book of Protection" (accesstoinsight.org), Anandajoti's table on
+// Wikipedia ("Paritta") and M. D. Banik's critical study of the Catubhanavara (wisdomlib.org).
+// Not imported: Paccavekkhana (its pirith wording is not a canonical passage).
 const TEXTS = [
   // ---- Preliminaries (Khuddakapāṭha) ----
   { id: 'saranagamanaya', title: 'සරණගමනය', keywords: ['සරණගමනය', 'saranagamana', 'tisarana'], order: 10,
@@ -128,10 +130,6 @@ const TEXTS = [
     file: 'mn-3-4', start: { heading: 'සච්චවිභඞ්ග සුත්තං' }, ref: 'මජ්ඣිම නිකාය 141' },
   { id: 'atanatiya-suthraya', title: 'ආටානාටිය සූත්‍රය', keywords: ['ආටානාටිය සූත්‍රය', 'atanatiyasutta', 'atanatiyasuthraya'], order: 280,
     file: 'dn-3-5', start: { heading: 'ආටානාටියසුත්තං' }, ref: 'දීඝ නිකාය 32' },
-  { id: 'anaththalakkhana-suthraya', title: 'අනත්තලක්ඛණ සූත්‍රය', keywords: ['අනත්තලක්ඛණ සූත්‍රය', 'පඤ්චවග්ගිය සූත්‍රය', 'anattalakkhanasutta', 'anaththalakkhanasuthraya'], order: 290,
-    file: 'sn-3-1-2', start: { heading: 'පඤ්චවග්ගිය සුත්තං' }, ref: 'සංයුත්ත නිකාය 22.1.2.1.7 (SN 22.59)' },
-  { id: 'adiththapariyaya-suthraya', title: 'ආදිත්තපරියාය සූත්‍රය', keywords: ['ආදිත්තපරියාය සූත්‍රය', 'adittapariyayasutta', 'adiththapariyayasuthraya'], order: 300,
-    file: 'sn-4', start: { heading: 'ආදිත්තපරියායසුත්තං' }, ref: 'සංයුත්ත නිකාය 35.1.3.6 (SN 35.28)' },
 ];
 
 // ---------------------------------------------------------------- BJT markup (port of tipitaka.lk shared/markup.ts)

@@ -1,23 +1,5 @@
 {
   "articles": {
-    "adiththapariyaya-suthraya": {
-      "id": "adiththapariyaya-suthraya",
-      "title": "ආදිත්තපරියාය සූත්‍රය",
-      "keywords": [
-        "ආදිත්තපරියාය සූත්‍රය",
-        "adittapariyayasutta",
-        "adiththapariyayasuthraya",
-        "Adittapariyaya Sutta"
-      ],
-      "collections": [
-        "pirith"
-      ],
-      "note": "සියල්ල ඇවිළ ගෙන ඇති බව දෙසූ ගිනි දේශනාව",
-      "english": "Adittapariyaya Sutta",
-      "about": "The fire sermon: everything is burning with greed, hatred and delusion.",
-      "description": "ආදිත්තපරියාය සූත්‍රය (Adittapariyaya Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. සියල්ල ඇවිළ ගෙන ඇති බව දෙසූ ගිනි දේශනාව. The fire sermon: everything is burning with greed, hatred and delusion.",
-      "order": 300
-    },
     "alawaka-suthraya": {
       "id": "alawaka-suthraya",
       "title": "ආළවක සූත්‍රය",
@@ -35,25 +17,6 @@
       "about": "The Buddha's answers to the questions of the yakkha Alavaka, who then became his follower.",
       "description": "ආළවක සූත්‍රය (Alavaka Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. ආළවක යක්ෂයාගේ ප්‍රශ්නවලට බුදුරදුන් දුන් පිළිතුරු. The Buddha's answers to the questions of the yakkha Alavaka, who then became his follower.",
       "order": 230
-    },
-    "anaththalakkhana-suthraya": {
-      "id": "anaththalakkhana-suthraya",
-      "title": "අනත්තලක්ඛණ සූත්‍රය",
-      "keywords": [
-        "අනත්තලක්ඛණ සූත්‍රය",
-        "පඤ්චවග්ගිය සූත්‍රය",
-        "anattalakkhanasutta",
-        "anaththalakkhanasuthraya",
-        "Anattalakkhana Sutta"
-      ],
-      "collections": [
-        "pirith"
-      ],
-      "note": "පස්වග මහණුන්ට දෙසූ අනාත්ම ලක්ෂණය",
-      "english": "Anattalakkhana Sutta",
-      "about": "The characteristic of not-self, the second discourse, taught to the five ascetics.",
-      "description": "අනත්තලක්ඛණ සූත්‍රය (Anattalakkhana Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. පස්වග මහණුන්ට දෙසූ අනාත්ම ලක්ෂණය. The characteristic of not-self, the second discourse, taught to the five ascetics.",
-      "order": 290
     },
     "anawum-piritha": {
       "id": "anawum-piritha",
@@ -729,9 +692,7 @@
     "pirith": {
       "title": "පිරිත්",
       "articles": [
-        "adiththapariyaya-suthraya",
         "alawaka-suthraya",
-        "anaththalakkhana-suthraya",
         "anawum-piritha",
         "atanatiya-suthraya",
         "atawisi-piritha",
