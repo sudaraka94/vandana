@@ -1,19 +1,23 @@
 import React from "react";
-
-import { selectArticles, selectCollections } from "../slices/menu";
-import { useAppSelector } from "../store";
-import Menu from "../components/Menu";
+import { shallowEqual } from "react-redux";
 import { useParams } from "react-router-dom";
 
-const ArticleMenu = () => {
-    const { collectionId }: { collectionId?: string } = useParams();
-    const articles = collectionId ? useAppSelector(selectArticles(collectionId)) : {};
+import { selectArticles, selectCollections, selectIsMenuLoading } from "../slices/menu";
+import { useAppSelector } from "../store";
+import Menu from "../components/Menu";
+import { NotFound } from "../components/StatusMessage";
 
-    return (
-        <>
-            <Menu isLoading={false} articles={articles} routePrefix="articles" />
-        </>
-    );
+const ArticleMenu = () => {
+    const { collectionId = "" } = useParams();
+    const articles = useAppSelector(selectArticles(collectionId), shallowEqual);
+    const collections = useAppSelector(selectCollections);
+    const isMenuLoading = useAppSelector(selectIsMenuLoading);
+
+    if (!isMenuLoading && Object.keys(collections).length > 0 && !collections[collectionId]) {
+        return <NotFound />;
+    }
+
+    return <Menu articles={articles} routePrefix="articles" />;
 };
 
 export default ArticleMenu;

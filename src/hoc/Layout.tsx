@@ -1,39 +1,59 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import { AppBar, Button, Toolbar } from "@mui/material";
 import { Box } from "@mui/system";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, matchPath, useLocation, useNavigate } from "react-router-dom";
 
 import Logo from "/images/VandanaLogo.svg";
 import { ArrowBackIosNew } from "@mui/icons-material";
+import { selectAllArticles } from "../slices/menu";
+import { useAppSelector } from "../store";
 
 interface LayoutProps {
   children: JSX.Element;
 }
 
+// BrowserRouter numbers its history entries; idx 0 is the page the visitor
+// landed on, so anything above 0 means there is an in-app page to go back to.
+const hasInAppHistory = () => (window.history.state?.idx ?? 0) > 0;
+
 const Layout = (props: LayoutProps) => {
   const navigate = useNavigate();
   const location = useLocation();
-  const [backBtn, setBackBtn] = useState<JSX.Element | undefined>()
+  const articles = useAppSelector(selectAllArticles);
 
-  useEffect(() => {
-    const currentPath = location.pathname;
+  // Where "back" goes when the visitor arrived straight on this page
+  // (e.g. from a shared link): one level up instead of leaving the site.
+  const parentPath = () => {
+    const articleMatch = matchPath("/articles/:articleId", location.pathname);
+    const collectionId = articleMatch?.params.articleId
+      ? articles[articleMatch.params.articleId]?.collections?.[0]
+      : undefined;
+    return collectionId ? `/collections/${collectionId}` : "/";
+  };
 
-    if (currentPath != "/") {
-      setBackBtn(
-        <Button variant="outlined" sx={{ color: '#ffff', borderColor: '#ffff', position: 'absolute' }}
-          onClick={() => navigate(-1)}><ArrowBackIosNew /></Button>
-      )
+  const goBack = () => {
+    if (hasInAppHistory()) {
+      navigate(-1);
     } else {
-      setBackBtn(undefined)
+      navigate(parentPath(), { replace: true });
     }
-  }, [location]);
+  };
 
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          {backBtn}
+          {location.pathname !== "/" && (
+            <Button
+              variant="outlined"
+              aria-label="ආපසු"
+              sx={{ color: '#ffff', borderColor: '#ffff', position: 'absolute' }}
+              onClick={goBack}
+            >
+              <ArrowBackIosNew />
+            </Button>
+          )}
           <Box display="flex" flex="1" justifyContent="center">
             <Link to="/">
               <img src={Logo} alt="වන්දනා" height={40} />
@@ -42,11 +62,6 @@ const Layout = (props: LayoutProps) => {
         </Toolbar>
       </AppBar>
       {props.children}
-      {/* <Box display="flex" width="100%" justifyContent="center"  marginBottom="1em">
-        <Typography fontWeight={700} variant="subtitle2">
-          Made with ❤️ by <MuiLink target="_blank" href="http://zeroonetech.xyz" underline="none">ZeroOne Technologies</MuiLink>
-        </Typography>
-      </Box> */}
     </Box>
   );
 };
