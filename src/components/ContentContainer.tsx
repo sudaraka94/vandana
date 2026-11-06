@@ -1,18 +1,27 @@
-import { Box } from "@mui/system";
 import React from "react";
+import { Box } from "@mui/material";
 
-interface IArticleContainer {
+import { SERIF } from "../theme/theme";
+
+interface ContentContainerProps {
   article: string | undefined;
-  fontSize: number;
+  fontSize: number; // px
+  lineHeight: number;
 }
 
-export default function ContentContainer(props: IArticleContainer) {
-  const { article = "", fontSize = 1 } = props;
+export default function ContentContainer({ article = "", fontSize, lineHeight }: ContentContainerProps) {
   return (
     <Box
-      fontSize={`${fontSize}em`}
       dangerouslySetInnerHTML={{ __html: article }}
-      sx={{textAlign: 'center'}}
+      sx={{
+        fontFamily: SERIF,
+        fontSize: `${fontSize}px`,
+        lineHeight,
+        textAlign: "center",
+        overflowWrap: "break-word",
+        // Each <p> in the content is a stanza (or a line); give stanzas room to breathe.
+        "& p": { margin: "0 0 1.1em" },
+      }}
     />
   );
 }

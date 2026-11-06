@@ -848,6 +848,11 @@
   resolved "https://registry.yarnpkg.com/@fontsource/noto-sans-sinhala/-/noto-sans-sinhala-5.3.0.tgz#e28dfa8886d922fe0f8258e1ff01fe73fbc9469e"
   integrity sha512-g52kQSjsB3vHmFbp6zrPfumJxZADhsssOHd3fMkN+hCK1JrpKvSudtJMAAGuVUcrC7r9dqNmmslj7I9VU1dzbw==
 
+"@fontsource/noto-serif-sinhala@5.2.6":
+  version "5.2.6"
+  resolved "https://registry.yarnpkg.com/@fontsource/noto-serif-sinhala/-/noto-serif-sinhala-5.2.6.tgz#1d1c0f21009804fbe6be87b11f142cf822fc26b6"
+  integrity sha512-e8pQn9a50pjbXMN5b/u4fYkSfCFNrhall/qaKoBxT/dSaV1WTRpJFAaMEyK2++0ArU9nXrRWhVCtfeH5UPinEQ==
+
 "@grpc/grpc-js@~1.9.0":
   version "1.9.14"
   resolved "https://registry.npmjs.org/@grpc/grpc-js/-/grpc-js-1.9.14.tgz"
