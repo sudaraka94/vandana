@@ -843,6 +843,11 @@
   resolved "https://registry.npmjs.org/@floating-ui/utils/-/utils-0.2.2.tgz"
   integrity sha512-J4yDIIthosAsRZ5CPYP/jQvUAQtlZTTD/4suA08/FEnlxqW3sKS9iAhgsa9VYLZ6vDHn/ixJgIqRQPotoBjxIw==
 
+"@fontsource/noto-sans-sinhala@5.3.0":
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/noto-sans-sinhala/-/noto-sans-sinhala-5.3.0.tgz#e28dfa8886d922fe0f8258e1ff01fe73fbc9469e"
+  integrity sha512-g52kQSjsB3vHmFbp6zrPfumJxZADhsssOHd3fMkN+hCK1JrpKvSudtJMAAGuVUcrC7r9dqNmmslj7I9VU1dzbw==
+
 "@grpc/grpc-js@~1.9.0":
   version "1.9.14"
   resolved "https://registry.npmjs.org/@grpc/grpc-js/-/grpc-js-1.9.14.tgz"

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="si">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/favicon.ico" />
@@ -9,6 +9,16 @@
     <meta name="theme-color" content="#ff9800"/>
     <meta name="description" content="Vandana (වන්දනා) is a sinhala pirith and sinhala ghathaa web app for buddhists">
     <title>වන්දනා</title>
+    <script>
+      // Restore a deep link saved by 404.html (GitHub Pages SPA fallback).
+      try {
+        var redirect = sessionStorage.getItem('redirect');
+        sessionStorage.removeItem('redirect');
+        if (redirect && redirect !== location.pathname + location.search + location.hash) {
+          history.replaceState(null, '', redirect);
+        }
+      } catch (e) {}
+    </script>
   </head>
   <body>
     <div id="root"></div>

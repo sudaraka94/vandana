@@ -1,6 +1,12 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import Article from "../containers/Article";
 import { RootState } from "../store";
+
+export interface MenuArticle {
+    id: string
+    title: string
+    keywords?: string[]
+    collections?: string[]
+}
 
 export interface Collection {
     id: string
@@ -10,12 +16,14 @@ export interface Collection {
 
 export interface MenuState {
     isMenuLoading: boolean
-    articles: { [id: string]: Article }
+    hasMenuError: boolean
+    articles: { [id: string]: MenuArticle }
     collections: { [id: string]: Collection }
 }
 
 const initialState: MenuState = {
     isMenuLoading: true,
+    hasMenuError: false,
     articles: {},
     collections: {}
 }
@@ -24,28 +32,39 @@ const menuSlice = createSlice({
     name: 'menu',
     initialState,
     reducers: {
-        updateMenu: (state, action: PayloadAction<MenuState>) => {
+        menuLoading: (state) => {
+            state.isMenuLoading = true
+            state.hasMenuError = false
+        },
+        updateMenu: (state, action: PayloadAction<Pick<MenuState, 'articles' | 'collections'>>) => {
             state.articles = action.payload.articles
             state.collections = action.payload.collections
-            state.isMenuLoading = state.isMenuLoading
+            state.isMenuLoading = false
+            state.hasMenuError = false
+        },
+        menuFailed: (state) => {
+            state.isMenuLoading = false
+            state.hasMenuError = true
         },
     },
 });
 
-// Other code such as selectors can use the imported `RootState` type
 export const selectArticles = (collectionId: string) => (state: RootState) => {
-    let articles: { [id: string]: Article } = {}
-    state.menu.collections[collectionId]?.articles.reduce((obj, key) => {
-        articles[key] = state.menu.articles[key];
-        return articles
-    }, {})
+    const articles: { [id: string]: MenuArticle } = {}
+    state.menu.collections[collectionId]?.articles.forEach((key) => {
+        if (state.menu.articles[key]) {
+            articles[key] = state.menu.articles[key];
+        }
+    })
 
     return articles;
 }
 
 export const selectIsMenuLoading = (state: RootState) => state.menu.isMenuLoading
+export const selectHasMenuError = (state: RootState) => state.menu.hasMenuError
 export const selectCollections = (state: RootState) => state.menu.collections
+export const selectAllArticles = (state: RootState) => state.menu.articles
 
-export const { updateMenu } = menuSlice.actions;
+export const { menuLoading, updateMenu, menuFailed } = menuSlice.actions;
 
 export default menuSlice.reducer
