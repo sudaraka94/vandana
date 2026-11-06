@@ -5,6 +5,7 @@ keywords:
     - "jayapiritha"
 collections:
     - "pirith"
+order: 320
 ---
 <p style='text-align:center'>සිරි ධිති මති තේජෝ ජය&shy;සිද්ධි මහිද්ධි මහා ගුණං අප&shy;රි&shy;මිත</p>
 <p style='text-align:center'>පුඤ්ඤාධි කාරස්ස සබ්බ&shy;න්ත&shy;රාය නිවා&shy;රණ සම&shy;ත්ථස්ස,</p>

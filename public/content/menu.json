@@ -1,5 +1,45 @@
 {
   "articles": {
+    "adiththapariyaya-suthraya": {
+      "id": "adiththapariyaya-suthraya",
+      "title": "ආදිත්තපරියාය සූත්‍රය",
+      "keywords": [
+        "ආදිත්තපරියාය සූත්‍රය",
+        "adittapariyayasutta",
+        "adiththapariyayasuthraya"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "order": 300
+    },
+    "alawaka-suthraya": {
+      "id": "alawaka-suthraya",
+      "title": "ආළවක සූත්‍රය",
+      "keywords": [
+        "ආළවක සූත්‍රය",
+        "alavakasutta",
+        "alawakasuthraya"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "order": 230
+    },
+    "anaththalakkhana-suthraya": {
+      "id": "anaththalakkhana-suthraya",
+      "title": "අනත්තලක්ඛණ සූත්‍රය",
+      "keywords": [
+        "අනත්තලක්ඛණ සූත්‍රය",
+        "පඤ්චවග්ගිය සූත්‍රය",
+        "anattalakkhanasutta",
+        "anaththalakkhanasuthraya"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "order": 290
+    },
     "anawum-piritha": {
       "id": "anawum-piritha",
       "title": "ඇනවුම් පිරිත",
@@ -9,7 +49,21 @@
       ],
       "collections": [
         "pirith"
-      ]
+      ],
+      "order": 350
+    },
+    "atanatiya-suthraya": {
+      "id": "atanatiya-suthraya",
+      "title": "ආටානාටිය සූත්‍රය",
+      "keywords": [
+        "ආටානාටිය සූත්‍රය",
+        "atanatiyasutta",
+        "atanatiyasuthraya"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "order": 280
     },
     "atawisi-piritha": {
       "id": "atawisi-piritha",
@@ -20,7 +74,8 @@
       ],
       "collections": [
         "pirith"
-      ]
+      ],
+      "order": 340
     },
     "bojjanga-piritha": {
       "id": "bojjanga-piritha",
@@ -31,7 +86,8 @@
       ],
       "collections": [
         "pirith"
-      ]
+      ],
+      "order": 310
     },
     "buddhapuja-ghatha": {
       "id": "buddhapuja-ghatha",
@@ -44,6 +100,46 @@
         "mulikaVandanawa"
       ]
     },
+    "chanda-piritha": {
+      "id": "chanda-piritha",
+      "title": "චන්ද පරිත්තය",
+      "keywords": [
+        "චන්ද පරිත්තය",
+        "චන්දිම සූත්‍රය",
+        "candaparitta",
+        "chandapiritha"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "order": 130
+    },
+    "dasa-sikkhapada": {
+      "id": "dasa-sikkhapada",
+      "title": "දස සික්ඛාපද",
+      "keywords": [
+        "දස සික්ඛාපද",
+        "දසසික්ඛාපදය",
+        "dasasikkhapada"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "order": 20
+    },
+    "dasadhamma-suthraya": {
+      "id": "dasadhamma-suthraya",
+      "title": "දසධම්ම සූත්‍රය",
+      "keywords": [
+        "දසධම්ම සූත්‍රය",
+        "dasadhammasutta",
+        "dasadhammasuthraya"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "order": 50
+    },
     "deviyanta-pindeema": {
       "id": "deviyanta-pindeema",
       "title": "දෙවියන්ට පින්දීම",
@@ -55,6 +151,19 @@
         "mulikaVandanawa"
       ]
     },
+    "dhajagga-suthraya": {
+      "id": "dhajagga-suthraya",
+      "title": "ධජග්ග සූත්‍රය",
+      "keywords": [
+        "ධජග්ග සූත්‍රය",
+        "dhajaggasutta",
+        "dhajaggasuthraya"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "order": 150
+    },
     "dhamma-chakka-pawattana-sutta": {
       "id": "dhamma-chakka-pawattana-sutta",
       "title": "ධම්මචක්කපවත්තන සූත්‍රය",
@@ -64,7 +173,21 @@
       ],
       "collections": [
         "pirith"
-      ]
+      ],
+      "order": 210
+    },
+    "dvattimsakaraya": {
+      "id": "dvattimsakaraya",
+      "title": "ද්වත්තිංසාකාරය",
+      "keywords": [
+        "ද්වත්තිංසාකාරය",
+        "dvattimsakara",
+        "dwaththinsakaraya"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "order": 40
     },
     "girimananda-suthraya": {
       "id": "girimananda-suthraya",
@@ -75,7 +198,21 @@
       ],
       "collections": [
         "pirith"
-      ]
+      ],
+      "order": 190
+    },
+    "isigili-suthraya": {
+      "id": "isigili-suthraya",
+      "title": "ඉසිගිලි සූත්‍රය",
+      "keywords": [
+        "ඉසිගිලි සූත්‍රය",
+        "isigilisutta",
+        "isigilisuthraya"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "order": 200
     },
     "jaya-piritha": {
       "id": "jaya-piritha",
@@ -86,7 +223,8 @@
       ],
       "collections": [
         "pirith"
-      ]
+      ],
+      "order": 320
     },
     "jinapanjaraya": {
       "id": "jinapanjaraya",
@@ -97,7 +235,8 @@
       ],
       "collections": [
         "pirith"
-      ]
+      ],
+      "order": 360
     },
     "karaneeyameththa-suthraya": {
       "id": "karaneeyameththa-suthraya",
@@ -108,7 +247,50 @@
       ],
       "collections": [
         "pirith"
-      ]
+      ],
+      "order": 80
+    },
+    "kasibharadwaja-suthraya": {
+      "id": "kasibharadwaja-suthraya",
+      "title": "කසීභාරද්වාජ සූත්‍රය",
+      "keywords": [
+        "කසීභාරද්වාජ සූත්‍රය",
+        "kasibharadvajasutta",
+        "kasibharadwajasuthraya"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "order": 240
+    },
+    "khandha-piritha": {
+      "id": "khandha-piritha",
+      "title": "ඛන්ධ පරිත්තය",
+      "keywords": [
+        "ඛන්ධ පරිත්තය",
+        "ඛන්ධ පිරිත",
+        "අහි මෙත්ත සූත්‍රය",
+        "khandhaparitta",
+        "khandhapiritha"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "order": 90
+    },
+    "mahachunda-bojjanga-suthraya": {
+      "id": "mahachunda-bojjanga-suthraya",
+      "title": "මහාචුන්ද බොජ්ඣංග සූත්‍රය",
+      "keywords": [
+        "මහාචුන්ද බොජ්ඣංග සූත්‍රය",
+        "තතිය ගිලාන සූත්‍රය",
+        "mahacundabojjhangasutta",
+        "bojjangasuthraya"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "order": 180
     },
     "mahajayamangala-gatha": {
       "id": "mahajayamangala-gatha",
@@ -119,7 +301,22 @@
       ],
       "collections": [
         "pirith"
-      ]
+      ],
+      "order": 330
+    },
+    "mahakassapa-bojjanga-suthraya": {
+      "id": "mahakassapa-bojjanga-suthraya",
+      "title": "මහාකස්සප බොජ්ඣංග සූත්‍රය",
+      "keywords": [
+        "මහාකස්සප බොජ්ඣංග සූත්‍රය",
+        "ගිලාන සූත්‍රය",
+        "mahakassapabojjhangasutta",
+        "bojjangasuthraya"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "order": 160
     },
     "mahamangala-suthraya": {
       "id": "mahamangala-suthraya",
@@ -130,7 +327,76 @@
       ],
       "collections": [
         "pirith"
-      ]
+      ],
+      "order": 60
+    },
+    "mahamoggallana-bojjanga-suthraya": {
+      "id": "mahamoggallana-bojjanga-suthraya",
+      "title": "මහාමොග්ගල්ලාන බොජ්ඣංග සූත්‍රය",
+      "keywords": [
+        "මහාමොග්ගල්ලාන බොජ්ඣංග සූත්‍රය",
+        "දුතිය ගිලාන සූත්‍රය",
+        "mahamoggallanabojjhangasutta",
+        "bojjangasuthraya"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "order": 170
+    },
+    "mahasamaya-suthraya": {
+      "id": "mahasamaya-suthraya",
+      "title": "මහාසමය සූත්‍රය",
+      "keywords": [
+        "මහාසමය සූත්‍රය",
+        "mahasamayasutta",
+        "mahasamayasuthraya"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "order": 220
+    },
+    "meththanisansa-suthraya": {
+      "id": "meththanisansa-suthraya",
+      "title": "මෙත්තානිසංස සූත්‍රය",
+      "keywords": [
+        "මෙත්තානිසංස සූත්‍රය",
+        "mettanisamsasutta",
+        "meththanisansasuthraya"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "order": 100
+    },
+    "miththanisansa-gatha": {
+      "id": "miththanisansa-gatha",
+      "title": "මිත්තානිසංස ගාථා",
+      "keywords": [
+        "මිත්තානිසංස ගාථා",
+        "මිත්තානිසංසය",
+        "mittanisamsa",
+        "miththanisansa"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "order": 110
+    },
+    "mora-piritha": {
+      "id": "mora-piritha",
+      "title": "මෝර පරිත්තය",
+      "keywords": [
+        "මෝර පරිත්තය",
+        "මෝර පිරිත",
+        "moraparitta",
+        "morapiritha"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "order": 120
     },
     "namaskaraya": {
       "id": "namaskaraya",
@@ -143,6 +409,19 @@
         "mulikaVandanawa"
       ]
     },
+    "parabhawa-suthraya": {
+      "id": "parabhawa-suthraya",
+      "title": "පරාභව සූත්‍රය",
+      "keywords": [
+        "පරාභව සූත්‍රය",
+        "parabhavasutta",
+        "parabhawasuthraya"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "order": 250
+    },
     "rathana-suthraya": {
       "id": "rathana-suthraya",
       "title": "රතන සූත්‍රය",
@@ -152,7 +431,8 @@
       ],
       "collections": [
         "pirith"
-      ]
+      ],
+      "order": 70
     },
     "sachchavibhanga-suthraya": {
       "id": "sachchavibhanga-suthraya",
@@ -163,7 +443,35 @@
       ],
       "collections": [
         "pirith"
-      ]
+      ],
+      "order": 270
+    },
+    "samanera-panhaya": {
+      "id": "samanera-panhaya",
+      "title": "සාමණේර පඤ්හය",
+      "keywords": [
+        "සාමණේර පඤ්හය",
+        "කුමාරපඤ්හ",
+        "samanerapanha",
+        "kumarapanha"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "order": 30
+    },
+    "saranagamanaya": {
+      "id": "saranagamanaya",
+      "title": "සරණගමනය",
+      "keywords": [
+        "සරණගමනය",
+        "saranagamana",
+        "tisarana"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "order": 10
     },
     "seth-pathima": {
       "id": "seth-pathima",
@@ -176,6 +484,20 @@
         "mulikaVandanawa"
       ]
     },
+    "suriya-piritha": {
+      "id": "suriya-piritha",
+      "title": "සූරිය පරිත්තය",
+      "keywords": [
+        "සූරිය පරිත්තය",
+        "සූරිය සූත්‍රය",
+        "suriyaparitta",
+        "suriyapiritha"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "order": 140
+    },
     "theruwan-vandanawa": {
       "id": "theruwan-vandanawa",
       "title": "තෙරුවන් වන්දනාව",
@@ -186,24 +508,61 @@
       "collections": [
         "mulikaVandanawa"
       ]
+    },
+    "wasala-suthraya": {
+      "id": "wasala-suthraya",
+      "title": "වසල සූත්‍රය",
+      "keywords": [
+        "වසල සූත්‍රය",
+        "vasalasutta",
+        "wasalasuthraya"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "order": 260
     }
   },
   "collections": {
     "pirith": {
       "title": "පිරිත්",
       "articles": [
+        "adiththapariyaya-suthraya",
+        "alawaka-suthraya",
+        "anaththalakkhana-suthraya",
         "anawum-piritha",
+        "atanatiya-suthraya",
         "atawisi-piritha",
         "bojjanga-piritha",
+        "chanda-piritha",
+        "dasa-sikkhapada",
+        "dasadhamma-suthraya",
+        "dhajagga-suthraya",
         "dhamma-chakka-pawattana-sutta",
+        "dvattimsakaraya",
         "girimananda-suthraya",
+        "isigili-suthraya",
         "jaya-piritha",
         "jinapanjaraya",
         "karaneeyameththa-suthraya",
+        "kasibharadwaja-suthraya",
+        "khandha-piritha",
+        "mahachunda-bojjanga-suthraya",
         "mahajayamangala-gatha",
+        "mahakassapa-bojjanga-suthraya",
         "mahamangala-suthraya",
+        "mahamoggallana-bojjanga-suthraya",
+        "mahasamaya-suthraya",
+        "meththanisansa-suthraya",
+        "miththanisansa-gatha",
+        "mora-piritha",
+        "parabhawa-suthraya",
         "rathana-suthraya",
-        "sachchavibhanga-suthraya"
+        "sachchavibhanga-suthraya",
+        "samanera-panhaya",
+        "saranagamanaya",
+        "suriya-piritha",
+        "wasala-suthraya"
       ]
     },
     "mulikaVandanawa": {

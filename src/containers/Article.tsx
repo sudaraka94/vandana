@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
 import { shallowEqual } from "react-redux";
 
-import { Backdrop, Box, Button, CircularProgress, IconButton, Snackbar, Typography, useMediaQuery } from "@mui/material";
+import { Backdrop, Box, Button, CircularProgress, IconButton, Snackbar, ToggleButton, ToggleButtonGroup, Typography, useMediaQuery } from "@mui/material";
 import { MenuBook, Share, Star, StarBorder } from "@mui/icons-material";
 
 import { fetchArticleById } from "../api";
@@ -24,6 +24,8 @@ import LogoLamp from "/images/VandanaLogoLamp.svg";
 interface ArticleData {
   title: string;
   content: string;
+  translation?: string; // Sinhala meaning, when available
+  source?: string;
 }
 
 type LoadState = "loading" | "loaded" | "notFound" | "error";
@@ -41,7 +43,7 @@ const Article = () => {
   const location = useLocation();
   const wide = useMediaQuery("(min-width:900px)");
   const prefs = usePrefs();
-  const { fontSize, lineSpacing, keepAwake, themeMode, isFavourite, toggleFavourite, update } = prefs;
+  const { fontSize, lineSpacing, keepAwake, themeMode, textLanguage, isFavourite, toggleFavourite, update } = prefs;
 
   const articles = useAppSelector(selectAllArticles, shallowEqual);
   const collections = useAppSelector(selectCollections);
@@ -185,7 +187,30 @@ const Article = () => {
             {position >= 0 && ` · ${position + 1} / ${siblings.length}`}
           </Typography>
         )}
-        <ContentContainer article={article?.content} fontSize={fontSize} lineHeight={LINE_HEIGHTS[lineSpacing]} />
+        {article?.translation && (
+          <Box sx={{ display: "flex", justifyContent: "center", mb: 3 }}>
+            <ToggleButtonGroup
+              exclusive
+              size="small"
+              value={textLanguage}
+              aria-label="පාඨයේ භාෂාව"
+              onChange={(_, value) => value && update({ textLanguage: value })}
+            >
+              <ToggleButton value="pali" sx={{ px: 2, fontWeight: 600 }}>පාළි</ToggleButton>
+              <ToggleButton value="sinhala" sx={{ px: 2, fontWeight: 600 }}>සිංහල අරුත</ToggleButton>
+            </ToggleButtonGroup>
+          </Box>
+        )}
+        <ContentContainer
+          article={article?.translation && textLanguage === "sinhala" ? article.translation : article?.content}
+          fontSize={fontSize}
+          lineHeight={LINE_HEIGHTS[lineSpacing]}
+        />
+        {article?.source && (
+          <Typography color="text.secondary" align="center" sx={{ fontSize: 12.5, mt: 3 }}>
+            මූලාශ්‍රය: {article.source}
+          </Typography>
+        )}
 
         {loadState === "loaded" && (
           <Box sx={{ mt: 4, bgcolor: (t) => t.tokens.accentTint, borderRadius: 4, p: 2, display: "flex", flexDirection: "column", gap: 1.25 }}>
