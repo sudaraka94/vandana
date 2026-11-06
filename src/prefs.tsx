@@ -4,6 +4,9 @@ import { ThemeMode } from "./theme/theme";
 
 export type LineSpacing = "compact" | "normal" | "relaxed";
 
+// Which version of a text to show: the Pali original or its Sinhala meaning.
+export type TextLanguage = "pali" | "sinhala";
+
 export interface LastRead {
   id: string;
   progress: number; // 0..1
@@ -14,6 +17,7 @@ export interface Prefs {
   fontSize: number; // px, verse text
   lineSpacing: LineSpacing;
   keepAwake: boolean;
+  textLanguage: TextLanguage;
   favourites: string[];
   lastRead?: LastRead;
 }
@@ -36,6 +40,7 @@ const DEFAULTS: Prefs = {
   fontSize: DEFAULT_FONT_SIZE,
   lineSpacing: "normal",
   keepAwake: true,
+  textLanguage: "pali",
   favourites: [],
 };
 

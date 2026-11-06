@@ -1,10 +1,14 @@
 ---
 title: "සෙත් පැතීම"
+english: "Seth Pathima"
+note: "සුවය, දීර්ඝායුෂ හා සෙත පතා කියන ගාථා"
+about: "Blessing verses wishing health, long life and freedom from danger (Sabbitiyo vivajjantu)."
 keywords: 
     - "සෙත් පැතීම"
     - "sethpathima"
 collections:
     - "mulikaVandanawa"
+order: 40
 ---
 <article>
     <div>

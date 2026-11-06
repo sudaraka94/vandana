@@ -1,0 +1,21 @@
+{
+  "url": "https://vandana.sudaraka94.com",
+  "name": "වන්දනා",
+  "english": "Vandana",
+  "tagline": "සිංහල පිරිත් හා වන්දනා ගාථා",
+  "description": "පිරිත් සූත්‍ර, බුද්ධ වන්දනා හා පූජා ගාථා සම්පූර්ණ පාඨ සිංහලෙන්. Sinhala pirith and Buddhist vandana gatha, full text, free and ad free.",
+  "about": "Vandana is a free reader for Sinhala Buddhist pirith (paritta) chants and everyday worship verses (vandana gatha), with the full Pali text in Sinhala script.",
+  "image": "/og-image.png",
+  "collections": {
+    "pirith": {
+      "english": "Pirith",
+      "description": "සෙත හා ආරක්ෂාව පිණිස සජ්ඣායනා කරන සූත්‍ර",
+      "about": "Protective Buddhist chants (paritta), such as Jaya Piritha, Ratana Sutta and Karaniya Metta Sutta, in Sinhala script."
+    },
+    "mulikaVandanawa": {
+      "english": "Daily worship",
+      "description": "දිනපතා වන්දනාව, පූජා හා පින් දීම",
+      "about": "Everyday Buddhist worship: homage to the Buddha, worship of the Triple Gem, offerings and sharing merit, in Sinhala script."
+    }
+  }
+}

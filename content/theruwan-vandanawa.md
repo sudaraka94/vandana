@@ -1,10 +1,14 @@
 ---
 title: "තෙරුවන් වන්දනාව"
+english: "Theruwan Vandanawa"
+note: "බුද්ධ, ධම්ම, සංඝ ගුණ සිහිකර තෙරුවන් වැඳීම"
+about: "Worship of the Triple Gem: verses recalling the qualities of the Buddha, Dhamma and Sangha (Itipiso)."
 keywords: 
     - "තෙරුවන් වන්දනාව"
     - "theruwanvandanawa"
 collections:
     - "mulikaVandanawa"
+order: 50
 ---
 <p style='text-align:center'><strong>1. බුදු ගුණ නමස්කාරය</strong></p>
 <p style='text-align:center'>ඉතිපි සො භගවා අරහං සම්මා සම්බුද්ධො විජ්ජාචරණ සම්පන්නො සුගතො ලෝක විදූ, අනුත්තරෝ පුරිස ධම්ම සාරථි සත්ථා දේව මනුස්සානං බුද්ධො භගවාති</p>

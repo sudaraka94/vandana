@@ -1,10 +1,14 @@
 ---
 title: "ඇනවුම් පිරිත"
+english: "Anawum Piritha"
+note: "පිරිත් සජ්ඣායනයට පෙර දෙවියන්ට ආරාධනා කරන ගාථා"
+about: "Verses chanted at the start of a pirith ceremony to invite the deities to come and listen."
 keywords: 
     - "ඇනවුම් පිරිත"
     - "anawumpiritha"
 collections:
     - "pirith"
+order: 350
 ---
 <p>
   යෙ සන්තා සන්ත චිත්තා තිසරණ සරණා එත්ථ ලොකන්තරෙවා<br />

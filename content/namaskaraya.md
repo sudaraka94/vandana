@@ -1,10 +1,14 @@
 ---
 title: "නමස්කාරය හා බුද්ධ වන්දනා"
+english: "Namaskaraya and Buddha Vandana"
+note: "නමෝ තස්ස, තිසරණය සහ බුදුරජුන් වැඳීම"
+about: "The homage 'Namo tassa', taking the Triple Refuge, and verses for worshipping the Buddha."
 keywords: 
     - "නමස්කාරය හා බුද්ධ වන්දනා"
     - "namaskarayabudhdhavandana"
 collections:
     - "mulikaVandanawa"
+order: 30
 ---
 <p>නමො තස්ස භගවතො අරහතො සම්මා සම්බුද්ධස්ස</p>
 <p>නමො තස්ස භගවතො අරහතො සම්මාසම්බුද්ධස්ස</p>

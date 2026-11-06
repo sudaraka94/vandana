@@ -21,6 +21,8 @@ export default function ContentContainer({ article = "", fontSize, lineHeight }:
         overflowWrap: "break-word",
         // Each <p> in the content is a stanza (or a line); give stanzas room to breathe.
         "& p": { margin: "0 0 1.1em" },
+        // Prose paragraphs of the suttas read better left-aligned.
+        "& p.prose": { textAlign: "start" },
       }}
     />
   );
