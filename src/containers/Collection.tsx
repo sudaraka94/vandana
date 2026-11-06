@@ -29,11 +29,11 @@ const Collection = () => {
     const items = orderedArticles(collection, articles);
     return (
       <>
-        <Box px={2.5} pt={2} pb={1}>
+        <Box sx={{ px: 2.5, pt: 2, pb: 1 }}>
           <Typography variant="h4" component="h1">
             {collection.title}
           </Typography>
-          <Typography color="text.secondary" fontSize={13}>
+          <Typography color="text.secondary" sx={{ fontSize: 13 }}>
             පාඨ {items.length}
           </Typography>
         </Box>
@@ -45,7 +45,7 @@ const Collection = () => {
   return (
     <Box>
       <PageBar backTo="/" backLabel="මුල් පිටුව" />
-      <Box maxWidth={680} mx="auto" pb={6}>
+      <Box sx={{ maxWidth: 680, mx: "auto", pb: 6 }}>
         {renderBody()}
       </Box>
     </Box>

@@ -20,13 +20,13 @@ export const LotusIcon = () => (
 );
 
 const StatusMessage = ({ message, hint, onRetry, showHomeLink }: StatusMessageProps) => (
-  <Box display="flex" flexDirection="column" alignItems="center" gap={1.5} px={3} py={6} textAlign="center">
+  <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 1.5, px: 3, py: 6, textAlign: "center" }}>
     <LotusIcon />
-    <Typography variant="h6" component="p" fontSize={18}>
+    <Typography variant="h6" component="p" sx={{ fontSize: 18 }}>
       {message}
     </Typography>
     {hint && (
-      <Typography color="text.secondary" fontSize={14} maxWidth="36ch">
+      <Typography color="text.secondary" sx={{ fontSize: 14, maxWidth: "36ch" }}>
         {hint}
       </Typography>
     )}

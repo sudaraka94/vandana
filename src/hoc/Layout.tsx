@@ -2,7 +2,7 @@ import React from "react";
 import { Box } from "@mui/material";
 
 interface LayoutProps {
-  children: JSX.Element;
+  children: React.ReactElement;
 }
 
 // Each screen draws its own header (home header or page bar), so the layout

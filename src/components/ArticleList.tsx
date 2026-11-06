@@ -78,12 +78,12 @@ const ArticleList = ({ articles, numbered, currentId, tagFor, highlight }: Artic
                   {index + 1}
                 </Typography>
               )}
-              <Box flex={1} minWidth={0}>
+              <Box sx={{ flex: 1, minWidth: 0 }}>
                 <Typography sx={{ fontFamily: SERIF, fontWeight: 600, fontSize: 17, lineHeight: 1.35 }}>
                   <Highlighted text={article.title} query={highlight} />
                 </Typography>
                 {article.note && (
-                  <Typography variant="body2" color="text.secondary" fontSize={12.5}>
+                  <Typography variant="body2" color="text.secondary" sx={{ fontSize: 12.5 }}>
                     {article.note}
                   </Typography>
                 )}

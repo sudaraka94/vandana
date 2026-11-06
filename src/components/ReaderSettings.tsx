@@ -22,8 +22,8 @@ const SPACINGS: { value: LineSpacing; label: string }[] = [
 ];
 
 const Row = ({ label, children }: { label: string; children: React.ReactNode }) => (
-  <Box display="flex" flexDirection="column" gap={1}>
-    <Typography fontSize={13} fontWeight={600} color="text.secondary">
+  <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
+    <Typography color="text.secondary" sx={{ fontSize: 13, fontWeight: 600 }}>
       {label}
     </Typography>
     {children}
@@ -38,21 +38,23 @@ const ReaderSettings = ({ open, onClose }: ReaderSettingsProps) => {
       anchor="bottom"
       open={open}
       onClose={onClose}
-      PaperProps={{
-        sx: {
-          borderRadius: "20px 20px 0 0",
-          maxWidth: 520,
-          mx: "auto",
-          px: 2.5,
-          pt: 1.25,
-          pb: "calc(22px + env(safe-area-inset-bottom, 0px))",
-          display: "flex",
-          flexDirection: "column",
-          gap: 2.25,
+      // Lighter scrim so the text behind shows the change live.
+      slotProps={{
+        backdrop: { sx: { bgcolor: "rgba(46, 34, 22, 0.25)" } },
+        paper: {
+          sx: {
+            borderRadius: "20px 20px 0 0",
+            maxWidth: 520,
+            mx: "auto",
+            px: 2.5,
+            pt: 1.25,
+            pb: "calc(22px + env(safe-area-inset-bottom, 0px))",
+            display: "flex",
+            flexDirection: "column",
+            gap: 2.25,
+          },
         },
       }}
-      // Lighter scrim so the text behind shows the change live.
-      slotProps={{ backdrop: { sx: { bgcolor: "rgba(46, 34, 22, 0.25)" } } }}
     >
       <Box sx={{ width: 36, height: 4, borderRadius: 1, bgcolor: "divider", alignSelf: "center" }} />
       <Typography component="h2" sx={{ position: "absolute", width: 1, height: 1, overflow: "hidden", clip: "rect(0 0 0 0)" }}>
@@ -60,8 +62,8 @@ const ReaderSettings = ({ open, onClose }: ReaderSettingsProps) => {
       </Typography>
 
       <Row label="අකුරු ප්‍රමාණය">
-        <Box display="flex" alignItems="center" gap={2} px={0.5}>
-          <Typography fontFamily={SERIF} fontSize={14} aria-hidden>
+        <Box sx={{ display: "flex", alignItems: "center", gap: 2, px: 0.5 }}>
+          <Typography aria-hidden sx={{ fontFamily: SERIF, fontSize: 14 }}>
             අ
           </Typography>
           <Slider
@@ -73,7 +75,7 @@ const ReaderSettings = ({ open, onClose }: ReaderSettingsProps) => {
             aria-label="අකුරු ප්‍රමාණය"
             valueLabelDisplay="auto"
           />
-          <Typography fontFamily={SERIF} fontSize={26} aria-hidden>
+          <Typography aria-hidden sx={{ fontFamily: SERIF, fontSize: 26 }}>
             අ
           </Typography>
         </Box>
@@ -97,7 +99,7 @@ const ReaderSettings = ({ open, onClose }: ReaderSettingsProps) => {
       </Row>
 
       <Row label="තේමාව">
-        <Box display="grid" gridTemplateColumns="repeat(3, 1fr)" gap={1.25} role="radiogroup" aria-label="තේමාව">
+        <Box role="radiogroup" aria-label="තේමාව" sx={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 1.25 }}>
           {THEMES.map(({ mode, label }) => {
             const t = TOKENS[mode];
             const selected = themeMode === mode;
@@ -122,7 +124,7 @@ const ReaderSettings = ({ open, onClose }: ReaderSettingsProps) => {
                   fontSize: 12,
                 }}
               >
-                <Typography component="span" fontFamily={SERIF} fontSize={18} lineHeight={1}>
+                <Typography component="span" sx={{ fontFamily: SERIF, fontSize: 18, lineHeight: 1 }}>
                   අ
                 </Typography>
                 {label}
@@ -132,8 +134,8 @@ const ReaderSettings = ({ open, onClose }: ReaderSettingsProps) => {
         </Box>
       </Row>
 
-      <Box display="flex" alignItems="center" justifyContent="space-between">
-        <Typography component="label" htmlFor="keep-awake" fontSize={15}>
+      <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+        <Typography component="label" htmlFor="keep-awake" sx={{ fontSize: 15 }}>
           තිරය නිවී යාම වළක්වන්න
         </Typography>
         <Switch id="keep-awake" checked={keepAwake} onChange={(_, checked) => update({ keepAwake: checked })} />

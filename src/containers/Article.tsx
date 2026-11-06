@@ -180,7 +180,7 @@ const Article = () => {
           {article?.title}
         </Typography>
         {collection && (
-          <Typography align="center" color="text.secondary" fontSize={12.5} mt={0.5} mb={3}>
+          <Typography align="center" color="text.secondary" sx={{ fontSize: 12.5, mt: 0.5, mb: 3 }}>
             {collection.title}
             {position >= 0 && ` · ${position + 1} / ${siblings.length}`}
           </Typography>
@@ -191,10 +191,10 @@ const Article = () => {
           <Box sx={{ mt: 4, bgcolor: (t) => t.tokens.accentTint, borderRadius: 4, p: 2, display: "flex", flexDirection: "column", gap: 1.25 }}>
             {next ? (
               <>
-                <Typography fontSize={12.5} fontWeight={600} color="text.secondary">
+                <Typography color="text.secondary" sx={{ fontSize: 12.5, fontWeight: 600 }}>
                   ඊළඟට · {backLabel} {position + 2} / {siblings.length}
                 </Typography>
-                <Typography fontFamily={SERIF} fontWeight={600} fontSize={20}>
+                <Typography sx={{ fontFamily: SERIF, fontWeight: 600, fontSize: 20 }}>
                   {next.title}
                 </Typography>
                 <Button
@@ -211,7 +211,7 @@ const Article = () => {
                 </Button>
               </>
             ) : (
-              <Typography fontSize={14} color="text.secondary">
+              <Typography color="text.secondary" sx={{ fontSize: 14 }}>
                 {backLabel} එකතුවේ අවසාන පාඨයයි.
               </Typography>
             )}
@@ -225,7 +225,7 @@ const Article = () => {
   };
 
   const reader = (
-    <Box flex={1} minWidth={0}>
+    <Box sx={{ flex: 1, minWidth: 0 }}>
       <PageBar backTo={backTo} backLabel={backLabel} actions={loadState === "loaded" ? actions : undefined} progress={loadState === "loaded" ? progress : undefined} hidden={focused} />
       {focused && (
         <Box sx={{ position: "fixed", top: 0, left: 0, right: 0, height: 3, zIndex: 11, bgcolor: "divider" }}>
@@ -243,7 +243,7 @@ const Article = () => {
       </Backdrop>
 
       {wide && collection ? (
-        <Box display="flex" alignItems="flex-start">
+        <Box sx={{ display: "flex", alignItems: "flex-start" }}>
           <Box
             component="nav"
             aria-label={collection.title}
@@ -259,11 +259,11 @@ const Article = () => {
               bgcolor: "background.paper",
             }}
           >
-            <Box px={2.5} pt={2.5} pb={1.5}>
+            <Box sx={{ px: 2.5, pt: 2.5, pb: 1.5 }}>
               <Link to="/">
                 <Box component="img" src={themeMode === "night" ? LogoLamp : LogoSaffron} alt="වන්දනා" sx={{ height: 32, display: "block" }} />
               </Link>
-              <Typography fontSize={13} fontWeight={600} color="text.secondary" mt={2}>
+              <Typography color="text.secondary" sx={{ fontSize: 13, fontWeight: 600, mt: 2 }}>
                 {collection.title} · {siblings.length}
               </Typography>
             </Box>

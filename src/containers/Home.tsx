@@ -59,11 +59,11 @@ const Home = () => {
             state={{ resume: true, from: "/" }}
             sx={{ display: "flex", alignItems: "center", gap: 1.5, p: 2, borderRadius: 3.5, textDecoration: "none", color: "text.primary" }}
           >
-            <Box flex={1} minWidth={0}>
+            <Box sx={{ flex: 1, minWidth: 0 }}>
               <Typography sx={{ fontFamily: SERIF, fontWeight: 600, fontSize: 18 }} noWrap>
                 {continueArticle.title}
               </Typography>
-              <Typography color="text.secondary" fontSize={12.5}>
+              <Typography color="text.secondary" sx={{ fontSize: 12.5 }}>
                 {collections[continueArticle.collections?.[0] ?? ""]?.title}
                 {" · "}
                 {Math.round((lastRead?.progress ?? 0) * 100)}% කියවා ඇත
@@ -105,7 +105,7 @@ const Home = () => {
             </Typography>
             <Typography sx={{ fontFamily: SERIF, fontWeight: 600, fontSize: 19, lineHeight: 1.3 }}>{collection.title}</Typography>
             {COLLECTION_DESCRIPTIONS[id] && (
-              <Typography color="text.secondary" fontSize={12} lineHeight={1.45}>
+              <Typography color="text.secondary" sx={{ fontSize: 12, lineHeight: 1.45 }}>
                 {COLLECTION_DESCRIPTIONS[id]}
               </Typography>
             )}
@@ -116,7 +116,7 @@ const Home = () => {
       {favouriteArticles.length > 0 && (
         <>
           <SectionLabel>ප්‍රියතම</SectionLabel>
-          <Box display="flex" flexWrap="wrap" gap={1}>
+          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
             {favouriteArticles.map((article) => (
               <ButtonBase
                 key={article.id}
@@ -181,15 +181,15 @@ const Home = () => {
           px: 2.5,
         }}
       >
-        <Box maxWidth={COLUMN} mx="auto">
+        <Box sx={{ maxWidth: COLUMN, mx: "auto" }}>
           <Box component="img" src={night ? LogoLamp : Logo} alt="වන්දනා" sx={{ height: 38, display: "block" }} />
-          <Typography fontSize={13} sx={{ opacity: 0.9, mt: 1 }}>
+          <Typography sx={{ fontSize: 13, opacity: 0.9, mt: 1 }}>
             {greeting()}
           </Typography>
         </Box>
       </Box>
 
-      <Box px={2} maxWidth={COLUMN + 32} mx="auto">
+      <Box sx={{ px: 2, maxWidth: COLUMN + 32, mx: "auto" }}>
         <Paper
           component="form"
           role="search"
@@ -225,7 +225,7 @@ const Home = () => {
           )}
         </Paper>
 
-        <Box display="flex" flexDirection="column" gap={1.5} pt={2} pb={6}>
+        <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5, pt: 2, pb: 6 }}>
           {renderBody()}
         </Box>
       </Box>

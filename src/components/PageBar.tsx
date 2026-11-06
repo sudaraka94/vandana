@@ -63,11 +63,11 @@ const PageBar = ({ backTo, backLabel, actions, progress, hidden }: PageBarProps)
           sx={{ color: "primary.main", borderRadius: 2, px: 1, height: 44, gap: 0.5, minWidth: 0 }}
         >
           <ArrowBackIosNew sx={{ fontSize: 18 }} />
-          <Typography component="span" fontWeight={600} fontSize={15} noWrap>
+          <Typography component="span" noWrap sx={{ fontWeight: 600, fontSize: 15 }}>
             {backLabel}
           </Typography>
         </ButtonBase>
-        <Box flex={1} />
+        <Box sx={{ flex: 1 }} />
         {actions}
       </Box>
       {progress !== undefined && (
