@@ -191,12 +191,14 @@ for (const a of Object.values(menu.articles)) {
       `<h1>${esc(a.title)}</h1>`,
       `<p class="sub">${[a.english, a.note].filter(Boolean).map(esc).join(" · ")}</p>`,
       `<article>${data.content}</article>`,
+      data.translation ? `<h2>සිංහල අරුත</h2><article>${data.translation}</article>` : "",
+      data.source ? `<p class="sub">මූලාශ්‍රය: ${esc(data.source)}</p>` : "",
       siblings.length
         ? `<h2>${esc(menu.collections[cid].title)}</h2><ul>${siblings.map((s) => `<li><a href="/articles/${s.id}">${esc(articleName(s))}</a></li>`).join("")}</ul>`
         : "",
     ].join("\n"),
   });
-  fullText.push({ a, cid, text: toText(data.content) });
+  fullText.push({ a, cid, text: toText(data.content), meaning: data.translation ? toText(data.translation) : "", source: data.source });
 }
 
 // sitemap.xml
@@ -233,16 +235,18 @@ const full = [
   "",
   `> ${SITE.about}`,
   "",
-  ...fullText.flatMap(({ a, cid, text }) => [
+  ...fullText.flatMap(({ a, cid, text, meaning, source }) => [
     `## ${articleName(a)}`,
     "",
     `URL: ${abs(`/articles/${a.id}`)}`,
     cid ? `Collection: ${collectionName(cid)}` : "",
     a.note ? `Note: ${a.note}` : "",
     a.about ? `About: ${a.about}` : "",
+    source ? `Source: ${source}` : "",
     "",
     text,
     "",
+    ...(meaning ? ["### Sinhala meaning (සිංහල අරුත)", "", meaning, ""] : []),
   ]),
 ];
 fs.writeFileSync(path.join(OUT, "llms-full.txt"), full.filter((l, i, arr) => l !== "" || arr[i - 1] !== "").join("\n"));

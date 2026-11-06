@@ -8,6 +8,7 @@ keywords:
     - "anawumpiritha"
 collections:
     - "pirith"
+order: 350
 ---
 <p>
   යෙ සන්තා සන්ත චිත්තා තිසරණ සරණා එත්ථ ලොකන්තරෙවා<br />

@@ -1,5 +1,60 @@
 {
   "articles": {
+    "adiththapariyaya-suthraya": {
+      "id": "adiththapariyaya-suthraya",
+      "title": "ආදිත්තපරියාය සූත්‍රය",
+      "keywords": [
+        "ආදිත්තපරියාය සූත්‍රය",
+        "adittapariyayasutta",
+        "adiththapariyayasuthraya",
+        "Adittapariyaya Sutta"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "note": "සියල්ල ඇවිළ ගෙන ඇති බව දෙසූ ගිනි දේශනාව",
+      "english": "Adittapariyaya Sutta",
+      "about": "The fire sermon: everything is burning with greed, hatred and delusion.",
+      "description": "ආදිත්තපරියාය සූත්‍රය (Adittapariyaya Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. සියල්ල ඇවිළ ගෙන ඇති බව දෙසූ ගිනි දේශනාව. The fire sermon: everything is burning with greed, hatred and delusion.",
+      "order": 300
+    },
+    "alawaka-suthraya": {
+      "id": "alawaka-suthraya",
+      "title": "ආළවක සූත්‍රය",
+      "keywords": [
+        "ආළවක සූත්‍රය",
+        "alavakasutta",
+        "alawakasuthraya",
+        "Alavaka Sutta"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "note": "ආළවක යක්ෂයාගේ ප්‍රශ්නවලට බුදුරදුන් දුන් පිළිතුරු",
+      "english": "Alavaka Sutta",
+      "about": "The Buddha's answers to the questions of the yakkha Alavaka, who then became his follower.",
+      "description": "ආළවක සූත්‍රය (Alavaka Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. ආළවක යක්ෂයාගේ ප්‍රශ්නවලට බුදුරදුන් දුන් පිළිතුරු. The Buddha's answers to the questions of the yakkha Alavaka, who then became his follower.",
+      "order": 230
+    },
+    "anaththalakkhana-suthraya": {
+      "id": "anaththalakkhana-suthraya",
+      "title": "අනත්තලක්ඛණ සූත්‍රය",
+      "keywords": [
+        "අනත්තලක්ඛණ සූත්‍රය",
+        "පඤ්චවග්ගිය සූත්‍රය",
+        "anattalakkhanasutta",
+        "anaththalakkhanasuthraya",
+        "Anattalakkhana Sutta"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "note": "පස්වග මහණුන්ට දෙසූ අනාත්ම ලක්ෂණය",
+      "english": "Anattalakkhana Sutta",
+      "about": "The characteristic of not-self, the second discourse, taught to the five ascetics.",
+      "description": "අනත්තලක්ඛණ සූත්‍රය (Anattalakkhana Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. පස්වග මහණුන්ට දෙසූ අනාත්ම ලක්ෂණය. The characteristic of not-self, the second discourse, taught to the five ascetics.",
+      "order": 290
+    },
     "anawum-piritha": {
       "id": "anawum-piritha",
       "title": "ඇනවුම් පිරිත",
@@ -14,7 +69,26 @@
       "note": "පිරිත් සජ්ඣායනයට පෙර දෙවියන්ට ආරාධනා කරන ගාථා",
       "english": "Anawum Piritha",
       "about": "Verses chanted at the start of a pirith ceremony to invite the deities to come and listen.",
-      "description": "ඇනවුම් පිරිත (Anawum Piritha) සම්පූර්ණ පාඨය සිංහලෙන්. පිරිත් සජ්ඣායනයට පෙර දෙවියන්ට ආරාධනා කරන ගාථා. Verses chanted at the start of a pirith ceremony to invite the deities to come and listen."
+      "description": "ඇනවුම් පිරිත (Anawum Piritha) සම්පූර්ණ පාඨය සිංහලෙන්. පිරිත් සජ්ඣායනයට පෙර දෙවියන්ට ආරාධනා කරන ගාථා. Verses chanted at the start of a pirith ceremony to invite the deities to come and listen.",
+      "order": 350
+    },
+    "atanatiya-suthraya": {
+      "id": "atanatiya-suthraya",
+      "title": "ආටානාටිය සූත්‍රය",
+      "keywords": [
+        "ආටානාටිය සූත්‍රය",
+        "atanatiyasutta",
+        "atanatiyasuthraya",
+        "Atanatiya Sutta"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "note": "සතර වරම් දෙවියන් දුන් ආරක්ෂක පිරිත",
+      "english": "Atanatiya Sutta",
+      "about": "A protection given by the Four Great Kings against harmful spirits.",
+      "description": "ආටානාටිය සූත්‍රය (Atanatiya Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. සතර වරම් දෙවියන් දුන් ආරක්ෂක පිරිත. A protection given by the Four Great Kings against harmful spirits.",
+      "order": 280
     },
     "atawisi-piritha": {
       "id": "atawisi-piritha",
@@ -30,7 +104,8 @@
       "note": "බුදුවරුන් විසිඅට නමගේ නාමයන් සිහිකරන ගාථා",
       "english": "Atawisi Piritha",
       "about": "Verses recalling the names of the twenty-eight Buddhas, chanted for protection and blessings.",
-      "description": "අටවිසි පිරිත (Atawisi Piritha) සම්පූර්ණ පාඨය සිංහලෙන්. බුදුවරුන් විසිඅට නමගේ නාමයන් සිහිකරන ගාථා. Verses recalling the names of the twenty-eight Buddhas, chanted for protection and blessings."
+      "description": "අටවිසි පිරිත (Atawisi Piritha) සම්පූර්ණ පාඨය සිංහලෙන්. බුදුවරුන් විසිඅට නමගේ නාමයන් සිහිකරන ගාථා. Verses recalling the names of the twenty-eight Buddhas, chanted for protection and blessings.",
+      "order": 340
     },
     "bojjanga-piritha": {
       "id": "bojjanga-piritha",
@@ -46,7 +121,8 @@
       "note": "සප්ත බොජ්ඣංග සිහිකරමින් රෝගීන්ගේ සුවය පතා කියන පිරිත",
       "english": "Bojjhanga Piritha",
       "about": "The seven factors of enlightenment (bojjhanga), traditionally chanted for people who are ill.",
-      "description": "බොජ්ඣංග පිරිත (Bojjhanga Piritha) සම්පූර්ණ පාඨය සිංහලෙන්. සප්ත බොජ්ඣංග සිහිකරමින් රෝගීන්ගේ සුවය පතා කියන පිරිත. The seven factors of enlightenment (bojjhanga), traditionally chanted for people who are ill."
+      "description": "බොජ්ඣංග පිරිත (Bojjhanga Piritha) සම්පූර්ණ පාඨය සිංහලෙන්. සප්ත බොජ්ඣංග සිහිකරමින් රෝගීන්ගේ සුවය පතා කියන පිරිත. The seven factors of enlightenment (bojjhanga), traditionally chanted for people who are ill.",
+      "order": 310
     },
     "buddhapuja-ghatha": {
       "id": "buddhapuja-ghatha",
@@ -64,6 +140,61 @@
       "about": "Verses for offering lamps, incense, flowers and food to the Buddha.",
       "description": "බුද්ධ පූජා ගාථා (Buddha Puja Gatha) සම්පූර්ණ පාඨය සිංහලෙන්. පහන්, සුවඳ, මල් ආදිය බුදුරජුන්ට පූජා කරන ගාථා. Verses for offering lamps, incense, flowers and food to the Buddha."
     },
+    "chanda-piritha": {
+      "id": "chanda-piritha",
+      "title": "චන්ද පරිත්තය",
+      "keywords": [
+        "චන්ද පරිත්තය",
+        "චන්දිම සූත්‍රය",
+        "candaparitta",
+        "chandapiritha",
+        "Canda Paritta"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "note": "රාහුගෙන් චන්ද්‍ර දිව්‍ය පුත්‍රයා බේරාගත් පිරිත",
+      "english": "Canda Paritta",
+      "about": "The moon deity, seized by Rahu, is set free when he goes for refuge to the Buddha.",
+      "description": "චන්ද පරිත්තය (Canda Paritta) සම්පූර්ණ පාඨය සිංහලෙන්. රාහුගෙන් චන්ද්‍ර දිව්‍ය පුත්‍රයා බේරාගත් පිරිත. The moon deity, seized by Rahu, is set free when he goes for refuge to the Buddha.",
+      "order": 130
+    },
+    "dasa-sikkhapada": {
+      "id": "dasa-sikkhapada",
+      "title": "දස සික්ඛාපද",
+      "keywords": [
+        "දස සික්ඛාපද",
+        "දසසික්ඛාපදය",
+        "dasasikkhapada",
+        "Dasa Sikkhapada"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "note": "සාමණේරයන් රකින දස ශික්ෂා පද",
+      "english": "Dasa Sikkhapada",
+      "about": "The ten training precepts undertaken by novice monks and by lay people on special days.",
+      "description": "දස සික්ඛාපද (Dasa Sikkhapada) සම්පූර්ණ පාඨය සිංහලෙන්. සාමණේරයන් රකින දස ශික්ෂා පද. The ten training precepts undertaken by novice monks and by lay people on special days.",
+      "order": 20
+    },
+    "dasadhamma-suthraya": {
+      "id": "dasadhamma-suthraya",
+      "title": "දසධම්ම සූත්‍රය",
+      "keywords": [
+        "දසධම්ම සූත්‍රය",
+        "dasadhammasutta",
+        "dasadhammasuthraya",
+        "Dasadhamma Sutta"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "note": "පැවිද්දන් නිතර මෙනෙහි කළ යුතු කරුණු දහය",
+      "english": "Dasadhamma Sutta",
+      "about": "Ten things a monk should reflect on often.",
+      "description": "දසධම්ම සූත්‍රය (Dasadhamma Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. පැවිද්දන් නිතර මෙනෙහි කළ යුතු කරුණු දහය. Ten things a monk should reflect on often.",
+      "order": 50
+    },
     "deviyanta-pindeema": {
       "id": "deviyanta-pindeema",
       "title": "දෙවියන්ට පින්දීම",
@@ -80,6 +211,24 @@
       "about": "Verses for sharing the merit of a good deed with the deities and all beings (Ettavata ca amhehi).",
       "description": "දෙවියන්ට පින්දීම (Merit sharing with the deities) සම්පූර්ණ පාඨය සිංහලෙන්. කළ පින් දෙවියන්ට හා සියලු සතුන්ට අනුමෝදන් කරවන ගාථා. Verses for sharing the merit of a good deed with the deities and all beings (Ettavata ca amhehi)."
     },
+    "dhajagga-suthraya": {
+      "id": "dhajagga-suthraya",
+      "title": "ධජග්ග සූත්‍රය",
+      "keywords": [
+        "ධජග්ග සූත්‍රය",
+        "dhajaggasutta",
+        "dhajaggasuthraya",
+        "Dhajagga Sutta"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "note": "බිය දුරු කරන තෙරුවන් ගුණ සිහිය",
+      "english": "Dhajagga Sutta",
+      "about": "The banner's crest: recollecting the Buddha, Dhamma and Sangha to overcome fear.",
+      "description": "ධජග්ග සූත්‍රය (Dhajagga Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. බිය දුරු කරන තෙරුවන් ගුණ සිහිය. The banner's crest: recollecting the Buddha, Dhamma and Sangha to overcome fear.",
+      "order": 150
+    },
     "dhamma-chakka-pawattana-sutta": {
       "id": "dhamma-chakka-pawattana-sutta",
       "title": "ධම්මචක්කපවත්තන සූත්‍රය",
@@ -94,7 +243,25 @@
       "note": "බුදුරජුන් වදාළ පළමු දේශනාව, චතුරාර්ය සත්‍යය",
       "english": "Dhammacakkappavattana Sutta",
       "about": "The Buddha's first sermon at Isipatana, which sets out the Four Noble Truths and the Noble Eightfold Path.",
-      "description": "ධම්මචක්කපවත්තන සූත්‍රය (Dhammacakkappavattana Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. බුදුරජුන් වදාළ පළමු දේශනාව, චතුරාර්ය සත්‍යය. The Buddha's first sermon at Isipatana, which sets out the Four Noble Truths and the Noble Eightfold Path."
+      "description": "ධම්මචක්කපවත්තන සූත්‍රය (Dhammacakkappavattana Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. බුදුරජුන් වදාළ පළමු දේශනාව, චතුරාර්ය සත්‍යය. The Buddha's first sermon at Isipatana, which sets out the Four Noble Truths and the Noble Eightfold Path.",
+      "order": 210
+    },
+    "dvattimsakaraya": {
+      "id": "dvattimsakaraya",
+      "title": "ද්වත්තිංසාකාරය",
+      "keywords": [
+        "ද්වත්තිංසාකාරය",
+        "dvattimsakara",
+        "dwaththinsakaraya"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "note": "ශරීරයේ කොටස් තිස් දෙක මෙනෙහි කිරීම",
+      "english": "Dvattimsakara",
+      "about": "The thirty-two parts of the body, recited as a reflection on the body.",
+      "description": "ද්වත්තිංසාකාරය (Dvattimsakara) සම්පූර්ණ පාඨය සිංහලෙන්. ශරීරයේ කොටස් තිස් දෙක මෙනෙහි කිරීම. The thirty-two parts of the body, recited as a reflection on the body.",
+      "order": 40
     },
     "girimananda-suthraya": {
       "id": "girimananda-suthraya",
@@ -110,7 +277,26 @@
       "note": "ගිරිමානන්ද තෙරුන් රෝගයෙන් සුව කළ දස සංඥා දේශනාව",
       "english": "Girimananda Sutta",
       "about": "The ten perceptions taught for the ill Venerable Girimananda, traditionally chanted for the sick.",
-      "description": "ගිරිමානන්‍ද සූත්‍රය (Girimananda Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. ගිරිමානන්ද තෙරුන් රෝගයෙන් සුව කළ දස සංඥා දේශනාව. The ten perceptions taught for the ill Venerable Girimananda, traditionally chanted for the sick."
+      "description": "ගිරිමානන්‍ද සූත්‍රය (Girimananda Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. ගිරිමානන්ද තෙරුන් රෝගයෙන් සුව කළ දස සංඥා දේශනාව. The ten perceptions taught for the ill Venerable Girimananda, traditionally chanted for the sick.",
+      "order": 190
+    },
+    "isigili-suthraya": {
+      "id": "isigili-suthraya",
+      "title": "ඉසිගිලි සූත්‍රය",
+      "keywords": [
+        "ඉසිගිලි සූත්‍රය",
+        "isigilisutta",
+        "isigilisuthraya",
+        "Isigili Sutta"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "note": "ඉසිගිලි පර්වතයේ වැඩ සිටි පසේබුදුවරුන්ගේ නාම",
+      "english": "Isigili Sutta",
+      "about": "The names of the Paccekabuddhas who lived on Isigili mountain.",
+      "description": "ඉසිගිලි සූත්‍රය (Isigili Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. ඉසිගිලි පර්වතයේ වැඩ සිටි පසේබුදුවරුන්ගේ නාම. The names of the Paccekabuddhas who lived on Isigili mountain.",
+      "order": 200
     },
     "jaya-piritha": {
       "id": "jaya-piritha",
@@ -126,7 +312,8 @@
       "note": "ජයග්‍රහණය හා සෙත පතා කියන පිරිත",
       "english": "Jaya Piritha",
       "about": "Verses recalling the Buddha's virtues and victory, chanted for success, protection and blessings.",
-      "description": "ජය පිරිත (Jaya Piritha) සම්පූර්ණ පාඨය සිංහලෙන්. ජයග්‍රහණය හා සෙත පතා කියන පිරිත. Verses recalling the Buddha's virtues and victory, chanted for success, protection and blessings."
+      "description": "ජය පිරිත (Jaya Piritha) සම්පූර්ණ පාඨය සිංහලෙන්. ජයග්‍රහණය හා සෙත පතා කියන පිරිත. Verses recalling the Buddha's virtues and victory, chanted for success, protection and blessings.",
+      "order": 320
     },
     "jinapanjaraya": {
       "id": "jinapanjaraya",
@@ -142,7 +329,8 @@
       "note": "බුදුවරුන් හා මහ රහතුන් සිරුර වටා ආරක්ෂාවට පිහිටුවා ගන්නා ගාථා",
       "english": "Jina Panjaraya",
       "about": "The 'Buddha's cage': verses that place the Buddhas and great disciples around the body for protection.",
-      "description": "ජින පඤ්ජරය (Jina Panjaraya) සම්පූර්ණ පාඨය සිංහලෙන්. බුදුවරුන් හා මහ රහතුන් සිරුර වටා ආරක්ෂාවට පිහිටුවා ගන්නා ගාථා. The 'Buddha's cage': verses that place the Buddhas and great disciples around the body for protection."
+      "description": "ජින පඤ්ජරය (Jina Panjaraya) සම්පූර්ණ පාඨය සිංහලෙන්. බුදුවරුන් හා මහ රහතුන් සිරුර වටා ආරක්ෂාවට පිහිටුවා ගන්නා ගාථා. The 'Buddha's cage': verses that place the Buddhas and great disciples around the body for protection.",
+      "order": 360
     },
     "karaneeyameththa-suthraya": {
       "id": "karaneeyameththa-suthraya",
@@ -158,7 +346,65 @@
       "note": "සියලු සත්වයන් කෙරෙහි මෛත්‍රිය වඩන සූත්‍රය",
       "english": "Karaniya Metta Sutta",
       "about": "The discourse on loving-kindness towards all beings, chanted for protection and peace of mind.",
-      "description": "කරණීයමෙත්ත සූත්‍රය (Karaniya Metta Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. සියලු සත්වයන් කෙරෙහි මෛත්‍රිය වඩන සූත්‍රය. The discourse on loving-kindness towards all beings, chanted for protection and peace of mind."
+      "description": "කරණීයමෙත්ත සූත්‍රය (Karaniya Metta Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. සියලු සත්වයන් කෙරෙහි මෛත්‍රිය වඩන සූත්‍රය. The discourse on loving-kindness towards all beings, chanted for protection and peace of mind.",
+      "order": 80
+    },
+    "kasibharadwaja-suthraya": {
+      "id": "kasibharadwaja-suthraya",
+      "title": "කසීභාරද්වාජ සූත්‍රය",
+      "keywords": [
+        "කසීභාරද්වාජ සූත්‍රය",
+        "kasibharadvajasutta",
+        "kasibharadwajasuthraya",
+        "Kasi Bharadvaja Sutta"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "note": "කසීභාරද්වාජ බමුණාට දෙසූ දහම් සීසෑම",
+      "english": "Kasi Bharadvaja Sutta",
+      "about": "The Dhamma as ploughing, taught to the farming brahmin Kasi Bharadvaja.",
+      "description": "කසීභාරද්වාජ සූත්‍රය (Kasi Bharadvaja Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. කසීභාරද්වාජ බමුණාට දෙසූ දහම් සීසෑම. The Dhamma as ploughing, taught to the farming brahmin Kasi Bharadvaja.",
+      "order": 240
+    },
+    "khandha-piritha": {
+      "id": "khandha-piritha",
+      "title": "ඛන්ධ පරිත්තය",
+      "keywords": [
+        "ඛන්ධ පරිත්තය",
+        "ඛන්ධ පිරිත",
+        "අහි මෙත්ත සූත්‍රය",
+        "khandhaparitta",
+        "khandhapiritha",
+        "Khandha Paritta"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "note": "සර්පයන් ඇතුළු සියලු සතුන් කෙරෙහි මෛත්‍රිය",
+      "english": "Khandha Paritta",
+      "about": "Loving-kindness to all kinds of snakes and creatures, taught after a monk died of snakebite; chanted for protection.",
+      "description": "ඛන්ධ පරිත්තය (Khandha Paritta) සම්පූර්ණ පාඨය සිංහලෙන්. සර්පයන් ඇතුළු සියලු සතුන් කෙරෙහි මෛත්‍රිය. Loving-kindness to all kinds of snakes and creatures, taught after a monk died of snakebite; chanted for protection.",
+      "order": 90
+    },
+    "mahachunda-bojjanga-suthraya": {
+      "id": "mahachunda-bojjanga-suthraya",
+      "title": "මහාචුන්ද බොජ්ඣංග සූත්‍රය",
+      "keywords": [
+        "මහාචුන්ද බොජ්ඣංග සූත්‍රය",
+        "තතිය ගිලාන සූත්‍රය",
+        "mahacundabojjhangasutta",
+        "bojjangasuthraya",
+        "Maha Cunda Bojjhanga Sutta"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "note": "ගිලන් වූ බුදුරදුන් හමුවේ චුන්ද තෙරුන් කී බොජ්ඣංග",
+      "english": "Maha Cunda Bojjhanga Sutta",
+      "about": "The seven factors of awakening, recited by Venerable Cunda when the Buddha himself was ill.",
+      "description": "මහාචුන්ද බොජ්ඣංග සූත්‍රය (Maha Cunda Bojjhanga Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. ගිලන් වූ බුදුරදුන් හමුවේ චුන්ද තෙරුන් කී බොජ්ඣංග. The seven factors of awakening, recited by Venerable Cunda when the Buddha himself was ill.",
+      "order": 180
     },
     "mahajayamangala-gatha": {
       "id": "mahajayamangala-gatha",
@@ -174,7 +420,27 @@
       "note": "ජය මංගලය හා සෙත පතා කියන ගාථා",
       "english": "Maha Jaya Mangala Gatha",
       "about": "Verses wishing victory and blessings, often chanted at the end of a pirith ceremony.",
-      "description": "මහා ජයමංගල ගාථා (Maha Jaya Mangala Gatha) සම්පූර්ණ පාඨය සිංහලෙන්. ජය මංගලය හා සෙත පතා කියන ගාථා. Verses wishing victory and blessings, often chanted at the end of a pirith ceremony."
+      "description": "මහා ජයමංගල ගාථා (Maha Jaya Mangala Gatha) සම්පූර්ණ පාඨය සිංහලෙන්. ජය මංගලය හා සෙත පතා කියන ගාථා. Verses wishing victory and blessings, often chanted at the end of a pirith ceremony.",
+      "order": 330
+    },
+    "mahakassapa-bojjanga-suthraya": {
+      "id": "mahakassapa-bojjanga-suthraya",
+      "title": "මහාකස්සප බොජ්ඣංග සූත්‍රය",
+      "keywords": [
+        "මහාකස්සප බොජ්ඣංග සූත්‍රය",
+        "ගිලාන සූත්‍රය",
+        "mahakassapabojjhangasutta",
+        "bojjangasuthraya",
+        "Maha Kassapa Bojjhanga Sutta"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "note": "ගිලන් වූ මහා කස්සප තෙරුන්ට දෙසූ බොජ්ඣංග",
+      "english": "Maha Kassapa Bojjhanga Sutta",
+      "about": "The seven factors of awakening, taught to the ill Venerable Maha Kassapa, who recovered.",
+      "description": "මහාකස්සප බොජ්ඣංග සූත්‍රය (Maha Kassapa Bojjhanga Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. ගිලන් වූ මහා කස්සප තෙරුන්ට දෙසූ බොජ්ඣංග. The seven factors of awakening, taught to the ill Venerable Maha Kassapa, who recovered.",
+      "order": 160
     },
     "mahamangala-suthraya": {
       "id": "mahamangala-suthraya",
@@ -190,7 +456,100 @@
       "note": "ජීවිතයට උතුම් මංගල කරුණු තිස් අට",
       "english": "Maha Mangala Sutta",
       "about": "The Buddha's discourse on the thirty-eight highest blessings in life.",
-      "description": "මහා මංගල සූත්‍ර‍ය (Maha Mangala Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. ජීවිතයට උතුම් මංගල කරුණු තිස් අට. The Buddha's discourse on the thirty-eight highest blessings in life."
+      "description": "මහා මංගල සූත්‍ර‍ය (Maha Mangala Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. ජීවිතයට උතුම් මංගල කරුණු තිස් අට. The Buddha's discourse on the thirty-eight highest blessings in life.",
+      "order": 60
+    },
+    "mahamoggallana-bojjanga-suthraya": {
+      "id": "mahamoggallana-bojjanga-suthraya",
+      "title": "මහාමොග්ගල්ලාන බොජ්ඣංග සූත්‍රය",
+      "keywords": [
+        "මහාමොග්ගල්ලාන බොජ්ඣංග සූත්‍රය",
+        "දුතිය ගිලාන සූත්‍රය",
+        "mahamoggallanabojjhangasutta",
+        "bojjangasuthraya",
+        "Maha Moggallana Bojjhanga Sutta"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "note": "ගිලන් වූ මහා මොග්ගල්ලාන තෙරුන්ට දෙසූ බොජ්ඣංග",
+      "english": "Maha Moggallana Bojjhanga Sutta",
+      "about": "The seven factors of awakening, taught to the ill Venerable Maha Moggallana, who recovered.",
+      "description": "මහාමොග්ගල්ලාන බොජ්ඣංග සූත්‍රය (Maha Moggallana Bojjhanga Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. ගිලන් වූ මහා මොග්ගල්ලාන තෙරුන්ට දෙසූ බොජ්ඣංග. The seven factors of awakening, taught to the ill Venerable Maha Moggallana, who recovered.",
+      "order": 170
+    },
+    "mahasamaya-suthraya": {
+      "id": "mahasamaya-suthraya",
+      "title": "මහාසමය සූත්‍රය",
+      "keywords": [
+        "මහාසමය සූත්‍රය",
+        "mahasamayasutta",
+        "mahasamayasuthraya",
+        "Mahasamaya Sutta"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "note": "බුදුරදුන් දැකීමට රැස් වූ දෙවි බඹුන්ගේ මහා සමාගමය",
+      "english": "Mahasamaya Sutta",
+      "about": "The great assembly of deities who gathered to see the Buddha and the Sangha.",
+      "description": "මහාසමය සූත්‍රය (Mahasamaya Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. බුදුරදුන් දැකීමට රැස් වූ දෙවි බඹුන්ගේ මහා සමාගමය. The great assembly of deities who gathered to see the Buddha and the Sangha.",
+      "order": 220
+    },
+    "meththanisansa-suthraya": {
+      "id": "meththanisansa-suthraya",
+      "title": "මෙත්තානිසංස සූත්‍රය",
+      "keywords": [
+        "මෙත්තානිසංස සූත්‍රය",
+        "mettanisamsasutta",
+        "meththanisansasuthraya",
+        "Mettanisamsa Sutta"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "note": "මෛත්‍රිය වැඩීමේ ආනිසංස එකොළහ",
+      "english": "Mettanisamsa Sutta",
+      "about": "The eleven benefits of developing loving-kindness.",
+      "description": "මෙත්තානිසංස සූත්‍රය (Mettanisamsa Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. මෛත්‍රිය වැඩීමේ ආනිසංස එකොළහ. The eleven benefits of developing loving-kindness.",
+      "order": 100
+    },
+    "miththanisansa-gatha": {
+      "id": "miththanisansa-gatha",
+      "title": "මිත්තානිසංස ගාථා",
+      "keywords": [
+        "මිත්තානිසංස ගාථා",
+        "මිත්තානිසංසය",
+        "mittanisamsa",
+        "miththanisansa"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "note": "මිත්‍රයන්ට ද්‍රෝහි නොවන්නාට ලැබෙන ආනිසංස",
+      "english": "Mittanisamsa",
+      "about": "Verses on the blessings that come to one who is loyal to friends, from the Mugapakkha Jataka.",
+      "description": "මිත්තානිසංස ගාථා (Mittanisamsa) සම්පූර්ණ පාඨය සිංහලෙන්. මිත්‍රයන්ට ද්‍රෝහි නොවන්නාට ලැබෙන ආනිසංස. Verses on the blessings that come to one who is loyal to friends, from the Mugapakkha Jataka.",
+      "order": 110
+    },
+    "mora-piritha": {
+      "id": "mora-piritha",
+      "title": "මෝර පරිත්තය",
+      "keywords": [
+        "මෝර පරිත්තය",
+        "මෝර පිරිත",
+        "moraparitta",
+        "morapiritha",
+        "Mora Paritta"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "note": "මොනරා උදේ හවා කළ ආරක්ෂක පිරිත",
+      "english": "Mora Paritta",
+      "about": "The peacock's protection, recited morning and evening by the Bodhisatta as a golden peacock.",
+      "description": "මෝර පරිත්තය (Mora Paritta) සම්පූර්ණ පාඨය සිංහලෙන්. මොනරා උදේ හවා කළ ආරක්ෂක පිරිත. The peacock's protection, recited morning and evening by the Bodhisatta as a golden peacock.",
+      "order": 120
     },
     "namaskaraya": {
       "id": "namaskaraya",
@@ -208,6 +567,24 @@
       "about": "The homage 'Namo tassa', taking the Triple Refuge, and verses for worshipping the Buddha.",
       "description": "නමස්කාරය හා බුද්ධ වන්දනා (Namaskaraya and Buddha Vandana) සම්පූර්ණ පාඨය සිංහලෙන්. නමෝ තස්ස, තිසරණය සහ බුදුරජුන් වැඳීම. The homage 'Namo tassa', taking the Triple Refuge, and verses for worshipping the Buddha."
     },
+    "parabhawa-suthraya": {
+      "id": "parabhawa-suthraya",
+      "title": "පරාභව සූත්‍රය",
+      "keywords": [
+        "පරාභව සූත්‍රය",
+        "parabhavasutta",
+        "parabhawasuthraya",
+        "Parabhava Sutta"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "note": "පිරිහීමට හේතු වන කරුණු",
+      "english": "Parabhava Sutta",
+      "about": "The causes of downfall in a person's life.",
+      "description": "පරාභව සූත්‍රය (Parabhava Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. පිරිහීමට හේතු වන කරුණු. The causes of downfall in a person's life.",
+      "order": 250
+    },
     "rathana-suthraya": {
       "id": "rathana-suthraya",
       "title": "රතන සූත්‍රය",
@@ -222,7 +599,8 @@
       "note": "විසාලා මහනුවර දුර්භික්ෂ, රෝග හා අමනුෂ්‍ය බිය දුරු කළ සූත්‍රය",
       "english": "Ratana Sutta",
       "about": "The 'Jewel discourse', chanted to dispel famine, disease and fear in Vesali; one of the main protective suttas.",
-      "description": "රතන සූත්‍රය (Ratana Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. විසාලා මහනුවර දුර්භික්ෂ, රෝග හා අමනුෂ්‍ය බිය දුරු කළ සූත්‍රය. The 'Jewel discourse', chanted to dispel famine, disease and fear in Vesali; one of the main protective suttas."
+      "description": "රතන සූත්‍රය (Ratana Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. විසාලා මහනුවර දුර්භික්ෂ, රෝග හා අමනුෂ්‍ය බිය දුරු කළ සූත්‍රය. The 'Jewel discourse', chanted to dispel famine, disease and fear in Vesali; one of the main protective suttas.",
+      "order": 70
     },
     "sachchavibhanga-suthraya": {
       "id": "sachchavibhanga-suthraya",
@@ -238,7 +616,44 @@
       "note": "චතුරාර්ය සත්‍යය විස්තරාත්මකව විග්‍රහ කරන සූත්‍රය",
       "english": "Saccavibhanga Sutta",
       "about": "A detailed analysis of the Four Noble Truths, given by Venerable Sariputta.",
-      "description": "සච්චවිභඞ්ග සූත්‍රය (Saccavibhanga Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. චතුරාර්ය සත්‍යය විස්තරාත්මකව විග්‍රහ කරන සූත්‍රය. A detailed analysis of the Four Noble Truths, given by Venerable Sariputta."
+      "description": "සච්චවිභඞ්ග සූත්‍රය (Saccavibhanga Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. චතුරාර්ය සත්‍යය විස්තරාත්මකව විග්‍රහ කරන සූත්‍රය. A detailed analysis of the Four Noble Truths, given by Venerable Sariputta.",
+      "order": 270
+    },
+    "samanera-panhaya": {
+      "id": "samanera-panhaya",
+      "title": "සාමණේර පඤ්හය",
+      "keywords": [
+        "සාමණේර පඤ්හය",
+        "කුමාරපඤ්හ",
+        "samanerapanha",
+        "kumarapanha",
+        "Samanera Panha"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "note": "එකේ සිට දහය දක්වා දහම් ප්‍රශ්නෝත්තර",
+      "english": "Samanera Panha",
+      "about": "The novice's questions: ten questions and answers on the Dhamma, from one to ten.",
+      "description": "සාමණේර පඤ්හය (Samanera Panha) සම්පූර්ණ පාඨය සිංහලෙන්. එකේ සිට දහය දක්වා දහම් ප්‍රශ්නෝත්තර. The novice's questions: ten questions and answers on the Dhamma, from one to ten.",
+      "order": 30
+    },
+    "saranagamanaya": {
+      "id": "saranagamanaya",
+      "title": "සරණගමනය",
+      "keywords": [
+        "සරණගමනය",
+        "saranagamana",
+        "tisarana"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "note": "බුදු, දහම්, සඟ යන තෙරුවන් සරණ යෑම",
+      "english": "Saranagamana",
+      "about": "Going for refuge to the Buddha, the Dhamma and the Sangha, three times; recited at the start of every chanting.",
+      "description": "සරණගමනය (Saranagamana) සම්පූර්ණ පාඨය සිංහලෙන්. බුදු, දහම්, සඟ යන තෙරුවන් සරණ යෑම. Going for refuge to the Buddha, the Dhamma and the Sangha, three times; recited at the start of every chanting.",
+      "order": 10
     },
     "seth-pathima": {
       "id": "seth-pathima",
@@ -256,6 +671,25 @@
       "about": "Blessing verses wishing health, long life and freedom from danger (Sabbitiyo vivajjantu).",
       "description": "සෙත් පැතීම (Seth Pathima) සම්පූර්ණ පාඨය සිංහලෙන්. සුවය, දීර්ඝායුෂ හා සෙත පතා කියන ගාථා. Blessing verses wishing health, long life and freedom from danger (Sabbitiyo vivajjantu)."
     },
+    "suriya-piritha": {
+      "id": "suriya-piritha",
+      "title": "සූරිය පරිත්තය",
+      "keywords": [
+        "සූරිය පරිත්තය",
+        "සූරිය සූත්‍රය",
+        "suriyaparitta",
+        "suriyapiritha",
+        "Suriya Paritta"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "note": "රාහුගෙන් සූර්ය දිව්‍ය පුත්‍රයා බේරාගත් පිරිත",
+      "english": "Suriya Paritta",
+      "about": "The sun deity, seized by Rahu, is set free when he goes for refuge to the Buddha.",
+      "description": "සූරිය පරිත්තය (Suriya Paritta) සම්පූර්ණ පාඨය සිංහලෙන්. රාහුගෙන් සූර්ය දිව්‍ය පුත්‍රයා බේරාගත් පිරිත. The sun deity, seized by Rahu, is set free when he goes for refuge to the Buddha.",
+      "order": 140
+    },
     "theruwan-vandanawa": {
       "id": "theruwan-vandanawa",
       "title": "තෙරුවන් වන්දනාව",
@@ -271,24 +705,66 @@
       "english": "Theruwan Vandanawa",
       "about": "Worship of the Triple Gem: verses recalling the qualities of the Buddha, Dhamma and Sangha (Itipiso).",
       "description": "තෙරුවන් වන්දනාව (Theruwan Vandanawa) සම්පූර්ණ පාඨය සිංහලෙන්. බුද්ධ, ධම්ම, සංඝ ගුණ සිහිකර තෙරුවන් වැඳීම. Worship of the Triple Gem: verses recalling the qualities of the Buddha, Dhamma and Sangha (Itipiso)."
+    },
+    "wasala-suthraya": {
+      "id": "wasala-suthraya",
+      "title": "වසල සූත්‍රය",
+      "keywords": [
+        "වසල සූත්‍රය",
+        "vasalasutta",
+        "wasalasuthraya",
+        "Vasala Sutta"
+      ],
+      "collections": [
+        "pirith"
+      ],
+      "note": "ක්‍රියාවෙන් පහත් අය වන්නේ කෙසේද",
+      "english": "Vasala Sutta",
+      "about": "One becomes an outcast or a noble one by deeds, not by birth.",
+      "description": "වසල සූත්‍රය (Vasala Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. ක්‍රියාවෙන් පහත් අය වන්නේ කෙසේද. One becomes an outcast or a noble one by deeds, not by birth.",
+      "order": 260
     }
   },
   "collections": {
     "pirith": {
       "title": "පිරිත්",
       "articles": [
+        "adiththapariyaya-suthraya",
+        "alawaka-suthraya",
+        "anaththalakkhana-suthraya",
         "anawum-piritha",
+        "atanatiya-suthraya",
         "atawisi-piritha",
         "bojjanga-piritha",
+        "chanda-piritha",
+        "dasa-sikkhapada",
+        "dasadhamma-suthraya",
+        "dhajagga-suthraya",
         "dhamma-chakka-pawattana-sutta",
+        "dvattimsakaraya",
         "girimananda-suthraya",
+        "isigili-suthraya",
         "jaya-piritha",
         "jinapanjaraya",
         "karaneeyameththa-suthraya",
+        "kasibharadwaja-suthraya",
+        "khandha-piritha",
+        "mahachunda-bojjanga-suthraya",
         "mahajayamangala-gatha",
+        "mahakassapa-bojjanga-suthraya",
         "mahamangala-suthraya",
+        "mahamoggallana-bojjanga-suthraya",
+        "mahasamaya-suthraya",
+        "meththanisansa-suthraya",
+        "miththanisansa-gatha",
+        "mora-piritha",
+        "parabhawa-suthraya",
         "rathana-suthraya",
-        "sachchavibhanga-suthraya"
+        "sachchavibhanga-suthraya",
+        "samanera-panhaya",
+        "saranagamanaya",
+        "suriya-piritha",
+        "wasala-suthraya"
       ]
     },
     "mulikaVandanawa": {
