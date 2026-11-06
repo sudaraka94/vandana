@@ -228,7 +228,7 @@ const Article = () => {
     <Box sx={{ flex: 1, minWidth: 0 }}>
       <PageBar backTo={backTo} backLabel={backLabel} actions={loadState === "loaded" ? actions : undefined} progress={loadState === "loaded" ? progress : undefined} hidden={focused} />
       {focused && (
-        <Box sx={{ position: "fixed", top: 0, left: 0, right: 0, height: 3, zIndex: 11, bgcolor: "divider" }}>
+        <Box sx={{ position: "fixed", top: "env(safe-area-inset-top, 0px)", left: 0, right: 0, height: 3, zIndex: 11, bgcolor: "divider" }}>
           <Box sx={{ height: "100%", width: `${Math.round(progress * 100)}%`, bgcolor: "primary.main" }} />
         </Box>
       )}
