@@ -1,11 +1,12 @@
 {
   "name": "vandana",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview",
-    "generate-content": "node ./scripts/generate-content.js"
+    "generate-content": "node ./scripts/generate-content.cjs"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
