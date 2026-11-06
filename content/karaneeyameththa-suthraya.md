@@ -1,5 +1,8 @@
 ---
 title: "කරණීයමෙත්ත සූත්‍රය"
+english: "Karaniya Metta Sutta"
+note: "සියලු සත්වයන් කෙරෙහි මෛත්‍රිය වඩන සූත්‍රය"
+about: "The discourse on loving-kindness towards all beings, chanted for protection and peace of mind."
 keywords: 
     - "කරණීයමෙත්ත සූත්‍රය"
     - "karaneeyameththasuthraya"

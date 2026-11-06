@@ -1,5 +1,8 @@
 ---
 title: "දෙවියන්ට පින්දීම"
+english: "Merit sharing with the deities"
+note: "කළ පින් දෙවියන්ට හා සියලු සතුන්ට අනුමෝදන් කරවන ගාථා"
+about: "Verses for sharing the merit of a good deed with the deities and all beings (Ettavata ca amhehi)."
 keywords: 
     - "දෙවියන්ට පින්දීම"
     - "deviyantapindeema"

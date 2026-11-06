@@ -1,10 +1,10 @@
 import { Collection, MenuArticle } from "./slices/menu";
+import SITE from "./site.json";
 
 // One-line descriptions shown on the home screen's collection cards.
-export const COLLECTION_DESCRIPTIONS: { [id: string]: string } = {
-  pirith: "සෙත හා ආරක්ෂාව පිණිස සජ්ඣායනා කරන සූත්‍ර",
-  mulikaVandanawa: "දිනපතා වන්දනාව, පූජා හා පින් දීම",
-};
+export const COLLECTION_DESCRIPTIONS: { [id: string]: string } = Object.fromEntries(
+  Object.entries(SITE.collections).map(([id, c]) => [id, c.description])
+);
 
 // Texts of a collection in recitation order: by `order` from the content
 // frontmatter where given, otherwise in the order listed in menu.json.

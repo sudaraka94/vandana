@@ -1,5 +1,8 @@
 ---
 title: "අටවිසි පිරිත"
+english: "Atawisi Piritha"
+note: "බුදුවරුන් විසිඅට නමගේ නාමයන් සිහිකරන ගාථා"
+about: "Verses recalling the names of the twenty-eight Buddhas, chanted for protection and blessings."
 keywords: 
     - "අටවිසි පිරිත"
     - "atawisipiritha"

@@ -1,5 +1,8 @@
 ---
 title: "මහා මංගල සූත්‍ර‍ය"
+english: "Maha Mangala Sutta"
+note: "ජීවිතයට උතුම් මංගල කරුණු තිස් අට"
+about: "The Buddha's discourse on the thirty-eight highest blessings in life."
 keywords: 
     - "මහා මංගල සූත්‍ර‍ය"
     - "mahamangalasuthraya"

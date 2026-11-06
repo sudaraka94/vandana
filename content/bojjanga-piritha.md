@@ -1,5 +1,8 @@
 ---
 title: "බොජ්ඣංග පිරිත"
+english: "Bojjhanga Piritha"
+note: "සප්ත බොජ්ඣංග සිහිකරමින් රෝගීන්ගේ සුවය පතා කියන පිරිත"
+about: "The seven factors of enlightenment (bojjhanga), traditionally chanted for people who are ill."
 keywords: 
     - "බොජ්ඣංග පිරිත"
     - "bojjangapiritha"

@@ -12,6 +12,7 @@ import PageBar from "../components/PageBar";
 import ReaderSettings from "../components/ReaderSettings";
 import StatusMessage, { NotFound } from "../components/StatusMessage";
 import { orderedArticles } from "../content";
+import { usePageMeta } from "../hooks/usePageMeta";
 import { useWakeLock } from "../hooks/useWakeLock";
 import { LINE_HEIGHTS, usePrefs } from "../prefs";
 import { selectAllArticles, selectCollections } from "../slices/menu";
@@ -119,6 +120,13 @@ const Article = () => {
   const siblings = orderedArticles(collection, articles);
   const position = siblings.findIndex((a) => a.id === articleId);
   const next = position >= 0 ? siblings[position + 1] : undefined;
+  const menuArticle = articles[articleId];
+
+  usePageMeta({
+    title: menuArticle ? `${menuArticle.title}${menuArticle.english ? ` (${menuArticle.english})` : ""}` : article?.title,
+    description: menuArticle?.description,
+    path: `/articles/${articleId}`,
+  });
   const backTo = collectionId ? `/collections/${collectionId}` : "/";
   const backLabel = collection?.title ?? "මුල් පිටුව";
   const favourite = isFavourite(articleId);
@@ -181,6 +189,7 @@ const Article = () => {
         </Typography>
         {collection && (
           <Typography align="center" color="text.secondary" sx={{ fontSize: 12.5, mt: 0.5, mb: 3 }}>
+            {menuArticle?.english && `${menuArticle.english} · `}
             {collection.title}
             {position >= 0 && ` · ${position + 1} / ${siblings.length}`}
           </Typography>

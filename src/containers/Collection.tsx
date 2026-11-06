@@ -7,7 +7,9 @@ import ArticleList from "../components/ArticleList";
 import PageBar from "../components/PageBar";
 import StatusMessage, { NotFound } from "../components/StatusMessage";
 import { orderedArticles } from "../content";
+import { usePageMeta } from "../hooks/usePageMeta";
 import { loadMenu } from "../loadMenu";
+import SITE from "../site.json";
 import { selectAllArticles, selectCollections, selectHasMenuError, selectIsMenuLoading } from "../slices/menu";
 import { useAppDispatch, useAppSelector } from "../store";
 
@@ -19,6 +21,13 @@ const Collection = () => {
   const isLoading = useAppSelector(selectIsMenuLoading);
   const hasError = useAppSelector(selectHasMenuError);
   const collection = collections[collectionId];
+  const info = (SITE.collections as Record<string, { english: string; description: string; about: string }>)[collectionId];
+
+  usePageMeta({
+    title: collection ? `${collection.title}${info ? ` (${info.english})` : ""}` : undefined,
+    description: info ? `${info.description}. ${info.about}` : undefined,
+    path: `/collections/${collectionId}`,
+  });
 
   const renderBody = () => {
     if (hasError) {

@@ -25,6 +25,20 @@ function parseMarkdownFile(fileName) {
     };
     // Optional fields for the list screens: a one-line note and recitation order.
     if (data.note) jsonData.note = data.note;
+    // English name and a one-line English summary, used for search engines,
+    // AI search (llms.txt) and the in-app search.
+    if (data.english) {
+      jsonData.english = data.english;
+      const key = data.english.toLowerCase();
+      if (!jsonData.keywords.some((k) => String(k).toLowerCase() === key)) jsonData.keywords.push(data.english);
+    }
+    if (data.about) jsonData.about = data.about;
+    // Search result snippet: Sinhala first, then the English summary.
+    jsonData.description = [
+      `${data.title}${data.english ? ` (${data.english})` : ''} සම්පූර්ණ පාඨය සිංහලෙන්.`,
+      data.note ? `${data.note}.` : '',
+      data.about || '',
+    ].filter(Boolean).join(' ');
     if (typeof data.order === 'number') jsonData.order = data.order;
 
     const outputFile = `${outputFilePath}/${fileName.replace('.md', '.json')}`;

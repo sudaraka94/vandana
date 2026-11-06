@@ -1,5 +1,8 @@
 ---
 title: "සච්චවිභඞ්ග සූත්‍රය"
+english: "Saccavibhanga Sutta"
+note: "චතුරාර්ය සත්‍යය විස්තරාත්මකව විග්‍රහ කරන සූත්‍රය"
+about: "A detailed analysis of the Four Noble Truths, given by Venerable Sariputta."
 keywords: 
     - "සච්චවිභඞ්ග සූත්‍රය"
     - "sachchavibhangasuthraya"

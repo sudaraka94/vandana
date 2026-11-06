@@ -1,5 +1,8 @@
 ---
 title: "ධම්මචක්කපවත්තන සූත්‍රය"
+english: "Dhammacakkappavattana Sutta"
+note: "බුදුරජුන් වදාළ පළමු දේශනාව, චතුරාර්ය සත්‍යය"
+about: "The Buddha's first sermon at Isipatana, which sets out the Four Noble Truths and the Noble Eightfold Path."
 keywords: 
     - "ධම්මචක්කපවත්තන සූත්‍රය"
     - "dhammachakkapawattanasutta"

@@ -1,5 +1,8 @@
 ---
 title: "රතන සූත්‍රය"
+english: "Ratana Sutta"
+note: "විසාලා මහනුවර දුර්භික්ෂ, රෝග හා අමනුෂ්‍ය බිය දුරු කළ සූත්‍රය"
+about: "The 'Jewel discourse', chanted to dispel famine, disease and fear in Vesali; one of the main protective suttas."
 keywords: 
     - "රතන සූත්‍රය"
     - "rathanasuthraya"

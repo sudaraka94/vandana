@@ -1,5 +1,8 @@
 ---
 title: "බුද්ධ පූජා ගාථා"
+english: "Buddha Puja Gatha"
+note: "පහන්, සුවඳ, මල් ආදිය බුදුරජුන්ට පූජා කරන ගාථා"
+about: "Verses for offering lamps, incense, flowers and food to the Buddha."
 keywords: 
     - "බුද්ධ පූජා ගාථා"
     - "buddhapujaghatha"

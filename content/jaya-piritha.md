@@ -1,5 +1,8 @@
 ---
 title: "ජය පිරිත"
+english: "Jaya Piritha"
+note: "ජයග්‍රහණය හා සෙත පතා කියන පිරිත"
+about: "Verses recalling the Buddha's virtues and victory, chanted for success, protection and blessings."
 keywords: 
     - "ජය පිරිත"
     - "jayapiritha"

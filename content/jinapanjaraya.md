@@ -1,5 +1,8 @@
 ---
 title: "ජින පඤ්ජරය"
+english: "Jina Panjaraya"
+note: "බුදුවරුන් හා මහ රහතුන් සිරුර වටා ආරක්ෂාවට පිහිටුවා ගන්නා ගාථා"
+about: "The 'Buddha's cage': verses that place the Buddhas and great disciples around the body for protection."
 keywords: 
     - "ජින පඤ්ජරයත"
     - "jinapanjaraya"

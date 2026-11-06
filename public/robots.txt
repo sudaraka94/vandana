@@ -1,0 +1,6 @@
+# Everyone is welcome, including AI search and assistant crawlers
+# (GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Google-Extended, etc.).
+User-agent: *
+Allow: /
+
+Sitemap: https://vandana.sudaraka94.com/sitemap.xml

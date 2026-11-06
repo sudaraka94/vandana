@@ -1,5 +1,8 @@
 ---
 title: "ඇනවුම් පිරිත"
+english: "Anawum Piritha"
+note: "පිරිත් සජ්ඣායනයට පෙර දෙවියන්ට ආරාධනා කරන ගාථා"
+about: "Verses chanted at the start of a pirith ceremony to invite the deities to come and listen."
 keywords: 
     - "ඇනවුම් පිරිත"
     - "anawumpiritha"

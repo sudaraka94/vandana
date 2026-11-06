@@ -5,187 +5,272 @@
       "title": "ඇනවුම් පිරිත",
       "keywords": [
         "ඇනවුම් පිරිත",
-        "anawumpiritha"
+        "anawumpiritha",
+        "Anawum Piritha"
       ],
       "collections": [
         "pirith"
-      ]
+      ],
+      "note": "පිරිත් සජ්ඣායනයට පෙර දෙවියන්ට ආරාධනා කරන ගාථා",
+      "english": "Anawum Piritha",
+      "about": "Verses chanted at the start of a pirith ceremony to invite the deities to come and listen.",
+      "description": "ඇනවුම් පිරිත (Anawum Piritha) සම්පූර්ණ පාඨය සිංහලෙන්. පිරිත් සජ්ඣායනයට පෙර දෙවියන්ට ආරාධනා කරන ගාථා. Verses chanted at the start of a pirith ceremony to invite the deities to come and listen."
     },
     "atawisi-piritha": {
       "id": "atawisi-piritha",
       "title": "අටවිසි පිරිත",
       "keywords": [
         "අටවිසි පිරිත",
-        "atawisipiritha"
+        "atawisipiritha",
+        "Atawisi Piritha"
       ],
       "collections": [
         "pirith"
-      ]
+      ],
+      "note": "බුදුවරුන් විසිඅට නමගේ නාමයන් සිහිකරන ගාථා",
+      "english": "Atawisi Piritha",
+      "about": "Verses recalling the names of the twenty-eight Buddhas, chanted for protection and blessings.",
+      "description": "අටවිසි පිරිත (Atawisi Piritha) සම්පූර්ණ පාඨය සිංහලෙන්. බුදුවරුන් විසිඅට නමගේ නාමයන් සිහිකරන ගාථා. Verses recalling the names of the twenty-eight Buddhas, chanted for protection and blessings."
     },
     "bojjanga-piritha": {
       "id": "bojjanga-piritha",
       "title": "බොජ්ඣංග පිරිත",
       "keywords": [
         "බොජ්ඣංග පිරිත",
-        "bojjangapiritha"
+        "bojjangapiritha",
+        "Bojjhanga Piritha"
       ],
       "collections": [
         "pirith"
-      ]
+      ],
+      "note": "සප්ත බොජ්ඣංග සිහිකරමින් රෝගීන්ගේ සුවය පතා කියන පිරිත",
+      "english": "Bojjhanga Piritha",
+      "about": "The seven factors of enlightenment (bojjhanga), traditionally chanted for people who are ill.",
+      "description": "බොජ්ඣංග පිරිත (Bojjhanga Piritha) සම්පූර්ණ පාඨය සිංහලෙන්. සප්ත බොජ්ඣංග සිහිකරමින් රෝගීන්ගේ සුවය පතා කියන පිරිත. The seven factors of enlightenment (bojjhanga), traditionally chanted for people who are ill."
     },
     "buddhapuja-ghatha": {
       "id": "buddhapuja-ghatha",
       "title": "බුද්ධ පූජා ගාථා",
       "keywords": [
         "බුද්ධ පූජා ගාථා",
-        "buddhapujaghatha"
+        "buddhapujaghatha",
+        "Buddha Puja Gatha"
       ],
       "collections": [
         "mulikaVandanawa"
-      ]
+      ],
+      "note": "පහන්, සුවඳ, මල් ආදිය බුදුරජුන්ට පූජා කරන ගාථා",
+      "english": "Buddha Puja Gatha",
+      "about": "Verses for offering lamps, incense, flowers and food to the Buddha.",
+      "description": "බුද්ධ පූජා ගාථා (Buddha Puja Gatha) සම්පූර්ණ පාඨය සිංහලෙන්. පහන්, සුවඳ, මල් ආදිය බුදුරජුන්ට පූජා කරන ගාථා. Verses for offering lamps, incense, flowers and food to the Buddha."
     },
     "deviyanta-pindeema": {
       "id": "deviyanta-pindeema",
       "title": "දෙවියන්ට පින්දීම",
       "keywords": [
         "දෙවියන්ට පින්දීම",
-        "deviyantapindeema"
+        "deviyantapindeema",
+        "Merit sharing with the deities"
       ],
       "collections": [
         "mulikaVandanawa"
-      ]
+      ],
+      "note": "කළ පින් දෙවියන්ට හා සියලු සතුන්ට අනුමෝදන් කරවන ගාථා",
+      "english": "Merit sharing with the deities",
+      "about": "Verses for sharing the merit of a good deed with the deities and all beings (Ettavata ca amhehi).",
+      "description": "දෙවියන්ට පින්දීම (Merit sharing with the deities) සම්පූර්ණ පාඨය සිංහලෙන්. කළ පින් දෙවියන්ට හා සියලු සතුන්ට අනුමෝදන් කරවන ගාථා. Verses for sharing the merit of a good deed with the deities and all beings (Ettavata ca amhehi)."
     },
     "dhamma-chakka-pawattana-sutta": {
       "id": "dhamma-chakka-pawattana-sutta",
       "title": "ධම්මචක්කපවත්තන සූත්‍රය",
       "keywords": [
         "ධම්මචක්කපවත්තන සූත්‍රය",
-        "dhammachakkapawattanasutta"
+        "dhammachakkapawattanasutta",
+        "Dhammacakkappavattana Sutta"
       ],
       "collections": [
         "pirith"
-      ]
+      ],
+      "note": "බුදුරජුන් වදාළ පළමු දේශනාව, චතුරාර්ය සත්‍යය",
+      "english": "Dhammacakkappavattana Sutta",
+      "about": "The Buddha's first sermon at Isipatana, which sets out the Four Noble Truths and the Noble Eightfold Path.",
+      "description": "ධම්මචක්කපවත්තන සූත්‍රය (Dhammacakkappavattana Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. බුදුරජුන් වදාළ පළමු දේශනාව, චතුරාර්ය සත්‍යය. The Buddha's first sermon at Isipatana, which sets out the Four Noble Truths and the Noble Eightfold Path."
     },
     "girimananda-suthraya": {
       "id": "girimananda-suthraya",
       "title": "ගිරිමානන්‍ද සූත්‍රය",
       "keywords": [
         "ගිරිමානන්‍ද සූත්‍රය",
-        "girimanandasuthraya"
+        "girimanandasuthraya",
+        "Girimananda Sutta"
       ],
       "collections": [
         "pirith"
-      ]
+      ],
+      "note": "ගිරිමානන්ද තෙරුන් රෝගයෙන් සුව කළ දස සංඥා දේශනාව",
+      "english": "Girimananda Sutta",
+      "about": "The ten perceptions taught for the ill Venerable Girimananda, traditionally chanted for the sick.",
+      "description": "ගිරිමානන්‍ද සූත්‍රය (Girimananda Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. ගිරිමානන්ද තෙරුන් රෝගයෙන් සුව කළ දස සංඥා දේශනාව. The ten perceptions taught for the ill Venerable Girimananda, traditionally chanted for the sick."
     },
     "jaya-piritha": {
       "id": "jaya-piritha",
       "title": "ජය පිරිත",
       "keywords": [
         "ජය පිරිත",
-        "jayapiritha"
+        "jayapiritha",
+        "Jaya Piritha"
       ],
       "collections": [
         "pirith"
-      ]
+      ],
+      "note": "ජයග්‍රහණය හා සෙත පතා කියන පිරිත",
+      "english": "Jaya Piritha",
+      "about": "Verses recalling the Buddha's virtues and victory, chanted for success, protection and blessings.",
+      "description": "ජය පිරිත (Jaya Piritha) සම්පූර්ණ පාඨය සිංහලෙන්. ජයග්‍රහණය හා සෙත පතා කියන පිරිත. Verses recalling the Buddha's virtues and victory, chanted for success, protection and blessings."
     },
     "jinapanjaraya": {
       "id": "jinapanjaraya",
       "title": "ජින පඤ්ජරය",
       "keywords": [
         "ජින පඤ්ජරයත",
-        "jinapanjaraya"
+        "jinapanjaraya",
+        "Jina Panjaraya"
       ],
       "collections": [
         "pirith"
-      ]
+      ],
+      "note": "බුදුවරුන් හා මහ රහතුන් සිරුර වටා ආරක්ෂාවට පිහිටුවා ගන්නා ගාථා",
+      "english": "Jina Panjaraya",
+      "about": "The 'Buddha's cage': verses that place the Buddhas and great disciples around the body for protection.",
+      "description": "ජින පඤ්ජරය (Jina Panjaraya) සම්පූර්ණ පාඨය සිංහලෙන්. බුදුවරුන් හා මහ රහතුන් සිරුර වටා ආරක්ෂාවට පිහිටුවා ගන්නා ගාථා. The 'Buddha's cage': verses that place the Buddhas and great disciples around the body for protection."
     },
     "karaneeyameththa-suthraya": {
       "id": "karaneeyameththa-suthraya",
       "title": "කරණීයමෙත්ත සූත්‍රය",
       "keywords": [
         "කරණීයමෙත්ත සූත්‍රය",
-        "karaneeyameththasuthraya"
+        "karaneeyameththasuthraya",
+        "Karaniya Metta Sutta"
       ],
       "collections": [
         "pirith"
-      ]
+      ],
+      "note": "සියලු සත්වයන් කෙරෙහි මෛත්‍රිය වඩන සූත්‍රය",
+      "english": "Karaniya Metta Sutta",
+      "about": "The discourse on loving-kindness towards all beings, chanted for protection and peace of mind.",
+      "description": "කරණීයමෙත්ත සූත්‍රය (Karaniya Metta Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. සියලු සත්වයන් කෙරෙහි මෛත්‍රිය වඩන සූත්‍රය. The discourse on loving-kindness towards all beings, chanted for protection and peace of mind."
     },
     "mahajayamangala-gatha": {
       "id": "mahajayamangala-gatha",
       "title": "මහා ජයමංගල ගාථා",
       "keywords": [
         "මහා ජයමංගල ගාථා",
-        "mahajayamangalagatha"
+        "mahajayamangalagatha",
+        "Maha Jaya Mangala Gatha"
       ],
       "collections": [
         "pirith"
-      ]
+      ],
+      "note": "ජය මංගලය හා සෙත පතා කියන ගාථා",
+      "english": "Maha Jaya Mangala Gatha",
+      "about": "Verses wishing victory and blessings, often chanted at the end of a pirith ceremony.",
+      "description": "මහා ජයමංගල ගාථා (Maha Jaya Mangala Gatha) සම්පූර්ණ පාඨය සිංහලෙන්. ජය මංගලය හා සෙත පතා කියන ගාථා. Verses wishing victory and blessings, often chanted at the end of a pirith ceremony."
     },
     "mahamangala-suthraya": {
       "id": "mahamangala-suthraya",
       "title": "මහා මංගල සූත්‍ර‍ය",
       "keywords": [
         "මහා මංගල සූත්‍ර‍ය",
-        "mahamangalasuthraya"
+        "mahamangalasuthraya",
+        "Maha Mangala Sutta"
       ],
       "collections": [
         "pirith"
-      ]
+      ],
+      "note": "ජීවිතයට උතුම් මංගල කරුණු තිස් අට",
+      "english": "Maha Mangala Sutta",
+      "about": "The Buddha's discourse on the thirty-eight highest blessings in life.",
+      "description": "මහා මංගල සූත්‍ර‍ය (Maha Mangala Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. ජීවිතයට උතුම් මංගල කරුණු තිස් අට. The Buddha's discourse on the thirty-eight highest blessings in life."
     },
     "namaskaraya": {
       "id": "namaskaraya",
       "title": "නමස්කාරය හා බුද්ධ වන්දනා",
       "keywords": [
         "නමස්කාරය හා බුද්ධ වන්දනා",
-        "namaskarayabudhdhavandana"
+        "namaskarayabudhdhavandana",
+        "Namaskaraya and Buddha Vandana"
       ],
       "collections": [
         "mulikaVandanawa"
-      ]
+      ],
+      "note": "නමෝ තස්ස, තිසරණය සහ බුදුරජුන් වැඳීම",
+      "english": "Namaskaraya and Buddha Vandana",
+      "about": "The homage 'Namo tassa', taking the Triple Refuge, and verses for worshipping the Buddha.",
+      "description": "නමස්කාරය හා බුද්ධ වන්දනා (Namaskaraya and Buddha Vandana) සම්පූර්ණ පාඨය සිංහලෙන්. නමෝ තස්ස, තිසරණය සහ බුදුරජුන් වැඳීම. The homage 'Namo tassa', taking the Triple Refuge, and verses for worshipping the Buddha."
     },
     "rathana-suthraya": {
       "id": "rathana-suthraya",
       "title": "රතන සූත්‍රය",
       "keywords": [
         "රතන සූත්‍රය",
-        "rathanasuthraya"
+        "rathanasuthraya",
+        "Ratana Sutta"
       ],
       "collections": [
         "pirith"
-      ]
+      ],
+      "note": "විසාලා මහනුවර දුර්භික්ෂ, රෝග හා අමනුෂ්‍ය බිය දුරු කළ සූත්‍රය",
+      "english": "Ratana Sutta",
+      "about": "The 'Jewel discourse', chanted to dispel famine, disease and fear in Vesali; one of the main protective suttas.",
+      "description": "රතන සූත්‍රය (Ratana Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. විසාලා මහනුවර දුර්භික්ෂ, රෝග හා අමනුෂ්‍ය බිය දුරු කළ සූත්‍රය. The 'Jewel discourse', chanted to dispel famine, disease and fear in Vesali; one of the main protective suttas."
     },
     "sachchavibhanga-suthraya": {
       "id": "sachchavibhanga-suthraya",
       "title": "සච්චවිභඞ්ග සූත්‍රය",
       "keywords": [
         "සච්චවිභඞ්ග සූත්‍රය",
-        "sachchavibhangasuthraya"
+        "sachchavibhangasuthraya",
+        "Saccavibhanga Sutta"
       ],
       "collections": [
         "pirith"
-      ]
+      ],
+      "note": "චතුරාර්ය සත්‍යය විස්තරාත්මකව විග්‍රහ කරන සූත්‍රය",
+      "english": "Saccavibhanga Sutta",
+      "about": "A detailed analysis of the Four Noble Truths, given by Venerable Sariputta.",
+      "description": "සච්චවිභඞ්ග සූත්‍රය (Saccavibhanga Sutta) සම්පූර්ණ පාඨය සිංහලෙන්. චතුරාර්ය සත්‍යය විස්තරාත්මකව විග්‍රහ කරන සූත්‍රය. A detailed analysis of the Four Noble Truths, given by Venerable Sariputta."
     },
     "seth-pathima": {
       "id": "seth-pathima",
       "title": "සෙත් පැතීම",
       "keywords": [
         "සෙත් පැතීම",
-        "sethpathima"
+        "sethpathima",
+        "Seth Pathima"
       ],
       "collections": [
         "mulikaVandanawa"
-      ]
+      ],
+      "note": "සුවය, දීර්ඝායුෂ හා සෙත පතා කියන ගාථා",
+      "english": "Seth Pathima",
+      "about": "Blessing verses wishing health, long life and freedom from danger (Sabbitiyo vivajjantu).",
+      "description": "සෙත් පැතීම (Seth Pathima) සම්පූර්ණ පාඨය සිංහලෙන්. සුවය, දීර්ඝායුෂ හා සෙත පතා කියන ගාථා. Blessing verses wishing health, long life and freedom from danger (Sabbitiyo vivajjantu)."
     },
     "theruwan-vandanawa": {
       "id": "theruwan-vandanawa",
       "title": "තෙරුවන් වන්දනාව",
       "keywords": [
         "තෙරුවන් වන්දනාව",
-        "theruwanvandanawa"
+        "theruwanvandanawa",
+        "Theruwan Vandanawa"
       ],
       "collections": [
         "mulikaVandanawa"
-      ]
+      ],
+      "note": "බුද්ධ, ධම්ම, සංඝ ගුණ සිහිකර තෙරුවන් වැඳීම",
+      "english": "Theruwan Vandanawa",
+      "about": "Worship of the Triple Gem: verses recalling the qualities of the Buddha, Dhamma and Sangha (Itipiso).",
+      "description": "තෙරුවන් වන්දනාව (Theruwan Vandanawa) සම්පූර්ණ පාඨය සිංහලෙන්. බුද්ධ, ධම්ම, සංඝ ගුණ සිහිකර තෙරුවන් වැඳීම. Worship of the Triple Gem: verses recalling the qualities of the Buddha, Dhamma and Sangha (Itipiso)."
     }
   },
   "collections": {

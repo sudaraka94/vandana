@@ -9,6 +9,10 @@ export interface MenuArticle {
     // Optional, from content frontmatter: a one-line note and recitation order.
     note?: string
     order?: number
+    // English name and one-line English summary, for search engines.
+    english?: string
+    about?: string
+    description?: string
 }
 
 export interface Collection {

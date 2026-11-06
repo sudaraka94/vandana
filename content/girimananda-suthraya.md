@@ -1,5 +1,8 @@
 ---
 title: "ගිරිමානන්‍ද සූත්‍රය"
+english: "Girimananda Sutta"
+note: "ගිරිමානන්ද තෙරුන් රෝගයෙන් සුව කළ දස සංඥා දේශනාව"
+about: "The ten perceptions taught for the ill Venerable Girimananda, traditionally chanted for the sick."
 keywords: 
     - "ගිරිමානන්‍ද සූත්‍රය"
     - "girimanandasuthraya"

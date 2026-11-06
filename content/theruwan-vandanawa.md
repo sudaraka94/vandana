@@ -1,5 +1,8 @@
 ---
 title: "තෙරුවන් වන්දනාව"
+english: "Theruwan Vandanawa"
+note: "බුද්ධ, ධම්ම, සංඝ ගුණ සිහිකර තෙරුවන් වැඳීම"
+about: "Worship of the Triple Gem: verses recalling the qualities of the Buddha, Dhamma and Sangha (Itipiso)."
 keywords: 
     - "තෙරුවන් වන්දනාව"
     - "theruwanvandanawa"

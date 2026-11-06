@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import ArticleList from "../components/ArticleList";
 import StatusMessage from "../components/StatusMessage";
 import { COLLECTION_DESCRIPTIONS, matchesQuery } from "../content";
+import { usePageMeta } from "../hooks/usePageMeta";
 import { loadMenu } from "../loadMenu";
 import { usePrefs } from "../prefs";
 import { selectAllArticles, selectCollections, selectHasMenuError, selectIsMenuLoading } from "../slices/menu";
@@ -40,6 +41,7 @@ const Home = () => {
   const hasError = useAppSelector(selectHasMenuError);
   const { themeMode, lastRead, favourites } = usePrefs();
   const [query, setQuery] = useState("");
+  usePageMeta({ path: "/" });
 
   const q = query.trim().toLowerCase();
   const night = themeMode === "night";
@@ -182,7 +184,9 @@ const Home = () => {
         }}
       >
         <Box sx={{ maxWidth: COLUMN, mx: "auto" }}>
-          <Box component="img" src={night ? LogoLamp : Logo} alt="වන්දනා" sx={{ height: 38, display: "block" }} />
+          <Box component="h1" sx={{ m: 0, lineHeight: 0 }}>
+            <Box component="img" src={night ? LogoLamp : Logo} alt="වන්දනා · සිංහල පිරිත් හා වන්දනා ගාථා" sx={{ height: 38, display: "block" }} />
+          </Box>
           <Typography sx={{ fontSize: 13, opacity: 0.9, mt: 1 }}>
             {greeting()}
           </Typography>

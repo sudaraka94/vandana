@@ -1,5 +1,8 @@
 ---
 title: "මහා ජයමංගල ගාථා"
+english: "Maha Jaya Mangala Gatha"
+note: "ජය මංගලය හා සෙත පතා කියන ගාථා"
+about: "Verses wishing victory and blessings, often chanted at the end of a pirith ceremony."
 keywords: 
     - "මහා ජයමංගල ගාථා"
     - "mahajayamangalagatha"
