@@ -69,14 +69,14 @@ const META = {
 // Wikipedia ("Paritta") and M. D. Banik's critical study of the Catubhanavara (wisdomlib.org).
 // Not imported: Paccavekkhana (its pirith wording is not a canonical passage).
 const TEXTS = [
-  // ---- Preliminaries (Khuddakapāṭha) ----
-  { id: 'saranagamanaya', title: 'සරණගමනය', keywords: ['සරණගමනය', 'saranagamana', 'tisarana'], order: 10,
+  // ---- Preliminaries of the Maha Pirith book (Khuddakapāṭha). Not pirith themselves, so they go under මූලික වන්දනාව ----
+  { id: 'saranagamanaya', title: 'සරණගමනය', keywords: ['සරණගමනය', 'saranagamana', 'tisarana'], order: 60, collection: 'mulikaVandanawa',
     file: 'kn-khp', start: { heading: 'සරණගමනං' }, ref: 'ඛුද්දකපාඨ 1' },
-  { id: 'dasa-sikkhapada', title: 'දස සික්ඛාපද', keywords: ['දස සික්ඛාපද', 'දසසික්ඛාපදය', 'dasasikkhapada'], order: 20,
+  { id: 'dasa-sikkhapada', title: 'දස සික්ඛාපද', keywords: ['දස සික්ඛාපද', 'දසසික්ඛාපදය', 'dasasikkhapada'], order: 70, collection: 'mulikaVandanawa',
     file: 'kn-khp', start: { heading: 'දසසික්ඛාපදං' }, ref: 'ඛුද්දකපාඨ 2' },
-  { id: 'samanera-panhaya', title: 'සාමණේර පඤ්හය', keywords: ['සාමණේර පඤ්හය', 'කුමාරපඤ්හ', 'samanerapanha', 'kumarapanha'], order: 30,
+  { id: 'samanera-panhaya', title: 'සාමණේර පඤ්හය', keywords: ['සාමණේර පඤ්හය', 'කුමාරපඤ්හ', 'samanerapanha', 'kumarapanha'], order: 80, collection: 'mulikaVandanawa',
     file: 'kn-khp', start: { heading: 'කුමාරපඤ්හා' }, ref: 'ඛුද්දකපාඨ 4' },
-  { id: 'dvattimsakaraya', title: 'ද්වත්තිංසාකාරය', keywords: ['ද්වත්තිංසාකාරය', 'dvattimsakara', 'dwaththinsakaraya'], order: 40,
+  { id: 'dvattimsakaraya', title: 'ද්වත්තිංසාකාරය', keywords: ['ද්වත්තිංසාකාරය', 'dvattimsakara', 'dwaththinsakaraya'], order: 90, collection: 'mulikaVandanawa',
     file: 'kn-khp', start: { heading: 'ද්වත්තිංසාකාරං' }, ref: 'ඛුද්දකපාඨ 3' },
   { id: 'dasadhamma-suthraya', title: 'දසධම්ම සූත්‍රය', keywords: ['දසධම්ම සූත්‍රය', 'dasadhammasutta', 'dasadhammasuthraya'], order: 50,
     file: 'an-10', start: { heading: 'දසධම්ම සුත්තං' }, ref: 'අංගුත්තර නිකාය 10.1.5.8 (AN 10.48)' },
@@ -290,7 +290,7 @@ async function main() {
         'keywords:',
         ...text.keywords.map((k) => `    - ${yamlStr(k)}`),
         'collections:',
-        '    - "pirith"',
+        `    - "${text.collection || 'pirith'}"`,
         `order: ${text.order}`,
         `source: ${yamlStr(source)}`,
         '---',

@@ -101,7 +101,8 @@
       "note": "පහන්, සුවඳ, මල් ආදිය බුදුරජුන්ට පූජා කරන ගාථා",
       "english": "Buddha Puja Gatha",
       "about": "Verses for offering lamps, incense, flowers and food to the Buddha.",
-      "description": "බුද්ධ පූජා ගාථා (Buddha Puja Gatha) සම්පූර්ණ පාඨය සිංහලෙන්. පහන්, සුවඳ, මල් ආදිය බුදුරජුන්ට පූජා කරන ගාථා. Verses for offering lamps, incense, flowers and food to the Buddha."
+      "description": "බුද්ධ පූජා ගාථා (Buddha Puja Gatha) සම්පූර්ණ පාඨය සිංහලෙන්. පහන්, සුවඳ, මල් ආදිය බුදුරජුන්ට පූජා කරන ගාථා. Verses for offering lamps, incense, flowers and food to the Buddha.",
+      "order": 10
     },
     "chanda-piritha": {
       "id": "chanda-piritha",
@@ -132,13 +133,13 @@
         "Dasa Sikkhapada"
       ],
       "collections": [
-        "pirith"
+        "mulikaVandanawa"
       ],
       "note": "සාමණේරයන් රකින දස ශික්ෂා පද",
       "english": "Dasa Sikkhapada",
       "about": "The ten training precepts undertaken by novice monks and by lay people on special days.",
       "description": "දස සික්ඛාපද (Dasa Sikkhapada) සම්පූර්ණ පාඨය සිංහලෙන්. සාමණේරයන් රකින දස ශික්ෂා පද. The ten training precepts undertaken by novice monks and by lay people on special days.",
-      "order": 20
+      "order": 70
     },
     "dasadhamma-suthraya": {
       "id": "dasadhamma-suthraya",
@@ -172,7 +173,8 @@
       "note": "කළ පින් දෙවියන්ට හා සියලු සතුන්ට අනුමෝදන් කරවන ගාථා",
       "english": "Merit sharing with the deities",
       "about": "Verses for sharing the merit of a good deed with the deities and all beings (Ettavata ca amhehi).",
-      "description": "දෙවියන්ට පින්දීම (Merit sharing with the deities) සම්පූර්ණ පාඨය සිංහලෙන්. කළ පින් දෙවියන්ට හා සියලු සතුන්ට අනුමෝදන් කරවන ගාථා. Verses for sharing the merit of a good deed with the deities and all beings (Ettavata ca amhehi)."
+      "description": "දෙවියන්ට පින්දීම (Merit sharing with the deities) සම්පූර්ණ පාඨය සිංහලෙන්. කළ පින් දෙවියන්ට හා සියලු සතුන්ට අනුමෝදන් කරවන ගාථා. Verses for sharing the merit of a good deed with the deities and all beings (Ettavata ca amhehi).",
+      "order": 20
     },
     "dhajagga-suthraya": {
       "id": "dhajagga-suthraya",
@@ -218,13 +220,13 @@
         "dwaththinsakaraya"
       ],
       "collections": [
-        "pirith"
+        "mulikaVandanawa"
       ],
       "note": "ශරීරයේ කොටස් තිස් දෙක මෙනෙහි කිරීම",
       "english": "Dvattimsakara",
       "about": "The thirty-two parts of the body, recited as a reflection on the body.",
       "description": "ද්වත්තිංසාකාරය (Dvattimsakara) සම්පූර්ණ පාඨය සිංහලෙන්. ශරීරයේ කොටස් තිස් දෙක මෙනෙහි කිරීම. The thirty-two parts of the body, recited as a reflection on the body.",
-      "order": 40
+      "order": 90
     },
     "girimananda-suthraya": {
       "id": "girimananda-suthraya",
@@ -528,7 +530,8 @@
       "note": "නමෝ තස්ස, තිසරණය සහ බුදුරජුන් වැඳීම",
       "english": "Namaskaraya and Buddha Vandana",
       "about": "The homage 'Namo tassa', taking the Triple Refuge, and verses for worshipping the Buddha.",
-      "description": "නමස්කාරය හා බුද්ධ වන්දනා (Namaskaraya and Buddha Vandana) සම්පූර්ණ පාඨය සිංහලෙන්. නමෝ තස්ස, තිසරණය සහ බුදුරජුන් වැඳීම. The homage 'Namo tassa', taking the Triple Refuge, and verses for worshipping the Buddha."
+      "description": "නමස්කාරය හා බුද්ධ වන්දනා (Namaskaraya and Buddha Vandana) සම්පූර්ණ පාඨය සිංහලෙන්. නමෝ තස්ස, තිසරණය සහ බුදුරජුන් වැඳීම. The homage 'Namo tassa', taking the Triple Refuge, and verses for worshipping the Buddha.",
+      "order": 30
     },
     "parabhawa-suthraya": {
       "id": "parabhawa-suthraya",
@@ -593,13 +596,13 @@
         "Samanera Panha"
       ],
       "collections": [
-        "pirith"
+        "mulikaVandanawa"
       ],
       "note": "එකේ සිට දහය දක්වා දහම් ප්‍රශ්නෝත්තර",
       "english": "Samanera Panha",
       "about": "The novice's questions: ten questions and answers on the Dhamma, from one to ten.",
       "description": "සාමණේර පඤ්හය (Samanera Panha) සම්පූර්ණ පාඨය සිංහලෙන්. එකේ සිට දහය දක්වා දහම් ප්‍රශ්නෝත්තර. The novice's questions: ten questions and answers on the Dhamma, from one to ten.",
-      "order": 30
+      "order": 80
     },
     "saranagamanaya": {
       "id": "saranagamanaya",
@@ -610,13 +613,13 @@
         "tisarana"
       ],
       "collections": [
-        "pirith"
+        "mulikaVandanawa"
       ],
       "note": "බුදු, දහම්, සඟ යන තෙරුවන් සරණ යෑම",
       "english": "Saranagamana",
       "about": "Going for refuge to the Buddha, the Dhamma and the Sangha, three times; recited at the start of every chanting.",
       "description": "සරණගමනය (Saranagamana) සම්පූර්ණ පාඨය සිංහලෙන්. බුදු, දහම්, සඟ යන තෙරුවන් සරණ යෑම. Going for refuge to the Buddha, the Dhamma and the Sangha, three times; recited at the start of every chanting.",
-      "order": 10
+      "order": 60
     },
     "seth-pathima": {
       "id": "seth-pathima",
@@ -632,7 +635,8 @@
       "note": "සුවය, දීර්ඝායුෂ හා සෙත පතා කියන ගාථා",
       "english": "Seth Pathima",
       "about": "Blessing verses wishing health, long life and freedom from danger (Sabbitiyo vivajjantu).",
-      "description": "සෙත් පැතීම (Seth Pathima) සම්පූර්ණ පාඨය සිංහලෙන්. සුවය, දීර්ඝායුෂ හා සෙත පතා කියන ගාථා. Blessing verses wishing health, long life and freedom from danger (Sabbitiyo vivajjantu)."
+      "description": "සෙත් පැතීම (Seth Pathima) සම්පූර්ණ පාඨය සිංහලෙන්. සුවය, දීර්ඝායුෂ හා සෙත පතා කියන ගාථා. Blessing verses wishing health, long life and freedom from danger (Sabbitiyo vivajjantu).",
+      "order": 40
     },
     "suriya-piritha": {
       "id": "suriya-piritha",
@@ -667,7 +671,8 @@
       "note": "බුද්ධ, ධම්ම, සංඝ ගුණ සිහිකර තෙරුවන් වැඳීම",
       "english": "Theruwan Vandanawa",
       "about": "Worship of the Triple Gem: verses recalling the qualities of the Buddha, Dhamma and Sangha (Itipiso).",
-      "description": "තෙරුවන් වන්දනාව (Theruwan Vandanawa) සම්පූර්ණ පාඨය සිංහලෙන්. බුද්ධ, ධම්ම, සංඝ ගුණ සිහිකර තෙරුවන් වැඳීම. Worship of the Triple Gem: verses recalling the qualities of the Buddha, Dhamma and Sangha (Itipiso)."
+      "description": "තෙරුවන් වන්දනාව (Theruwan Vandanawa) සම්පූර්ණ පාඨය සිංහලෙන්. බුද්ධ, ධම්ම, සංඝ ගුණ සිහිකර තෙරුවන් වැඳීම. Worship of the Triple Gem: verses recalling the qualities of the Buddha, Dhamma and Sangha (Itipiso).",
+      "order": 50
     },
     "wasala-suthraya": {
       "id": "wasala-suthraya",
@@ -698,11 +703,9 @@
         "atawisi-piritha",
         "bojjanga-piritha",
         "chanda-piritha",
-        "dasa-sikkhapada",
         "dasadhamma-suthraya",
         "dhajagga-suthraya",
         "dhamma-chakka-pawattana-sutta",
-        "dvattimsakaraya",
         "girimananda-suthraya",
         "isigili-suthraya",
         "jaya-piritha",
@@ -722,8 +725,6 @@
         "parabhawa-suthraya",
         "rathana-suthraya",
         "sachchavibhanga-suthraya",
-        "samanera-panhaya",
-        "saranagamanaya",
         "suriya-piritha",
         "wasala-suthraya"
       ]
@@ -732,8 +733,12 @@
       "title": "මූලික වන්දනාව",
       "articles": [
         "buddhapuja-ghatha",
+        "dasa-sikkhapada",
         "deviyanta-pindeema",
+        "dvattimsakaraya",
         "namaskaraya",
+        "samanera-panhaya",
+        "saranagamanaya",
         "seth-pathima",
         "theruwan-vandanawa"
       ]

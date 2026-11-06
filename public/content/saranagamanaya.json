@@ -7,7 +7,7 @@
     "tisarana"
   ],
   "collections": [
-    "pirith"
+    "mulikaVandanawa"
   ],
   "content": "<p class='prose'>බුද්ධං සරණං ගච්ඡාමි.</p> <p class='prose'>ධම්මං සරණං ගච්ඡාමි.</p> <p class='prose'>සඞ්ඝං සරණං ගච්ඡාමි.</p> <p class='prose'>දුතියම්පි බුද්ධං සරණං ගච්ඡාමි.</p> <p class='prose'>දුතියම්පි ධම්මං සරණං ගච්ඡාමි.</p> <p class='prose'>දුතියම්පි සඞ්ඝං සරණං ගච්ඡාමි.</p> <p class='prose'>තතියම්පි බුද්ධං සරණං ගච්ඡාමි.</p> <p class='prose'>තතියම්පි ධම්මං සරණං ගච්ඡාමි.</p> <p class='prose'>තතියම්පි සඞ්ඝං සරණං ගච්ඡාමි.</p> <p style='text-align:center'>සරණගමනං.</p>",
   "translation": "<p class='prose'>බුදුරජුන් සරණයෙමි (පිහිට යැ යි දැන ගණිමි.)</p> <p class='prose'>දහම් සරණ යෙමි (පිහිට යැ යි දැන ගණිමි.)</p> <p class='prose'>සඟ සරණ යෙමි (පිහිට යැ යි දැන ගණිමි.)</p> <p class='prose'>දෙවනු ද බුදුරජුන් සරණ යෙමි.</p> <p class='prose'>දෙවනු ද දහම් සරණ යෙමි.</p> <p class='prose'>දෙවනු ද සඟ සරණ යෙමි.</p> <p class='prose'>තෙවනු ද බුදුරජුන් සරණ යෙමි.</p> <p class='prose'>තෙවනු ද දහම් සරණ යෙමි.</p> <p class='prose'>තෙවනු ද සඟ සරණ යෙමි.</p> <p style='text-align:center'>ශරණගමනය යි.</p>",
@@ -16,5 +16,5 @@
   "english": "Saranagamana",
   "about": "Going for refuge to the Buddha, the Dhamma and the Sangha, three times; recited at the start of every chanting.",
   "description": "සරණගමනය (Saranagamana) සම්පූර්ණ පාඨය සිංහලෙන්. බුදු, දහම්, සඟ යන තෙරුවන් සරණ යෑම. Going for refuge to the Buddha, the Dhamma and the Sangha, three times; recited at the start of every chanting.",
-  "order": 10
+  "order": 60
 }

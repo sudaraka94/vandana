@@ -8,6 +8,7 @@ keywords:
     - "sethpathima"
 collections:
     - "mulikaVandanawa"
+order: 40
 ---
 <article>
     <div>

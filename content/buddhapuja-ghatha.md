@@ -8,6 +8,7 @@ keywords:
     - "buddhapujaghatha"
 collections:
     - "mulikaVandanawa"
+order: 10
 ---
 <h4>පහන් පූජා කිරීම</h4>
 <p><strong>ඝණසාරප්ප දිත්තේන</strong>&nbsp;&ndash;&nbsp;<strong>දීපෙන තමධංසිනා</strong><br /><strong>තිලෝක දීපං සම්බුද්ධං</strong>&nbsp;&ndash;&nbsp;<strong>පූජයාමී තමෝනුදං</strong></p>

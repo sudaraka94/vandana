@@ -8,6 +8,7 @@ keywords:
     - "namaskarayabudhdhavandana"
 collections:
     - "mulikaVandanawa"
+order: 30
 ---
 <p>නමො තස්ස භගවතො අරහතො සම්මා සම්බුද්ධස්ස</p>
 <p>නමො තස්ස භගවතො අරහතො සම්මාසම්බුද්ධස්ස</p>
