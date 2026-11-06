@@ -23,6 +23,9 @@ function parseMarkdownFile(fileName) {
       collections: data.collections ? data.collections : [], // Ensure collections are an array, even if absent
       content: cleanContent,
     };
+    // Optional fields for the list screens: a one-line note and recitation order.
+    if (data.note) jsonData.note = data.note;
+    if (typeof data.order === 'number') jsonData.order = data.order;
 
     const outputFile = `${outputFilePath}/${fileName.replace('.md', '.json')}`;
     const jsonFileContent = `${JSON.stringify(jsonData, null, 2)}\n`

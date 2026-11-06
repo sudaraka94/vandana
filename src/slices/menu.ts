@@ -6,6 +6,9 @@ export interface MenuArticle {
     title: string
     keywords?: string[]
     collections?: string[]
+    // Optional, from content frontmatter: a one-line note and recitation order.
+    note?: string
+    order?: number
 }
 
 export interface Collection {
