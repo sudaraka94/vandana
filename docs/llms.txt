@@ -1,0 +1,55 @@
+# Vandana (වන්දනා)
+
+> Vandana is a free reader for Sinhala Buddhist pirith (paritta) chants and everyday worship verses (vandana gatha), with the full Pali text in Sinhala script.
+
+Texts are in Pali or Sinhala, written in Sinhala script. Each link below is a page with the full text.
+The complete text of every page is in one file: https://vandana.sudaraka94.com/llms-full.txt
+
+## Pirith (පිරිත්)
+
+Protective Buddhist chants (paritta), such as Jaya Piritha, Ratana Sutta and Karaniya Metta Sutta, in Sinhala script.
+
+- [දසධම්ම සූත්‍රය (Dasadhamma Sutta)](https://vandana.sudaraka94.com/articles/dasadhamma-suthraya): Ten things a monk should reflect on often.
+- [මහා මංගල සූත්‍ර‍ය (Maha Mangala Sutta)](https://vandana.sudaraka94.com/articles/mahamangala-suthraya): The Buddha's discourse on the thirty-eight highest blessings in life.
+- [රතන සූත්‍රය (Ratana Sutta)](https://vandana.sudaraka94.com/articles/rathana-suthraya): The 'Jewel discourse', chanted to dispel famine, disease and fear in Vesali; one of the main protective suttas.
+- [කරණීයමෙත්ත සූත්‍රය (Karaniya Metta Sutta)](https://vandana.sudaraka94.com/articles/karaneeyameththa-suthraya): The discourse on loving-kindness towards all beings, chanted for protection and peace of mind.
+- [ඛන්ධ පරිත්තය (Khandha Paritta)](https://vandana.sudaraka94.com/articles/khandha-piritha): Loving-kindness to all kinds of snakes and creatures, taught after a monk died of snakebite; chanted for protection.
+- [මෙත්තානිසංස සූත්‍රය (Mettanisamsa Sutta)](https://vandana.sudaraka94.com/articles/meththanisansa-suthraya): The eleven benefits of developing loving-kindness.
+- [මිත්තානිසංස ගාථා (Mittanisamsa)](https://vandana.sudaraka94.com/articles/miththanisansa-gatha): Verses on the blessings that come to one who is loyal to friends, from the Mugapakkha Jataka.
+- [මෝර පරිත්තය (Mora Paritta)](https://vandana.sudaraka94.com/articles/mora-piritha): The peacock's protection, recited morning and evening by the Bodhisatta as a golden peacock.
+- [චන්ද පරිත්තය (Canda Paritta)](https://vandana.sudaraka94.com/articles/chanda-piritha): The moon deity, seized by Rahu, is set free when he goes for refuge to the Buddha.
+- [සූරිය පරිත්තය (Suriya Paritta)](https://vandana.sudaraka94.com/articles/suriya-piritha): The sun deity, seized by Rahu, is set free when he goes for refuge to the Buddha.
+- [ධජග්ග සූත්‍රය (Dhajagga Sutta)](https://vandana.sudaraka94.com/articles/dhajagga-suthraya): The banner's crest: recollecting the Buddha, Dhamma and Sangha to overcome fear.
+- [මහාකස්සප බොජ්ඣංග සූත්‍රය (Maha Kassapa Bojjhanga Sutta)](https://vandana.sudaraka94.com/articles/mahakassapa-bojjanga-suthraya): The seven factors of awakening, taught to the ill Venerable Maha Kassapa, who recovered.
+- [මහාමොග්ගල්ලාන බොජ්ඣංග සූත්‍රය (Maha Moggallana Bojjhanga Sutta)](https://vandana.sudaraka94.com/articles/mahamoggallana-bojjanga-suthraya): The seven factors of awakening, taught to the ill Venerable Maha Moggallana, who recovered.
+- [මහාචුන්ද බොජ්ඣංග සූත්‍රය (Maha Cunda Bojjhanga Sutta)](https://vandana.sudaraka94.com/articles/mahachunda-bojjanga-suthraya): The seven factors of awakening, recited by Venerable Cunda when the Buddha himself was ill.
+- [ගිරිමානන්‍ද සූත්‍රය (Girimananda Sutta)](https://vandana.sudaraka94.com/articles/girimananda-suthraya): The ten perceptions taught for the ill Venerable Girimananda, traditionally chanted for the sick.
+- [ඉසිගිලි සූත්‍රය (Isigili Sutta)](https://vandana.sudaraka94.com/articles/isigili-suthraya): The names of the Paccekabuddhas who lived on Isigili mountain.
+- [ධම්මචක්කපවත්තන සූත්‍රය (Dhammacakkappavattana Sutta)](https://vandana.sudaraka94.com/articles/dhamma-chakka-pawattana-sutta): The Buddha's first sermon at Isipatana, which sets out the Four Noble Truths and the Noble Eightfold Path.
+- [මහාසමය සූත්‍රය (Mahasamaya Sutta)](https://vandana.sudaraka94.com/articles/mahasamaya-suthraya): The great assembly of deities who gathered to see the Buddha and the Sangha.
+- [ආළවක සූත්‍රය (Alavaka Sutta)](https://vandana.sudaraka94.com/articles/alawaka-suthraya): The Buddha's answers to the questions of the yakkha Alavaka, who then became his follower.
+- [කසීභාරද්වාජ සූත්‍රය (Kasi Bharadvaja Sutta)](https://vandana.sudaraka94.com/articles/kasibharadwaja-suthraya): The Dhamma as ploughing, taught to the farming brahmin Kasi Bharadvaja.
+- [පරාභව සූත්‍රය (Parabhava Sutta)](https://vandana.sudaraka94.com/articles/parabhawa-suthraya): The causes of downfall in a person's life.
+- [වසල සූත්‍රය (Vasala Sutta)](https://vandana.sudaraka94.com/articles/wasala-suthraya): One becomes an outcast or a noble one by deeds, not by birth.
+- [සච්චවිභඞ්ග සූත්‍රය (Saccavibhanga Sutta)](https://vandana.sudaraka94.com/articles/sachchavibhanga-suthraya): A detailed analysis of the Four Noble Truths, given by Venerable Sariputta.
+- [ආටානාටිය සූත්‍රය (Atanatiya Sutta)](https://vandana.sudaraka94.com/articles/atanatiya-suthraya): A protection given by the Four Great Kings against harmful spirits.
+- [බොජ්ඣංග පිරිත (Bojjhanga Piritha)](https://vandana.sudaraka94.com/articles/bojjanga-piritha): The seven factors of enlightenment (bojjhanga), traditionally chanted for people who are ill.
+- [ජය පිරිත (Jaya Piritha)](https://vandana.sudaraka94.com/articles/jaya-piritha): Verses recalling the Buddha's virtues and victory, chanted for success, protection and blessings.
+- [මහා ජයමංගල ගාථා (Maha Jaya Mangala Gatha)](https://vandana.sudaraka94.com/articles/mahajayamangala-gatha): Verses wishing victory and blessings, often chanted at the end of a pirith ceremony.
+- [අටවිසි පිරිත (Atawisi Piritha)](https://vandana.sudaraka94.com/articles/atawisi-piritha): Verses recalling the names of the twenty-eight Buddhas, chanted for protection and blessings.
+- [ඇනවුම් පිරිත (Anawum Piritha)](https://vandana.sudaraka94.com/articles/anawum-piritha): Verses chanted at the start of a pirith ceremony to invite the deities to come and listen.
+- [ජින පඤ්ජරය (Jina Panjaraya)](https://vandana.sudaraka94.com/articles/jinapanjaraya): The 'Buddha's cage': verses that place the Buddhas and great disciples around the body for protection.
+
+## Daily worship (මූලික වන්දනාව)
+
+Everyday Buddhist worship: homage to the Buddha, worship of the Triple Gem, offerings and sharing merit, in Sinhala script.
+
+- [බුද්ධ පූජා ගාථා (Buddha Puja Gatha)](https://vandana.sudaraka94.com/articles/buddhapuja-ghatha): Verses for offering lamps, incense, flowers and food to the Buddha.
+- [දෙවියන්ට පින්දීම (Merit sharing with the deities)](https://vandana.sudaraka94.com/articles/deviyanta-pindeema): Verses for sharing the merit of a good deed with the deities and all beings (Ettavata ca amhehi).
+- [නමස්කාරය හා බුද්ධ වන්දනා (Namaskaraya and Buddha Vandana)](https://vandana.sudaraka94.com/articles/namaskaraya): The homage 'Namo tassa', taking the Triple Refuge, and verses for worshipping the Buddha.
+- [සෙත් පැතීම (Seth Pathima)](https://vandana.sudaraka94.com/articles/seth-pathima): Blessing verses wishing health, long life and freedom from danger (Sabbitiyo vivajjantu).
+- [තෙරුවන් වන්දනාව (Theruwan Vandanawa)](https://vandana.sudaraka94.com/articles/theruwan-vandanawa): Worship of the Triple Gem: verses recalling the qualities of the Buddha, Dhamma and Sangha (Itipiso).
+- [සරණගමනය (Saranagamana)](https://vandana.sudaraka94.com/articles/saranagamanaya): Going for refuge to the Buddha, the Dhamma and the Sangha, three times; recited at the start of every chanting.
+- [දස සික්ඛාපද (Dasa Sikkhapada)](https://vandana.sudaraka94.com/articles/dasa-sikkhapada): The ten training precepts undertaken by novice monks and by lay people on special days.
+- [සාමණේර පඤ්හය (Samanera Panha)](https://vandana.sudaraka94.com/articles/samanera-panhaya): The novice's questions: ten questions and answers on the Dhamma, from one to ten.
+- [ද්වත්තිංසාකාරය (Dvattimsakara)](https://vandana.sudaraka94.com/articles/dvattimsakaraya): The thirty-two parts of the body, recited as a reflection on the body.

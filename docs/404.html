@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>වන්දනා</title>
+    <script>
+      // GitHub Pages serves this file for every unknown path, including
+      // client-side routes like /articles/jaya-piritha. Save the path and
+      // load the app at the root; index.html puts the path back.
+      try {
+        sessionStorage.setItem('redirect', location.pathname + location.search + location.hash);
+      } catch (e) {}
+      location.replace('/');
+    </script>
+  </head>
+  <body></body>
+</html>
