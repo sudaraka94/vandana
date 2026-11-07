@@ -1,33 +1,31 @@
-import React, { useEffect, useMemo } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React, { Suspense, useEffect, useMemo } from "react";
+import { BrowserRouter, Route, Routes } from "react-router";
 
-import { CssBaseline, ThemeProvider } from "@mui/material";
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import CssBaseline from "@mui/material/CssBaseline";
+import { ThemeProvider } from "@mui/material/styles";
 
-import Collection from "./containers/Collection";
-import Article from "./containers/Article";
 import Layout from "./hoc/Layout";
+import { lazyWithReload } from "./lazy";
 import { makeTheme, TOKENS } from "./theme/theme";
 import Home from "./containers/Home";
 import { PrefsProvider, usePrefs } from "./prefs";
-import { useAppDispatch } from "./store";
-import { loadMenu } from "./loadMenu";
 import { NotFound } from "./components/StatusMessage";
+import { usePageViews } from "./hooks/usePageViews";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyDZmhbMzCOtPgCY5CItE8jtWlXeWs4kWQ8",
-  projectId: "vandana-94dfa",
-  appId: "1:901516946638:web:f5072b42552596b8c6b49f",
-  measurementId: "G-Z9N1XMK4C6",
-};
+// The reader and collection screens load on demand, so the home screen
+// (where most visits start) downloads less.
+const loadArticle = () => import("./containers/Article");
+const loadCollection = () => import("./containers/Collection");
+const Article = lazyWithReload(loadArticle);
+const Collection = lazyWithReload(loadCollection);
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-getAnalytics(app);
+// Lives inside the router so it can see route changes.
+function PageViews() {
+  usePageViews();
+  return null;
+}
 
 function ThemedApp() {
-  const dispatch = useAppDispatch();
   const { themeMode } = usePrefs();
   const theme = useMemo(() => makeTheme(themeMode), [themeMode]);
 
@@ -37,22 +35,30 @@ function ThemedApp() {
     document.querySelector('meta[name="theme-color"]')?.setAttribute("content", color);
   }, [themeMode]);
 
-  // Load the menu once when the app starts.
+  // Fetch the other screens in the background once the first one is up, so
+  // opening a text doesn't wait for its code.
   useEffect(() => {
-    loadMenu(dispatch);
-  }, [dispatch]);
+    const id = window.setTimeout(() => {
+      loadArticle();
+      loadCollection();
+    }, 1500);
+    return () => window.clearTimeout(id);
+  }, []);
 
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <BrowserRouter>
+        <PageViews />
         <Layout>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/collections/:collectionId" element={<Collection />} />
-            <Route path="/articles/:articleId" element={<Article />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+          <Suspense fallback={null}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/collections/:collectionId" element={<Collection />} />
+              <Route path="/articles/:articleId" element={<Article />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Suspense>
         </Layout>
       </BrowserRouter>
     </ThemeProvider>

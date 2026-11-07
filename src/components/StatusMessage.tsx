@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Button, SvgIcon, Typography } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 interface StatusMessageProps {
   message: string;

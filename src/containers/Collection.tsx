@@ -1,25 +1,20 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import { shallowEqual } from "react-redux";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router";
 
 import ArticleList from "../components/ArticleList";
 import PageBar from "../components/PageBar";
 import StatusMessage, { NotFound } from "../components/StatusMessage";
-import { orderedArticles } from "../content";
+import { OLD_COLLECTION_IDS, orderedArticles } from "../content";
 import { usePageMeta } from "../hooks/usePageMeta";
-import { loadMenu } from "../loadMenu";
+import { loadMenu, useMenu } from "../menu";
 import SITE from "../site.json";
-import { selectAllArticles, selectCollections, selectHasMenuError, selectIsMenuLoading } from "../slices/menu";
-import { useAppDispatch, useAppSelector } from "../store";
 
 const Collection = () => {
   const { collectionId = "" } = useParams();
-  const dispatch = useAppDispatch();
-  const collections = useAppSelector(selectCollections);
-  const articles = useAppSelector(selectAllArticles, shallowEqual);
-  const isLoading = useAppSelector(selectIsMenuLoading);
-  const hasError = useAppSelector(selectHasMenuError);
+  const { status, articles, collections } = useMenu();
+  const isLoading = status === "loading";
+  const hasError = status === "error";
   const collection = collections[collectionId];
   const info = (SITE.collections as Record<string, { english: string; description: string; about: string }>)[collectionId];
 
@@ -29,9 +24,12 @@ const Collection = () => {
     path: `/collections/${collectionId}`,
   });
 
+  const newId = OLD_COLLECTION_IDS[collectionId];
+  if (newId) return <Navigate to={`/collections/${newId}`} replace />;
+
   const renderBody = () => {
     if (hasError) {
-      return <StatusMessage message="පූරණය කිරීමට නොහැකි විය" onRetry={() => loadMenu(dispatch)} />;
+      return <StatusMessage message="පූරණය කිරීමට නොහැකි විය" onRetry={() => loadMenu()} />;
     }
     if (isLoading) return null;
     if (!collection) return <NotFound />;

@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, ButtonBase, Typography } from "@mui/material";
-import { ArrowBackIosNew } from "@mui/icons-material";
-import { useLocation, useNavigate } from "react-router-dom";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import { useLocation, useNavigate } from "react-router";
 
 interface PageBarProps {
   // Parent page: where "back" goes, and the name shown beside the arrow.
@@ -62,7 +62,7 @@ const PageBar = ({ backTo, backLabel, actions, progress, hidden }: PageBarProps)
           aria-label={`ආපසු: ${backLabel}`}
           sx={{ color: "primary.main", borderRadius: 2, px: 1, height: 44, gap: 0.5, minWidth: 0 }}
         >
-          <ArrowBackIosNew sx={{ fontSize: 18 }} />
+          <ArrowBackIosNewIcon sx={{ fontSize: 18 }} />
           <Typography component="span" noWrap sx={{ fontWeight: 600, fontSize: 15 }}>
             {backLabel}
           </Typography>

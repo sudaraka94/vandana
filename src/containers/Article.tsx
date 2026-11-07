@@ -1,38 +1,31 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Link, useLocation, useParams } from "react-router-dom";
-import { shallowEqual } from "react-redux";
+import React, { Suspense, useEffect, useRef, useState } from "react";
+import { Link, Navigate, useLocation, useParams } from "react-router";
 
 import { Backdrop, Box, Button, CircularProgress, IconButton, Snackbar, ToggleButton, ToggleButtonGroup, Typography, useMediaQuery } from "@mui/material";
-import { MenuBook, Share, Star, StarBorder } from "@mui/icons-material";
+import MenuBookIcon from "@mui/icons-material/MenuBook";
+import ShareIcon from "@mui/icons-material/Share";
+import StarIcon from "@mui/icons-material/Star";
+import StarBorderIcon from "@mui/icons-material/StarBorder";
 
-import { fetchArticleById } from "../api";
 import ArticleList from "../components/ArticleList";
 import ContentContainer from "../components/ContentContainer";
 import PageBar from "../components/PageBar";
-import ReaderSettings from "../components/ReaderSettings";
 import StatusMessage, { NotFound } from "../components/StatusMessage";
-import { orderedArticles } from "../content";
+import { OLD_ARTICLE_IDS, orderedArticles } from "../content";
 import { usePageMeta } from "../hooks/usePageMeta";
 import { useWakeLock } from "../hooks/useWakeLock";
+import { lazyWithReload } from "../lazy";
 import { LINE_HEIGHTS, usePrefs } from "../prefs";
-import { selectAllArticles, selectCollections } from "../slices/menu";
-import { useAppSelector } from "../store";
+import { ArticleData, fetchArticle, useMenu } from "../menu";
 import { SERIF } from "../theme/theme";
 
 import LogoSaffron from "/images/VandanaLogoSaffron.svg";
 import LogoLamp from "/images/VandanaLogoLamp.svg";
 
-interface ArticleData {
-  title: string;
-  content: string;
-  translation?: string; // Sinhala meaning, when available
-  source?: string;
-}
+// The settings sheet is only needed once the reader opens it.
+const ReaderSettings = lazyWithReload(() => import("../components/ReaderSettings"));
 
 type LoadState = "loading" | "loaded" | "notFound" | "error";
-
-const isAxios404 = (error: unknown) =>
-  (error as { response?: { status?: number } } | null)?.response?.status === 404;
 
 const scrollProgress = () => {
   const max = document.documentElement.scrollHeight - window.innerHeight;
@@ -41,18 +34,23 @@ const scrollProgress = () => {
 
 const Article = () => {
   const { articleId = "" } = useParams();
+  const newId = OLD_ARTICLE_IDS[articleId];
+  return newId ? <Navigate to={`/articles/${newId}`} replace /> : <Reader articleId={articleId} />;
+};
+
+const Reader = ({ articleId }: { articleId: string }) => {
   const location = useLocation();
   const wide = useMediaQuery("(min-width:900px)");
   const prefs = usePrefs();
   const { fontSize, lineSpacing, keepAwake, themeMode, textLanguage, isFavourite, toggleFavourite, update } = prefs;
 
-  const articles = useAppSelector(selectAllArticles, shallowEqual);
-  const collections = useAppSelector(selectCollections);
+  const { articles, collections } = useMenu();
 
   const [article, setArticle] = useState<ArticleData>();
   const [loadState, setLoadState] = useState<LoadState>("loading");
   const [attempt, setAttempt] = useState(0);
   const [settingsOpen, setSettingsOpen] = useState(false);
+  const [settingsUsed, setSettingsUsed] = useState(false); // keeps the sheet mounted so it can animate closed
   const [focused, setFocused] = useState(false);
   const [progress, setProgress] = useState(0);
   const [copied, setCopied] = useState(false);
@@ -69,18 +67,10 @@ const Article = () => {
     const wantsResume = (location.state as { resume?: boolean } | null)?.resume;
     resumeFrom.current = wantsResume && prefs.lastRead?.id === articleId ? prefs.lastRead.progress : null;
 
-    fetchArticleById(articleId).then((response) => {
+    fetchArticle(articleId).then((result) => {
       if (cancelled) return;
-      const data = response.data;
-      if (data && typeof data === "object" && typeof data.content === "string") {
-        setArticle(data);
-        setLoadState("loaded");
-      } else if (response.error && !isAxios404(response.error)) {
-        setLoadState("error");
-      } else {
-        // A 404, or the dev server answering with index.html for an unknown file.
-        setLoadState("notFound");
-      }
+      if (result.status === "loaded") setArticle(result.data);
+      setLoadState(result.status);
     });
     return () => {
       cancelled = true;
@@ -156,14 +146,17 @@ const Article = () => {
         onClick={() => toggleFavourite(articleId)}
         sx={{ color: favourite ? "primary.main" : "text.primary", width: 44, height: 44 }}
       >
-        {favourite ? <Star /> : <StarBorder />}
+        {favourite ? <StarIcon /> : <StarBorderIcon />}
       </IconButton>
       <IconButton aria-label="බෙදාගන්න" onClick={share} sx={{ color: "text.primary", width: 44, height: 44 }}>
-        <Share fontSize="small" />
+        <ShareIcon fontSize="small" />
       </IconButton>
       <IconButton
         aria-label="කියවීමේ සැකසුම්"
-        onClick={() => setSettingsOpen(true)}
+        onClick={() => {
+          setSettingsUsed(true);
+          setSettingsOpen(true);
+        }}
         sx={{ color: "text.primary", width: 44, height: 44, fontFamily: SERIF, fontWeight: 600, fontSize: 18, gap: "1px", alignItems: "baseline" }}
       >
         අ<Box component="span" sx={{ fontSize: 12 }}>අ</Box>
@@ -234,7 +227,7 @@ const Article = () => {
                 <Button
                   variant="contained"
                   size="large"
-                  startIcon={<MenuBook />}
+                  startIcon={<MenuBookIcon />}
                   component={Link}
                   to={`/articles/${next.id}`}
                   state={{ from: location.pathname }}
@@ -309,7 +302,11 @@ const Article = () => {
         reader
       )}
 
-      <ReaderSettings open={settingsOpen} onClose={() => setSettingsOpen(false)} />
+      {settingsUsed && (
+        <Suspense fallback={null}>
+          <ReaderSettings open={settingsOpen} onClose={() => setSettingsOpen(false)} />
+        </Suspense>
+      )}
       <Snackbar open={copied} autoHideDuration={2500} onClose={() => setCopied(false)} message="සබැඳිය පිටපත් කළා" />
     </>
   );

@@ -1,9 +1,10 @@
 import React from "react";
 import { Box, IconButton, List, ListItem, ListItemButton, Typography } from "@mui/material";
-import { Star, StarBorder } from "@mui/icons-material";
-import { Link, useLocation } from "react-router-dom";
+import StarIcon from "@mui/icons-material/Star";
+import StarBorderIcon from "@mui/icons-material/StarBorder";
+import { Link, useLocation } from "react-router";
 
-import { MenuArticle } from "../slices/menu";
+import { MenuArticle } from "../menu";
 import { usePrefs } from "../prefs";
 import { SERIF } from "../theme/theme";
 
@@ -52,7 +53,7 @@ const ArticleList = ({ articles, numbered, currentId, tagFor, highlight }: Artic
                 onClick={() => toggleFavourite(article.id)}
                 sx={{ color: favourite ? "primary.main" : "text.secondary" }}
               >
-                {favourite ? <Star fontSize="small" /> : <StarBorder fontSize="small" />}
+                {favourite ? <StarIcon fontSize="small" /> : <StarBorderIcon fontSize="small" />}
               </IconButton>
             }
           >
