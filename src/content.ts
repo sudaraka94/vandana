@@ -1,4 +1,5 @@
-import { Collection, MenuArticle } from "./slices/menu";
+import { Collection, MenuArticle } from "./menu";
+import REDIRECTS from "./redirects.json";
 import SITE from "./site.json";
 
 // One-line descriptions shown on the home screen's collection cards.
@@ -31,3 +32,8 @@ export const matchesQuery = (query: string, article: MenuArticle) => {
     text?.toLowerCase().includes(query)
   );
 };
+
+// Addresses used before the texts were renamed in 2024 (src/redirects.json).
+// Old shared links and bookmarks are sent to the current page.
+export const OLD_ARTICLE_IDS: { [oldId: string]: string } = REDIRECTS.articles;
+export const OLD_COLLECTION_IDS: { [oldId: string]: string } = REDIRECTS.collections;

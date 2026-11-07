@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import { Backdrop, Box, ButtonBase, CircularProgress, IconButton, InputBase, Paper, Typography } from "@mui/material";
-import { Close, MenuBook, Search, Star } from "@mui/icons-material";
-import { shallowEqual } from "react-redux";
-import { Link } from "react-router-dom";
+import CloseIcon from "@mui/icons-material/Close";
+import MenuBookIcon from "@mui/icons-material/MenuBook";
+import SearchIcon from "@mui/icons-material/Search";
+import StarIcon from "@mui/icons-material/Star";
+import { Link } from "react-router";
 
 import ArticleList from "../components/ArticleList";
 import StatusMessage from "../components/StatusMessage";
 import { COLLECTION_DESCRIPTIONS, matchesQuery } from "../content";
 import { usePageMeta } from "../hooks/usePageMeta";
-import { loadMenu } from "../loadMenu";
+import { loadMenu, useMenu } from "../menu";
 import { usePrefs } from "../prefs";
-import { selectAllArticles, selectCollections, selectHasMenuError, selectIsMenuLoading } from "../slices/menu";
-import { useAppDispatch, useAppSelector } from "../store";
 import { SERIF } from "../theme/theme";
 
 import Logo from "/images/VandanaLogo.svg";
@@ -34,11 +34,9 @@ const SectionLabel = ({ children }: { children: React.ReactNode }) => (
 );
 
 const Home = () => {
-  const dispatch = useAppDispatch();
-  const collections = useAppSelector(selectCollections);
-  const articles = useAppSelector(selectAllArticles, shallowEqual);
-  const isLoading = useAppSelector(selectIsMenuLoading);
-  const hasError = useAppSelector(selectHasMenuError);
+  const { status, articles, collections } = useMenu();
+  const isLoading = status === "loading";
+  const hasError = status === "error";
   const { themeMode, lastRead, favourites } = usePrefs();
   const [query, setQuery] = useState("");
   usePageMeta({ path: "/" });
@@ -75,7 +73,7 @@ const Home = () => {
               </Box>
             </Box>
             <Box sx={{ width: 44, height: 44, borderRadius: "50%", bgcolor: "primary.main", color: "primary.contrastText", display: "grid", placeItems: "center", flex: "none" }}>
-              <MenuBook fontSize="small" />
+              <MenuBookIcon fontSize="small" />
             </Box>
           </Paper>
         </>
@@ -127,7 +125,7 @@ const Home = () => {
                 state={{ from: "/" }}
                 sx={{ border: 1, borderColor: "divider", bgcolor: "background.paper", borderRadius: 99, px: 1.5, minHeight: 36, gap: 0.75, fontSize: 14 }}
               >
-                <Star sx={{ fontSize: 15, color: "primary.main" }} />
+                <StarIcon sx={{ fontSize: 15, color: "primary.main" }} />
                 {article.title}
               </ButtonBase>
             ))}
@@ -160,7 +158,7 @@ const Home = () => {
 
   const renderBody = () => {
     if (hasError) {
-      return <StatusMessage message="පූරණය කිරීමට නොහැකි විය" hint="අන්තර්ජාල සම්බන්ධතාව පරීක්ෂා කරන්න" onRetry={() => loadMenu(dispatch)} />;
+      return <StatusMessage message="පූරණය කිරීමට නොහැකි විය" hint="අන්තර්ජාල සම්බන්ධතාව පරීක්ෂා කරන්න" onRetry={() => loadMenu()} />;
     }
     if (isLoading) return null;
     return q ? renderResults() : renderDashboard();
@@ -213,7 +211,7 @@ const Home = () => {
             boxShadow: "0 4px 14px rgba(80, 50, 10, 0.10)",
           }}
         >
-          <Search sx={{ color: "text.secondary" }} />
+          <SearchIcon sx={{ color: "text.secondary" }} />
           <InputBase
             id="search"
             value={query}
@@ -224,7 +222,7 @@ const Home = () => {
           />
           {query && (
             <IconButton aria-label="සෙවුම මකන්න" onClick={() => setQuery("")}>
-              <Close />
+              <CloseIcon />
             </IconButton>
           )}
         </Paper>

@@ -4,7 +4,8 @@
 // HTTP status 200 instead of GitHub Pages' 404 fallback. React replaces the
 // pre-built markup as soon as the app loads.
 //
-// Also writes sitemap.xml, llms.txt and llms-full.txt.
+// Also writes sitemap.xml, llms.txt and llms-full.txt, and small redirect
+// pages for addresses used before the texts were renamed (src/redirects.json).
 import fs from "node:fs";
 import path from "node:path";
 
@@ -12,6 +13,7 @@ const OUT = "docs";
 const read = (file) => fs.readFileSync(file, "utf8");
 const SITE = JSON.parse(read("src/site.json"));
 const menu = JSON.parse(read("public/content/menu.json"));
+const REDIRECTS = JSON.parse(read("src/redirects.json"));
 const template = read(path.join(OUT, "index.html"));
 if (template.includes("application/ld+json")) {
   throw new Error("docs/index.html is already pre-rendered; run `vite build` first.");
@@ -200,6 +202,27 @@ for (const a of Object.values(menu.articles)) {
   });
   fullText.push({ a, cid, text: toText(data.content), meaning: data.translation ? toText(data.translation) : "", source: data.source });
 }
+
+// Old addresses: send visitors and search engines to the current page.
+const redirectPage = (from, to) => {
+  const url = abs(to);
+  const html = `<!DOCTYPE html>
+<html lang="si">
+  <head>
+    <meta charset="UTF-8" />
+    <title>${esc(SITE.name)}</title>
+    <link rel="canonical" href="${url}" />
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="refresh" content="0; url=${to}" />
+    <script>location.replace(${JSON.stringify(to)} + location.search + location.hash)</script>
+  </head>
+  <body><a href="${to}">${esc(url)}</a></body>
+</html>
+`;
+  fs.writeFileSync(path.join(OUT, `${from.slice(1)}.html`), html);
+};
+for (const [from, to] of Object.entries(REDIRECTS.articles)) redirectPage(`/articles/${from}`, `/articles/${to}`);
+for (const [from, to] of Object.entries(REDIRECTS.collections)) redirectPage(`/collections/${from}`, `/collections/${to}`);
 
 // sitemap.xml
 const urls = ["/", ...collectionIds.map((id) => `/collections/${id}`), ...Object.keys(menu.articles).map((id) => `/articles/${id}`)];
