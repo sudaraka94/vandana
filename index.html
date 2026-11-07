@@ -17,6 +17,22 @@
     <meta name="description" content="පිරිත් සූත්‍ර, බුද්ධ වන්දනා හා පූජා ගාථා සම්පූර්ණ පාඨ සිංහලෙන්. Sinhala pirith and Buddhist vandana gatha, full text, free and ad free." />
     <title>වන්දනා · සිංහල පිරිත් හා වන්දනා ගාථා</title>
     <script>
+      // Safari on iOS 26 colors the status bar from the page background, so set
+      // it before the app loads: the home header color, or the reading page
+      // color (same rule as src/hoc/Layout.tsx). #root keeps the page color.
+      (function () {
+      try {
+        var mode = (JSON.parse(localStorage.getItem('vandanaPrefs') || '{}') || {}).themeMode;
+        var home = location.pathname === '/';
+        var page = mode === 'night' ? '#15110C' : mode === 'white' ? '#FFFFFF' : '#FBF6EC';
+        var bar = home ? (mode === 'night' ? '#1F1912' : '#B4500F') : page;
+        var style = document.createElement('style');
+        style.textContent = 'html,body{margin:0;background-color:' + bar + '}#root{min-height:100vh;background-color:' + page + '}';
+        document.head.appendChild(style);
+      } catch (e) {}
+      })();
+    </script>
+    <script>
       // Restore a deep link saved by 404.html (GitHub Pages SPA fallback).
       try {
         var redirect = sessionStorage.getItem('redirect');
