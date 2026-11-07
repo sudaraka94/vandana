@@ -7,6 +7,7 @@ import StarIcon from "@mui/icons-material/Star";
 import { Link } from "react-router";
 
 import ArticleList from "../components/ArticleList";
+import InstallNudge from "../components/InstallNudge";
 import StatusMessage from "../components/StatusMessage";
 import { COLLECTION_DESCRIPTIONS, matchesQuery } from "../content";
 import { usePageMeta } from "../hooks/usePageMeta";
@@ -78,6 +79,9 @@ const Home = () => {
           </Paper>
         </>
       )}
+
+      {/* Only after someone has read a text, so first-time visitors aren't nagged. */}
+      {lastRead && <InstallNudge />}
 
       <SectionLabel>කාණ්ඩ</SectionLabel>
       <Box sx={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))", gap: 1.25 }}>

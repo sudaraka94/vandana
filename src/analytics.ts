@@ -29,6 +29,10 @@ export const trackPageView = (path: string) => {
   });
 };
 
+export const trackEvent = (name: string, params: Record<string, string>) => {
+  if (enabled) window.gtag("event", name, params);
+};
+
 // The analytics script is loaded after the page is ready and the browser is
 // idle, so it never holds up the first paint.
 export const startAnalytics = () => {
