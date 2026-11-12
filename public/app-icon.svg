@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-11 -11 86 86">
+  <!-- Home Screen icon: the favicon's Dharmachakra on a full saffron square.
+       No rounded corners, because iOS and Android round them. The wheel stays
+       inside the middle 80% circle, so Android's round and squircle masks
+       ("maskable" icons) never crop it. The icon-*.png and apple-touch-icon.png
+       files are this image rendered at their sizes. -->
+  <rect x="-11" y="-11" width="86" height="86" fill="#B4500F"/>
+  <g fill="#FFF8EE">
+    <path d="M38.41 30.92L49.79 29.23L49.79 34.77L38.41 33.08ZM37.30 35.76L46.53 42.62L42.62 46.53L35.76 37.30ZM33.08 38.41L34.77 49.79L29.23 49.79L30.92 38.41ZM28.24 37.30L21.38 46.53L17.47 42.62L26.70 35.76ZM25.59 33.08L14.21 34.77L14.21 29.23L25.59 30.92ZM26.70 28.24L17.47 21.38L21.38 17.47L28.24 26.70ZM30.92 25.59L29.23 14.21L34.77 14.21L33.08 25.59ZM35.76 26.70L42.62 17.47L46.53 21.38L37.30 28.24Z"/>
+    <circle cx="32" cy="32" r="2.6"/>
+    <circle cx="57" cy="32" r="3.3"/><circle cx="49.68" cy="49.68" r="3.3"/><circle cx="32" cy="57" r="3.3"/><circle cx="14.32" cy="49.68" r="3.3"/><circle cx="7" cy="32" r="3.3"/><circle cx="14.32" cy="14.32" r="3.3"/><circle cx="32" cy="7" r="3.3"/><circle cx="49.68" cy="14.32" r="3.3"/>
+  </g>
+  <g fill="none" stroke="#FFF8EE">
+    <circle cx="32" cy="32" r="18.5" stroke-width="4.4"/>
+    <circle cx="32" cy="32" r="6.2" stroke-width="2.6"/>
+    <path d="M52 32L57 32M46.14 46.14L49.68 49.68M32 52L32 57M17.86 46.14L14.32 49.68M12 32L7 32M17.86 17.86L14.32 14.32M32 12L32 7M46.14 17.86L49.68 14.32" stroke-width="2.4"/>
+  </g>
+</svg>
